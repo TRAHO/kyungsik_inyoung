@@ -1,0 +1,93 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.editor html, .editor body, .editor div, .editor span, .editor applet, .editor object, .editor iframe,
+.editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor p, .editor blockquote, .editor pre,
+.editor a, .editor abbr, .editor acronym, .editor address, .editor big, .editor cite, .editor code,
+.editor del, .editor dfn, .editor em, .editor img, .editor ins, .editor kbd, .editor q, .editor s, .editor samp,
+.editor small, .editor strike, .editor strong, .editor sub, .editor sup, .editor tt, .editor var,
+.editor b, .editor u, .editor i, .editor center,
+.editor dl, .editor dt, .editor dd, .editor ol, .editor ul, .editor li,
+.editor fieldset, .editor form, .editor label, .editor legend,
+.editor table, .editor caption, .editor tbody, .editor tfoot, .editor thead, .editor tr, .editor th, .editor td,
+.editor article, .editor aside, .editor canvas, .editor details, .editor embed, 
+.editor figure, .editor figcaption, .editor footer, .editor header, .editor hgroup, 
+.editor menu, .editor nav, .editor output, .editor ruby, .editor section, .editor summary,
+.editor time, .editor mark, .editor audio, .editor video {
+	margin: revert;
+	padding: revert;
+	border: revert;
+	font-size: revert;
+	font: revert;
+	vertical-align: revert;
+	-webkit-text-size-adjust: revert;
+	-ms-text-size-adjust: revert;
+	-moz-text-size-adjust: revert;
+	-o-text-size-adjust: revert;
+}
+
+/* HTML5 display-role reset for older browsers */
+.editor article, .editor aside, .editor details, .editor figcaption, .editor figure, 
+.editor footer, .editor header, .editor hgroup, .editor menu, .editor nav, .editor section {
+	display: revert;
+}
+.editor body {
+	line-height: revert;
+}
+.editor ol, .editor ul {
+	list-style: revert;
+}
+.editor blockquote, .editor q {
+	quotes: revert;
+}
+.editor blockquote:before, .editor blockquote:after,
+.editor q:before, .editor q:after {
+	content: revert;
+	content: revert;
+}
+.editor table {
+	border-collapse: revert;
+	border-spacing: revert;
+}
+
+.editor a {text-decoration: revert; color: revert;}
+
+.editor input, .editor textarea, .editor button, .editor select {
+	appearance: revert;
+	border-radius: revert;
+	-moz-appearance: revert;
+	-webkit-appearance: revert;
+	-webkit-border-radius: revert;
+	-moz-border-radius: revert;
+	outline: revert;
+	font-family: revert;
+}
+
+.editor input[type='radio']{
+	appearance: revert;
+}
+
+.editor img {max-width: revert; height: revert; vertical-align: revert;} /* 이미지 반응형 */
+
+/* ios 기본 스타일 제거 */
+.editor input{
+	/*ios대응*/
+	appearance: revert;
+	-webkit-appearance: revert;
+	-webkit-border-radius: revert;
+}
+
+.editor select{
+	/*ios대응*/
+	-webkit-appearance: revert;
+	-moz-appearance: revert; 
+	appearance: revert;
+
+	/*화살표 배경 넣기*/
+	background: revert;
+}
+.editor select::-ms-expand{ 
+	display: revert; /* 화살표 없애기 for IE10, 11*/
+}
