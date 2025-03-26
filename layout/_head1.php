@@ -8,10 +8,9 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
 
     <meta property="og:type" content="website">
-    <!-- <meta property="og:url" content="https://www.mobiem.com/"> -->
     <meta property="og:title" content="경식&인영, 결혼합니다.">
     <meta property="og:site_name" content="경식&인영, 결혼합니다.">
-    <!-- <meta property="og:image" content="/asset/img/mobiem_og.jpg"> -->
     <meta property="og:description" content="경식&인영, 결혼합니다.">
     <meta name="description" content="경식&인영, 결혼합니다.">
     <!-- <link rel="icon" type="image/png" href="/asset/img/mobiem_favicon.png"> -->
+</head>
