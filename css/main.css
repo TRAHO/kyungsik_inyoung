@@ -13,15 +13,20 @@ body {background-color: #f4fbf1;}
 .main {background-color: #fff; max-width: 768px; margin: 0 auto;}
 
 .s1 { position: relative; height: 100vh;}
-.s1 .introTxt {text-align: center; font-size: 100px; line-height: 1; white-space: nowrap; font-family: 'Soak Up The Sun Script';}
+.s1 .introTxt {text-align: center; font-size: 130px; line-height: 1; white-space: nowrap; font-family: 'Soak Up The Sun Script';}
 
 
-.s1 .intro {display: none; text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.s1 .intro {text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .s1 .intro .txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.s1 .intro .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.s1 .intro .txt svg {width: 350px;}
+.s1 .intro .txt svg * {stroke: #99ab91 !important;}
+/* .s1 .intro .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 
 .s1 .contents {text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .s1 .contents .txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .s1 .contents .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 
+@media screen and (max-width: 428px) {
+    .s1 .introTxt {font-size: 100px;}
+}
