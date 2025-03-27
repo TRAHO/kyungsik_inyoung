@@ -8,7 +8,10 @@
 ?>
 
 <link rel="stylesheet" href="/css/main.css">
-
+<style>
+    h1 + h1 {margin-top: 100px;}
+    
+</style>
 <!-- 
 
 인트로 : 이펙트 꽃잎, 드로잉 텍스트
