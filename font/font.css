@@ -7,9 +7,63 @@
     src: url("/font/Breathing.ttf") format("truetype");
 }
 
-/* Wonderful Branding */
+/* Ringster */
 @font-face {
-    font-family: "Wonderful_Branding";
-    src: url("/font/Wonderful_Branding.ttf") format("truetype");
+    font-family: "Ringster";
+    src: url("/font/Ringster.ttf") format("truetype");
+}
+
+/* SouthwellRegular */
+@font-face {
+    font-family: "SouthwellRegular";
+    src: url("/font/SouthwellRegular.ttf") format("truetype");
+}
+
+/* PrettyQueen */
+@font-face {
+    font-family: "PrettyQueen";
+    src: url("/font/PrettyQueen.ttf") format("truetype");
+}
+
+/* Sweet Sophie */
+@font-face {
+    font-family: "Sweet Sophie";
+    src: url("/font/Sweet Sophie.ttf") format("truetype");
+}
+
+/* Ahattom */
+@font-face {
+    font-family: "scootline";
+    src: url("/font/scootline.otf") format("opentype");
+}
+
+/* Palms-Delight */
+@font-face {
+    font-family: "Palms-Delight";
+    src: url("/font/Palms-Delight.otf") format("opentype");
+}
+
+/* Brittaney-Memories */
+@font-face {
+    font-family: "Brittaney-Memories";
+    src: url("/font/Brittaney-Memories.otf") format("opentype");
+}
+
+/* sweet-romance */
+@font-face {
+    font-family: "sweet-romance";
+    src: url("/font/sweet-romance.ttf") format("truetype");
+}
+
+/* BeautyHandwritingRegular */
+@font-face {
+    font-family: "BeautyHandwritingRegular";
+    src: url("/font/BeautyHandwritingRegular.ttf") format("truetype");
+}
+
+/* blackhills */
+@font-face {
+    font-family: "Soak Up The Sun Script";
+    src: url("/font/Soak Up The Sun Script.otf") format("opentype");
 }
 

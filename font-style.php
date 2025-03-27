@@ -29,7 +29,17 @@
                 <div class="contents">
                     <div class="txt">
                         <!-- <p>경식 & 인영</p> -->
-                        <h1 class="introTxt">We're getting <br>married!</h1>
+                        <h1 class="introTxt0">1. We're getting <br>married!</h1>
+                        <h1 class="introTxt1">2. We're getting <br>married!</h1>
+                        <h1 class="introTxt2">3. We're getting <br>married!</h1>
+                        <h1 class="introTxt3"><span style="font-family: 'Breathing';">4.</span> We're getting <br>married!</h1>
+                        <h1 class="introTxt4">5. We're getting <br>married!</h1>
+                        <h1 class="introTxt5">6. We're getting <br>married!</h1>
+                        <h1 class="introTxt6">7. We're getting <br>married!</h1>
+                        <h1 class="introTxt7">8. We're getting <br>married!</h1>
+                        <h1 class="introTxt8">9. We're getting <br>married!</h1>
+                        <h1 class="introTxt9">10. We're getting <br>married!</h1>
+                        <h1 class="introTxt10">11. We're getting <br>married!</h1>
                     </div>
                 </div>
             </section>
