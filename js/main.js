@@ -2,7 +2,7 @@
 window.addEventListener('load', () => {
   setTimeout(() => {
     window.scrollTo(0, 1);
-  }, 100);
+  }, 500);
 });
 let paths = document.querySelectorAll('#pathLayer > g > *');
 let duration = 4,
