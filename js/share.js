@@ -13,6 +13,11 @@ if(	navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     }
 }
 
+// 모바일 접속시 브라우저별 주소창 숨김
+if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || navigator.maxTouchPoints == 5){
+    document.querySelector('.addressBar').style.display = 'none';
+}
+
 
 // resize refresh
 // let saveWidth = window.innerWidth;
