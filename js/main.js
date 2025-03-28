@@ -1,4 +1,9 @@
 // gsap.from('.s1 .svgDraw path', {duration: 1, drawSVG: 0, ease: 'none'});
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    window.scrollTo(0, 1);
+  }, 100);
+});
 let paths = document.querySelectorAll('#pathLayer > g > *');
 let duration = 4,
     distance = 0,
@@ -25,6 +30,9 @@ let duration = 4,
             .to('.intro', {
               opacity: 0,
               duration: .4,
+            })
+            .add(() => {
+              $('body').css('overflow', 'auto');
             })
         },
         onStart: () => {

@@ -1,2 +1,4 @@
 .wrap {margin: 0 auto; width: 95%;}
 .wrap[max='1600'] {max-width: 1600px;}
+
+body {overflow: hidden;}
