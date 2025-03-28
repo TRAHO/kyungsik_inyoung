@@ -13,6 +13,17 @@ pointTxt2 #ff85a2
 body {background-color: #f4fbf1;}
 .main {background-color: #fff; max-width: 768px; margin: 0 auto;}
 
+.petals-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000; }
+.petal { position: absolute; opacity: 0; transform-origin: center; }
+
+@media screen and (max-width: 768px) {
+    .petal { transform: scale(0.7); }
+}
+@media screen and (max-width: 480px) {
+    .petal { transform: scale(0.5); }
+}
+
+
 .s1 { position: relative; height: 100vh; overflow: hidden;}
 /* .s1 .introTxt {text-align: center; font-size: 130px; line-height: 1; white-space: nowrap; font-family: 'Soak Up The Sun Script';} */
 .s1 .txt svg {width: 500px;}

@@ -7,12 +7,17 @@
     include_once $_SERVER["DOCUMENT_ROOT"]."/comp/header.php"; // 공통 스크립트 관리
 ?>
 
-<link rel="stylesheet" href="/css/test.css">
+<link rel="stylesheet" href="/css/main.css">
 
 
 <div id="smooth-wrapper">
     <div id="smooth-content">
         <main class="main">
+            <div class="petals-container">
+                <!-- SVG 꽃잎들이 JavaScript로 동적으로 추가됩니다 -->
+            </div>
+
+            
             <section class="s1">
                 <div class="intro">
                     <div class="txt svgDraw">
@@ -265,7 +270,8 @@
 </div>
 
 <script src="/js/share.js"></script>
-<script src="/js/main.js"></script>
+<script src="/js/test.js"></script>
+<script src="js/petals.js"></script>
 
 <?php
     include_once $_SERVER["DOCUMENT_ROOT"]."/layout/_end.php";

@@ -270,7 +270,7 @@
 </div>
 
 <script src="/js/share.js"></script>
-<script src="/js/main.js"></script>
+<script src="/js/test2.js"></script>
 <script src="js/petals.js"></script>
 
 <?php
