@@ -76,58 +76,58 @@
                             <g id="레이어_2" data-name="레이어 2">
                                 <g id="pathLayer" data-name="레이어 1">
                                     <g style="clip-path: url(#clip-path)">
-                                        <path d="M18.57,52.54s-22.08,76.6-14,78.07,16-32.1,21.55-38.47,2,14.9,8,14.51S64.23,28.46,57.52,26.43" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 9px"/>
+                                        <path d="M18.57,52.54s-22.08,76.6-14,78.07,16-32.1,21.55-38.47,2,14.9,8,14.51S64.23,28.46,57.52,26.43" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 9px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-2)">
-                                        <path d="M55.89,87.2S68.48,80,66.22,76.31s-14.38,10.15-11.87,18S74,88,78.65,82.71" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M55.89,87.2S68.48,80,66.22,76.31s-14.38,10.15-11.87,18S74,88,78.65,82.71" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-3)">
-                                        <line x1="83.84" y1="14.56" x2="75.84" y2="42.56" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 12px"/>
+                                        <line x1="83.84" y1="14.56" x2="75.84" y2="42.56" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 12px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-4)">
-                                        <path d="M84.25,76.33s2.23,18.9,1.3,20S97.67,57,101,74.54" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M84.25,76.33s2.23,18.9,1.3,20S97.67,57,101,74.54" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-5)">
-                                        <path d="M103.79,84.08s13.58-6.89,11.33-10.76S97.87,85.47,103.38,93.13,128,78.78,128,78.78" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M103.79,84.08s13.58-6.89,11.33-10.76S97.87,85.47,103.38,93.13,128,78.78,128,78.78" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-6)">
-                                        <path d="M161.55,70.81S143.63,88,148.81,90.67s15.74-20.06,19.73-20.32,8.18,2.48-2,46.23-21.61,37.48-21.61,37.48-21.26-18.66,37.91-79.63" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M161.55,70.81S143.63,88,148.81,90.67s15.74-20.06,19.73-20.32,8.18,2.48-2,46.23-21.61,37.48-21.61,37.48-21.26-18.66,37.91-79.63" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-7)">
-                                        <path d="M184.09,78.36s14.71-5,11.39-9.76-16,16.07-11.74,19.8,25.1-14.66,25.1-14.66" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M184.09,78.36s14.71-5,11.39-9.76-16,16.07-11.74,19.8,25.1-14.66,25.1-14.66" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-8)">
-                                        <path d="M204.19,78.8s20.11-36.94,22.15-51.94,4-18,0-18-15.11,38-16.14,49-6.6,33.48-.61,35.5S256.4,8,250.41,3.94s-10,6-15.06,18-18.21,73-12.25,87-36.82-63.11-36.82-63.11,33,2.09,39,.11,47-5.86,47-5.86" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+                                        <path d="M204.19,78.8s20.11-36.94,22.15-51.94,4-18,0-18-15.11,38-16.14,49-6.6,33.48-.61,35.5S256.4,8,250.41,3.94s-10,6-15.06,18-18.21,73-12.25,87-36.82-63.11-36.82-63.11,33,2.09,39,.11,47-5.86,47-5.86" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-9)">
-                                        <path d="M243.22,46.93s3.71,3.79,1,8-4.15,13.3-4.15,13.3-4.93,18.38,3.17,18.84S259,67,259,67" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M243.22,46.93s3.71,3.79,1,8-4.15,13.3-4.15,13.3-4.93,18.38,3.17,18.84S259,67,259,67" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-10)">
-                                        <path d="M259.28,63.45s-.5,23.08-1.57,22.15,12.74-19.87,15.93-17.07,4.51,7.72,8.63,9.46,17.32-11.15,17.32-11.15" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M259.28,63.45s-.5,23.08-1.57,22.15,12.74-19.87,15.93-17.07,4.51,7.72,8.63,9.46,17.32-11.15,17.32-11.15" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-11)">
-                                        <path d="M309.37,63.2s-4,.26-9.59,6.64-5.34,10.36-3.28,11.23,8.59-6.57,8.59-6.57,10-15.68,13.13-13.88,1.62,24.95-.05,30.07-15.39,56.11-24.56,53.7-2.41-36.92,14.39-56,26.32-26.76,26.32-26.76" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M309.37,63.2s-4,.26-9.59,6.64-5.34,10.36-3.28,11.23,8.59-6.57,8.59-6.57,10-15.68,13.13-13.88,1.62,24.95-.05,30.07-15.39,56.11-24.56,53.7-2.41-36.92,14.39-56,26.32-26.76,26.32-26.76" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-12)">
-                                        <path d="M63.6,207.54S77.32,142,82.35,142.85s.19,34,7.08,30.77,24.17-52.88,29.23-51.05-20,57.73-11.88,89.47" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M63.6,207.54S77.32,142,82.35,142.85s.19,34,7.08,30.77,24.17-52.88,29.23-51.05-20,57.73-11.88,89.47" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-13)">
-                                        <path d="M131.44,173.15s-18.68,9.66-13.44,16.48,13.61-11.48,13.61-11.48-1.25,21.39,2.24,21.1" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M131.44,173.15s-18.68,9.66-13.44,16.48,13.61-11.48,13.61-11.48-1.25,21.39,2.24,21.1" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-14)">
-                                        <path d="M139.43,172.87s2.73,20.92.7,20,12.7-37.46,17.33-19.61" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M139.43,172.87s2.73,20.92.7,20,12.7-37.46,17.33-19.61" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-15)">
-                                        <path d="M159.46,173.18s3.66,18.88.62,18,15.77-35.57,16.33-19.58" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M159.46,173.18s3.66,18.88.62,18,15.77-35.57,16.33-19.58" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-16)">
-                                        <path d="M185.71,151.25s5.2,5.82.52,15-7.12,25.26-2.09,26.09,24.25-21.86,24.25-21.86" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M185.71,151.25s5.2,5.82.52,15-7.12,25.26-2.09,26.09,24.25-21.86,24.25-21.86" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-17)">
-                                        <path d="M209.39,170.43S192.85,184,198,188.84s18.15-24.65,18.15-24.65,19.34-47.7,16.27-49.6-15.3,77.58-7,86.3" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M209.39,170.43S192.85,184,198,188.84s18.15-24.65,18.15-24.65,19.34-47.7,16.27-49.6-15.3,77.58-7,86.3" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-18)">
-                                        <path d="M264.56,111.18S240.35,155.87,238,208.85" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M264.56,111.18S240.35,155.87,238,208.85" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                 </g>
                             </g>
@@ -137,7 +137,7 @@
 
                 <div class="contents">
                     <div class="txt">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341.01 216.01">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341.01 216.01">
                             <defs>
                                 <clipPath id="clip-path" transform="translate(1.69 -1.03)">
                                     <path d="M61.07,32.06c.15,8.33-2.82,16.73-5,24.69C53.7,65,51.5,73.33,48.9,81.45c-2.49,7.71-4.78,16.59-9.69,23.16-2.16,2.88-4.9,4.88-8.1,1.7a9.41,9.41,0,0,1-2.19-3.63c-.77-1.78-.5-3.62-1.13-5.27-1.28.34-2,2.61-2.62,3.69-1,2-2.08,4.17-3.25,6.2-2,3.91-4.05,7.82-6.28,11.61-1.74,3.24-3.62,6.36-5.62,9.62-1.06,1.76-2.94,4.88-5.48,4C-.64,130.92-.1,125.28.14,121c.4-8,2.1-15.9,3.81-23.56A188.14,188.14,0,0,1,9.37,76.46c2.42-6.8,4.7-13.85,6.84-20.9.34-.93.37-2.37,1.68-2.32,1.05.19,1.4,1.47,1.58,2.24.39,2.06-.27,3.93-.8,5.78-2.22,8-4.32,15.79-6.4,23.74-2,7.56-3.85,15-5.31,22.62-.81,3.57-1.48,7.26-2.16,10.83-.47,2.76-1.3,6.07,0,8.59,3.09-2.54,4.83-7.87,6.55-11.37,2.44-4.59,4.61-9.29,7.05-13.87,2.12-3.53,4.27-8.49,7.76-10.93,1.25-.73,2.78-1.22,4-.26,1.64,1.19,1.06,4.36,1.05,6.18.22-.66.32-1.19.53-1.86.57.75.33,3,.39,3.89a7.82,7.82,0,0,0,.51,3.87c1.33,2.52,3.08-.72,3.77-2.07C39.36,95,41,88.34,42.71,82.37c2.55-8.89,5-17.65,7.4-26.54q1.71-6.55,3.44-13.12c.8-3.7,2.12-7.43,2.53-11.24a6.51,6.51,0,0,0,.08-2.74c-.16-.51-.59-1.13-.5-1.66s.46-.94,1.1-1.11A5.79,5.79,0,0,1,60,27.18C61.08,28.28,61,30.63,61.07,32.06Zm-57,91.51a40.1,40.1,0,0,1,.65-8,31.15,31.15,0,0,0,.65-6c-1.38.74-1,3.19-1.14,4.5a21.44,21.44,0,0,0-.48,2.51,10.24,10.24,0,0,1,0,2.08,3.41,3.41,0,0,0-.15,1.71h0a5.09,5.09,0,0,1,.13,1.94c-.11.4-.43-.62-.36.55s.15.25.29.37c.28.37-.23.54,0,.78S4.09,123.57,4.09,123.57Zm0-6.25c0,.13-.25.28-.26,0S3.93,117.07,4.08,117.32ZM5,110.88c0-.26-.16-.51,0-.65C5.32,110.47,5,111,5,110.88Zm.43-1.46c.26,0,.43-1.33.28-1.58-.13,0-.51.16-.5.29C5,109.06,5.08,108.79,5.39,109.42Zm.4-1.85c.23-.41.73-2.78.46-2.9s-.24.28-.36.55A3.45,3.45,0,0,0,5.79,107.57Zm.38-4.19c.12-.14.1-.4,0-.39A.25.25,0,0,0,6.17,103.38Zm.31.89c.43.49,0-2,.06-1.18C6.56,103.48,6.08,104,6.48,104.27Zm-.11-1.82c.12-.14.12-.14,0-.26S6.23,102.33,6.37,102.45Zm.39.11c.13,0,.12-.14,0-.26C6.63,102.43,6.63,102.56,6.76,102.56Zm.08-.79c0,.39.27.11.12-.14C6.93,101.11,6.84,101.77,6.84,101.77Zm.22-.67c.27.12.44-1.2.07-.91C7,100.32,6.79,101,7.06,101.1Zm.43-1.46a.4.4,0,0,0,0-.52C7.06,99.15,7.49,99.64,7.49,99.64Zm.2-.79c0-.26-.26-.12-.25,0S7.45,99.12,7.69,98.85Zm.09-.66a.24.24,0,0,0,0-.39A.24.24,0,0,0,7.78,98.19Zm.09-.66s.23-.4,0-.26S7.86,97.4,7.87,97.53Zm.2-.92c.14.12,0-.26,0-.26S7.93,96.49,8.07,96.61Zm.23-.54,0-.39C8.15,95.82,8,96,8.3,96.07Zm.08-.66a.56.56,0,0,0,.09-.65C8.09,94.91,8.38,95.41,8.38,95.41ZM8.9,93.3a.24.24,0,0,0,0-.39A.24.24,0,0,0,8.9,93.3Zm.5-2.25c.12-.14.12-.14,0-.26C9.26,90.93,9.27,91.06,9.4,91.05Zm.1-.53s.23-.4,0-.39Zm4.31,28.25c-.25.15-.24.28-.23.41C13.84,119.16,13.83,119,13.81,118.77Zm.58-1.08c-.25.15-.24.28-.1.4S14.41,118,14.39,117.69Zm.35-.67a.73.73,0,0,0-.35.67A.6.6,0,0,0,14.74,117Zm.23-.41c-.26,0-.24.28-.23.41C15,117,15,116.74,15,116.61Zm.45-1.07c-.25,0-.11.27-.1.4C15.58,115.92,15.43,115.67,15.42,115.54Zm.24-.4c-.26,0-.11.26-.11.39C15.81,115.52,15.67,115.26,15.66,115.14Zm.24-.28a.28.28,0,0,0-.24.28A.28.28,0,0,0,15.9,114.86Zm.11-.4c-.26,0-.12.27-.11.4C16.16,114.84,16,114.59,16,114.46Zm.34-.67a.69.69,0,0,0-.34.67C16.39,114.31,16.51,114.17,16.35,113.79Zm.24-.41c-.26,0-.12.27-.11.4C16.74,113.76,16.59,113.51,16.59,113.38Zm.58-1.08a1.46,1.46,0,0,0-.58,1.08A1,1,0,0,0,17.17,112.3Zm.93-1.75a2.5,2.5,0,0,0-.93,1.75,4.53,4.53,0,0,0,.82-1.36A.49.49,0,0,0,18.1,110.55Zm.58-1.08c-.26,0-.6.82-.58,1.08.12-.14.24-.28.37-.29A2,2,0,0,0,18.68,109.47ZM27.5,94.82c-.78.05-2.17,2.75-2.52,3.42-.84,1.1-1.42,2.18-2.13,3.27-1,1.49-1.63,3-2.45,4.46-.46.94-1.8,2.33-1.72,3.5.63-.3,1.32-1.65,1.67-2.33.7-1.21,1.28-2.42,2-3.64,1.52-2.58,3.18-5.16,4.85-7.48A1.13,1.13,0,0,0,27.5,94.82Zm-8.31,10.57c.26,0,.25-.27.24-.4C19.17,105,19.19,105.26,19.19,105.39Zm.24-.4c.13,0,.13,0,.12-.14S19.42,104.86,19.43,105Zm.24-.28c.26,0,.12-.14.11-.4C19.52,104.46,19.66,104.58,19.67,104.71Zm.42.37s.12-.14,0-.13Zm.61-2.52-.36.42C20.35,103.1,20.89,103.46,20.7,102.56ZM21,107c-.25.15-.11.27-.1.4S21,107.23,21,107Zm-.29-4.41c.13,0,.26,0,.25-.15S20.7,102.43,20.7,102.56Zm.6-.82c.26,0,.24-.28.24-.41C21.28,101.35,21.29,101.61,21.3,101.74Zm.62,3.48c-.25.14-.11.27-.11.4C22.07,105.6,21.94,105.48,21.92,105.22Zm-.38-3.89c.13,0,.12-.13.11-.26S21.53,101.2,21.54,101.33Zm.11-.26c.26,0,.24-.28.23-.41C21.62,100.68,21.64,100.94,21.65,101.07Zm.52,4c-.13,0-.26,0-.25.15S22.18,105.2,22.17,105.07Zm.1-.4c-.26,0-.12.14-.1.4C22.42,104.92,22.28,104.8,22.27,104.67Zm-.39-4c.13,0,.12-.14.12-.27S21.87,100.53,21.88,100.66Zm.25-.28a2.34,2.34,0,0,0,.7-1.21A1.23,1.23,0,0,0,22.13,100.38Zm.39,4a.13.13,0,0,0-.12.14A.13.13,0,0,0,22.52,104.4Zm.23-.41c-.26,0-.24.28-.23.41C22.78,104.38,22.76,104.12,22.75,104Zm.11-.27c-.13,0-.12.14-.11.27S22.87,103.85,22.86,103.72Zm.24-.4c-.26,0-.24.27-.24.4C23.12,103.71,23.11,103.45,23.1,103.32Zm-.27-4.15c.13,0,.12-.14.11-.27S22.82,99,22.83,99.17Zm.61,3.47a.6.6,0,0,0-.34.68A.72.72,0,0,0,23.44,102.64Zm-.37-3.75a.61.61,0,0,0,.35-.67C23,98.37,22.92,98.64,23.07,98.89Zm.72,3.08a.73.73,0,0,0-.35.67C23.7,102.5,24,102.35,23.79,102Zm-.37-3.75c.13,0,.13,0,.12-.14S23.41,98.09,23.42,98.22Zm.11-.27a.49.49,0,0,0,.49-.56C23.63,97.55,23.51,97.69,23.53,98Zm.26,4c.63-.3.73-.83,1-1.37C24.87,100.47,23.75,101.32,23.79,102ZM24,97.39c.13,0,.12-.13.11-.26S24,97.27,24,97.39Zm.11-.26c.26,0,.74-.57.47-.82A.89.89,0,0,0,24.13,97.13ZM25.68,99a2,2,0,0,0-.94,1.49,1.15,1.15,0,0,0,.72-.82A.47.47,0,0,0,25.68,99Zm-.6-3.22c.26,0,.75-.44.47-.81C25.31,95.23,25.07,95.5,25.08,95.76Zm.84,2.94c-.13,0-.12.14-.24.28A.28.28,0,0,0,25.92,98.7Zm.35-.67a.73.73,0,0,0-.35.67A.58.58,0,0,0,26.27,98Zm.25-.15c-.13,0-.26,0-.25.15S26.53,98,26.52,97.88Zm0,0A1.25,1.25,0,0,0,27,97.2C27.25,97.05,26.48,97.23,26.52,97.88Zm.7-1.34c0,.13.26.11.26,0S27.46,96.26,27.22,96.54Z" style="fill: none"/>
@@ -197,58 +197,58 @@
                             <g id="레이어_2" data-name="레이어 2">
                                 <g id="layer" data-name="레이어 1">
                                     <g style="clip-path: url(#clip-path)">
-                                        <path d="M18.57,52.54s-22.08,76.6-14,78.07,16-32.1,21.55-38.47,2,14.9,8,14.51S64.23,28.46,57.52,26.43" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 9px"/>
+                                        <path d="M18.57,52.54s-22.08,76.6-14,78.07,16-32.1,21.55-38.47,2,14.9,8,14.51S64.23,28.46,57.52,26.43" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 9px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-2)">
-                                        <path d="M55.89,87.2S68.48,80,66.22,76.31s-14.38,10.15-11.87,18S74,88,78.65,82.71" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M55.89,87.2S68.48,80,66.22,76.31s-14.38,10.15-11.87,18S74,88,78.65,82.71" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-3)">
-                                        <line x1="83.84" y1="14.56" x2="75.84" y2="42.56" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 12px"/>
+                                        <line x1="83.84" y1="14.56" x2="75.84" y2="42.56" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 12px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-4)">
-                                        <path d="M84.25,76.33s2.23,18.9,1.3,20S97.67,57,101,74.54" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M84.25,76.33s2.23,18.9,1.3,20S97.67,57,101,74.54" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-5)">
-                                        <path d="M103.79,84.08s13.58-6.89,11.33-10.76S97.87,85.47,103.38,93.13,128,78.78,128,78.78" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M103.79,84.08s13.58-6.89,11.33-10.76S97.87,85.47,103.38,93.13,128,78.78,128,78.78" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-6)">
-                                        <path d="M161.55,70.81S143.63,88,148.81,90.67s15.74-20.06,19.73-20.32,8.18,2.48-2,46.23-21.61,37.48-21.61,37.48-21.26-18.66,37.91-79.63" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M161.55,70.81S143.63,88,148.81,90.67s15.74-20.06,19.73-20.32,8.18,2.48-2,46.23-21.61,37.48-21.61,37.48-21.26-18.66,37.91-79.63" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-7)">
-                                        <path d="M184.09,78.36s14.71-5,11.39-9.76-16,16.07-11.74,19.8,25.1-14.66,25.1-14.66" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M184.09,78.36s14.71-5,11.39-9.76-16,16.07-11.74,19.8,25.1-14.66,25.1-14.66" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-8)">
-                                        <path d="M204.19,78.8s20.11-36.94,22.15-51.94,4-18,0-18-15.11,38-16.14,49-6.6,33.48-.61,35.5S256.4,8,250.41,3.94s-10,6-15.06,18-18.21,73-12.25,87-36.82-63.11-36.82-63.11,33,2.09,39,.11,47-5.86,47-5.86" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+                                        <path d="M204.19,78.8s20.11-36.94,22.15-51.94,4-18,0-18-15.11,38-16.14,49-6.6,33.48-.61,35.5S256.4,8,250.41,3.94s-10,6-15.06,18-18.21,73-12.25,87-36.82-63.11-36.82-63.11,33,2.09,39,.11,47-5.86,47-5.86" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-9)">
-                                        <path d="M243.22,46.93s3.71,3.79,1,8-4.15,13.3-4.15,13.3-4.93,18.38,3.17,18.84S259,67,259,67" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M243.22,46.93s3.71,3.79,1,8-4.15,13.3-4.15,13.3-4.93,18.38,3.17,18.84S259,67,259,67" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-10)">
-                                        <path d="M259.28,63.45s-.5,23.08-1.57,22.15,12.74-19.87,15.93-17.07,4.51,7.72,8.63,9.46,17.32-11.15,17.32-11.15" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M259.28,63.45s-.5,23.08-1.57,22.15,12.74-19.87,15.93-17.07,4.51,7.72,8.63,9.46,17.32-11.15,17.32-11.15" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-11)">
-                                        <path d="M309.37,63.2s-4,.26-9.59,6.64-5.34,10.36-3.28,11.23,8.59-6.57,8.59-6.57,10-15.68,13.13-13.88,1.62,24.95-.05,30.07-15.39,56.11-24.56,53.7-2.41-36.92,14.39-56,26.32-26.76,26.32-26.76" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M309.37,63.2s-4,.26-9.59,6.64-5.34,10.36-3.28,11.23,8.59-6.57,8.59-6.57,10-15.68,13.13-13.88,1.62,24.95-.05,30.07-15.39,56.11-24.56,53.7-2.41-36.92,14.39-56,26.32-26.76,26.32-26.76" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-12)">
-                                        <path d="M63.6,207.54S77.32,142,82.35,142.85s.19,34,7.08,30.77,24.17-52.88,29.23-51.05-20,57.73-11.88,89.47" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M63.6,207.54S77.32,142,82.35,142.85s.19,34,7.08,30.77,24.17-52.88,29.23-51.05-20,57.73-11.88,89.47" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-13)">
-                                        <path d="M131.44,173.15s-18.68,9.66-13.44,16.48,13.61-11.48,13.61-11.48-1.25,21.39,2.24,21.1" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M131.44,173.15s-18.68,9.66-13.44,16.48,13.61-11.48,13.61-11.48-1.25,21.39,2.24,21.1" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-14)">
-                                        <path d="M139.43,172.87s2.73,20.92.7,20,12.7-37.46,17.33-19.61" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M139.43,172.87s2.73,20.92.7,20,12.7-37.46,17.33-19.61" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-15)">
-                                        <path d="M159.46,173.18s3.66,18.88.62,18,15.77-35.57,16.33-19.58" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M159.46,173.18s3.66,18.88.62,18,15.77-35.57,16.33-19.58" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-16)">
-                                        <path d="M185.71,151.25s5.2,5.82.52,15-7.12,25.26-2.09,26.09,24.25-21.86,24.25-21.86" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M185.71,151.25s5.2,5.82.52,15-7.12,25.26-2.09,26.09,24.25-21.86,24.25-21.86" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-17)">
-                                        <path d="M209.39,170.43S192.85,184,198,188.84s18.15-24.65,18.15-24.65,19.34-47.7,16.27-49.6-15.3,77.58-7,86.3" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M209.39,170.43S192.85,184,198,188.84s18.15-24.65,18.15-24.65,19.34-47.7,16.27-49.6-15.3,77.58-7,86.3" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                     <g style="clip-path: url(#clip-path-18)">
-                                        <path d="M264.56,111.18S240.35,155.87,238,208.85" transform="translate(1.69 -1.03)" style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
+                                        <path d="M264.56,111.18S240.35,155.87,238,208.85" transform="translate(1.69 -1.03)" style="fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 10px"/>
                                     </g>
                                 </g>
                             </g>

@@ -7,25 +7,27 @@
 
 bg #f4fbf1
 pointTxt #99ab91
+pointTxt2 #ff85a2
 
 */
 body {background-color: #f4fbf1;}
 .main {background-color: #fff; max-width: 768px; margin: 0 auto;}
 
 .s1 { position: relative; height: 100vh;}
-.s1 .introTxt {text-align: center; font-size: 130px; line-height: 1; white-space: nowrap; font-family: 'Soak Up The Sun Script';}
+/* .s1 .introTxt {text-align: center; font-size: 130px; line-height: 1; white-space: nowrap; font-family: 'Soak Up The Sun Script';} */
+.s1 .txt svg {width: 500px;}
 
 
-.s1 .intro {text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.s1 .intro {backdrop-filter: blur(3px); text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 1;}
 .s1 .intro .txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.s1 .intro .txt svg {width: 350px;}
-.s1 .intro .txt svg * {stroke: #99ab91 !important;}
+.s1 .intro .txt svg * {stroke: #99ab91;}
 /* .s1 .intro .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 
-.s1 .contents {text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.s1 .contents .txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.s1 .contents .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-
+.s1 .contents {box-shadow: inset 0 0 45px 25px rgba(255, 255, 255, 1); background-image: url(/asset/img/front-visual.jpg); background-size: cover; background-position: center; text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.s1 .contents .txt {opacity: 0; position: absolute; top: 85%; left: 50%; transform: translate(-50%, -50%);}
+/* .s1 .contents .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
+.s1 .contents .txt svg {transform: scale(0.75);}
+.s1 .contents .txt svg * {stroke: #ff85a2;}
 
 @media screen and (max-width: 428px) {
     .s1 .introTxt {font-size: 100px;}
