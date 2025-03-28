@@ -13,11 +13,33 @@ if(	navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)
     }
 }
 
-// 모바일 접속시 브라우저별 주소창 숨김
+// 모바일 브라우저 주소바 자동 숨김 처리
 if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || navigator.maxTouchPoints == 5){
-    document.querySelector('.addressBar').style.display = 'none';
-}
+    // 초기 로드시 주소바 숨김
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            window.scrollTo(0, 1);
+        }, 100);
+    });
 
+    // 스크롤시 주소바 숨김
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (!scrollTimeout) {
+            scrollTimeout = setTimeout(function() {
+                window.scrollTo(0, 1);
+                scrollTimeout = null;
+            }, 100);
+        }
+    });
+
+    // 터치 이벤트시 주소바 숨김
+    document.addEventListener('touchstart', function() {
+        setTimeout(function() {
+            window.scrollTo(0, 1);
+        }, 100);
+    });
+}
 
 // resize refresh
 // let saveWidth = window.innerWidth;
