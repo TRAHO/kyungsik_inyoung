@@ -30,5 +30,5 @@ body {background-color: #f4fbf1;}
 .s1 .contents .txt svg * {stroke: #ff85a2;}
 
 @media screen and (max-width: 428px) {
-    .s1 .introTxt {font-size: 100px;}
+    .s1 .txt svg {width: 85vw;} 
 }
