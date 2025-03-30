@@ -261,6 +261,133 @@
                     </div>
                 </div>
             </section>
+
+            <section class="s2">
+                <div class="wrap">
+                    <div class="welcome">
+                        <p class="bold">
+                            이 모든 것 위에 사랑을 더하라<br>
+                            이는 온전하게 매는 띠니라
+                        </p>
+                        <p>
+                            -골로새서 3장 14절-
+                        </p>
+                    </div>
+
+                    <div class="inviteTxt">
+                        <b>♥️저희 결혼합니다♥️</b>
+
+                        <p>
+                            저희의 결혼 소식을 <br>
+                            함께 나누고 싶습니다.<br>
+                            부담 없이 편한 마음으로 오셔서<br>
+                            축하해 주시면 감사하겠습니다.<br>
+                            <br>
+                            자리에에 함께 하지 못하시더라도 부담 갖지 마시고, <br>
+                            따뜻한 마음으로 축하해 주시면 감사하겠습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s3">
+                <div class="wrap" max='500'>
+                    <div class="profileImg">
+                        <img src="/asset/img/profile.jpg" alt="">
+                    </div>
+
+                    <div class="profile">
+                        <div class="person">
+                            <div class="name">
+                                <small>신랑</small>
+                                <span>신경식</span>
+                            </div>
+
+                            <div class="introduce">
+                                <span>95년 10월 11일</span>
+                                <span>INFP</span>
+                                <small>김옥녀의 손자</small>
+                            </div>
+                        </div>
+
+                        <div class="person">
+                            <div class="name">
+                                <small>신부</small>
+                                <span>김인영</span>
+                            </div>
+
+                            <div class="introduce">
+                                <span>99년 12월 24일</span>
+                                <span>ISTJ</span>
+                                <small>김종덕, 이미향의 장녀</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s4">
+                <div class="wrap">
+                    <div class="interview">
+                        <b class="secTitle">웨딩 인터뷰</b>
+
+                        <p class="txt">
+                            신랑신부의 인터뷰가 준비되어 있습니다! <br>
+                            아래 버튼을 통해 확인해보세요.
+                        </p>
+                        
+                        <button class="interviewBtn">인터뷰 보러 가기&nbsp;&nbsp;&gt;</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s5">
+                <div class="wrap" max='500'>
+                    <div class="guestSnap">
+                        <b class="secTitle">게스트 스냅</b>
+                        <p class="subTxt">신랑<small>·</small>신부의 행복한 시작을 함께 기록해주세요!</p>
+
+                        <div class="guestSnapImg">
+                            <img src="/asset/img/geust_snap.jpg" alt="">
+                        </div>
+
+                        <div class="guestSnapTxt">
+                            <p>
+                                여러분이 촬영한 순간들을 담아주세요!
+                                <?php if(date('m-d') === '05-24'): ?>
+                                <br>2025년 5월 24일 이후부터<br>
+                                업로드가 가능합니다.
+                                <?php endif; ?>
+                            </p>
+
+                            <p>
+                                ✨ 특별한 미션에 참여해주세요 ✨<br>
+                                <br>
+                                💝 신부 대기실에서 설렘 가득한 순간<br>
+                                💝 행복한 웃음이 가득한 신랑신부부<br>
+                                💝 사랑스럽게 마주보는 신랑신부<br>
+                                💝 키스 타임의 달콤한 순간!<br>
+                                💝 행복한 피날레 행진!<br>
+                                💝 부케 던지기 현장<br>
+                                💝 함께 축하해 주시는 여러분의 모습<br>
+                                💝 여러분이 생각하는 최고의 순간!<br>
+                                💝 가족과의 따뜻한 순간<br>
+                                💝 신랑신부와 함께한 친구들의 모습<br>
+                                <br>
+                                미션에 참여해 주신 분들 중<br>
+                                가장 멋진 순간을 남겨주신 분께<br>
+                                맛있는 밥 한 끼를 쏘겠습니다!<br>
+                                <br>
+                                여러분의 소중한 순간들이<br>
+                                저희의 결혼을 더욱 빛나게 해줄 거예요<br>
+                                많은 참여 부탁드려요!💓
+                            </p>
+
+                            <button class="guestSnapBtn">사진 업로드<?php if(date('m-d') === '05-24'): ?><small>5월 24일 오픈</small><?php endif; ?></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <?php

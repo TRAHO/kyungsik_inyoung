@@ -16,11 +16,14 @@ body {background-color: #f4fbf1;}
 .petals-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000; }
 .petal { position: absolute; opacity: 0; transform-origin: center; }
 
+.secTitle {display: inline-block; border-radius: calc(10/28*1em); border-bottom: 2px solid #99ab91; padding: calc(10/28*1em) calc(30/28*1em); font-size: 28px; color: #99ab91; text-align: center; margin-top: calc(140/30*1em);}
+
 @media screen and (max-width: 768px) {
     .petal { transform: scale(0.7); }
 }
 @media screen and (max-width: 480px) {
     .petal { transform: scale(0.5); }
+    .secTitle {font-size: clamp(18px, 28/480*100vw, 28px);}
 }
 
 
@@ -28,13 +31,12 @@ body {background-color: #f4fbf1;}
 /* .s1 .introTxt {text-align: center; font-size: 130px; line-height: 1; white-space: nowrap; font-family: 'Soak Up The Sun Script';} */
 .s1 .txt svg {width: 500px;}
 
-
 .s1 .intro {backdrop-filter: blur(2px); text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 1;}
 .s1 .intro .txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .s1 .intro .txt svg * {stroke: #99ab91;}
 /* .s1 .intro .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 
-.s1 .contents {box-shadow: inset 0 0 65px 35px rgba(255, 255, 255, 1); background-image: url(/asset/img/front-visual.jpg); background-size: cover; background-position: center; text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.s1 .contents {box-shadow: inset 0 0 65px 35px rgba(255, 255, 255, 1); background-image: url(/asset/img/front-visual.jpg); background-size: cover; background-position: 56% 50%; text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .s1 .contents .txt {opacity: 0; position: absolute; top: 85%; left: 50%; transform: translate(-50%, -50%);}
 /* .s1 .contents .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 .s1 .contents .txt svg {transform: scale(0.75);}
@@ -43,3 +45,61 @@ body {background-color: #f4fbf1;}
 @media screen and (max-width: 428px) {
     .s1 .txt svg {width: 85vw;} 
 }
+
+
+
+.s2 .welcome {text-align: center; font-size: 22px; margin-top: calc(120/22*1em); line-height: 1.55; white-space: nowrap;}
+.s2 .welcome p.bold {font-weight: 600;}
+.s2 .welcome p + p {margin-top: 20px;}
+
+.s2 .inviteTxt {text-align: center; font-size: 22px; margin-top: calc(100/22*1em); padding-bottom: calc(120/22*1em); line-height: 1.55; white-space: nowrap;}
+.s2 .inviteTxt b {font-size: 28px;}
+.s2 .inviteTxt p {margin-top: calc(30/22*1em);}
+
+@media screen and (max-width: 428px) {
+    .s2 .welcome {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s2 .inviteTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s2 .inviteTxt b {font-size: clamp(18px, 22/428*100vw, 22px);}
+}
+
+
+.s3 .profileImg {position: relative; width: 100%; margin: 0 auto; overflow: hidden; border-radius: calc(20/768*100vw);}
+.s3 .profileImg::before {content: ''; display: block; padding-top: calc(546/664*100%);}
+.s3 .profileImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.s3 .profile {display: flex; justify-content: space-between; margin-top: calc(20/24*1em); font-size: 24px; line-height: 1.4; width: 90%; margin-left: auto; margin-right: auto;}
+.s3 .profile .person {width: calc(50% - (10/24*1em)); display: flex; flex-direction: column; align-items: center;}
+.s3 .profile .person .name {width: 100%; display: flex; justify-content: center; align-items: flex-end; gap: calc(7/24*1em); background: #fff; border-radius: calc(10/768*100vw); padding: calc(3/24*1em) calc(20/24*1em); box-sizing: border-box;}
+.s3 .profile .person:first-child .name {border-bottom: 1px solid #6d8efa;}
+.s3 .profile .person:first-child .name small {color: #6d8efa;}
+.s3 .profile .person:last-child .name {border-bottom: 1px solid #ff85a2;}
+.s3 .profile .person:last-child .name small {color: #ff85a2;}
+.s3 .profile .person .name small {font-size: calc(20/24*1em);}
+.s3 .profile .person .name span {font-size: calc(24/24*1em);}
+.s3 .profile .person .introduce {width: 100%; margin-top: calc(20/24*1em); display: flex; flex-direction: column; align-items: center;}
+.s3 .profile .person .introduce span {font-size: calc(24/24*1em);}
+.s3 .profile .person .introduce small { display: inline-block; margin-top: calc(15/20*1em); font-size: calc(20/24*1em);}
+
+@media screen and (max-width: 428px) {
+    .s3 .profile {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
+
+.s4 .interview {display: flex; flex-direction: column; align-items: center;}
+.s4 .interview .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
+.s4 .interview .interviewBtn { background: #fff; color: #43573a; border: 1px solid #43573a; outline: none; font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em); line-height: 1.55; white-space: nowrap;}
+
+@media screen and (max-width: 428px) {
+    .s4 .interview .txt {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s4 .interview .interviewBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
+
+.s5 .guestSnap {display: flex; flex-direction: column; align-items: center;}
+.s5 .guestSnap .subTxt {text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
+.s5 .guestSnap .subTxt small {font-family: 'Pretendard'; display: inline-block; padding: 0 calc(3/22*1em); background: #fff; border-radius: 50%;}
+.s5 .guestSnap .guestSnapImg {width: 100%; margin-top: calc(50/22*1em); position: relative; border-radius: calc(20/768*100vw); overflow: hidden;}
+.s5 .guestSnap .guestSnapImg::before {content: ''; display: block; padding-top: 95%;}
+.s5 .guestSnap .guestSnapImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+
+

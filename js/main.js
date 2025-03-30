@@ -15,19 +15,15 @@ let duration = 3,
             top: '85%', scale: 0.75,
             duration: 1.2, ease: 'sine.inOut', delay: .5
           })
-<<<<<<< HEAD
           .to('.s1 .intro .txt svg *', {
             stroke: '#ff85a2',
             duration: 1, ease: 'sine.inOut'
           }, '-=100%')
-=======
->>>>>>> 6ecc5b865def34e64a5b113095706170c37ee60e
           .to('.intro', {
               background: 'rgba(255, 255, 255, 0)',
               'backdrop-filter': 'blur(0px)',
               duration: 1,
           } ,'-=100%')
-<<<<<<< HEAD
           .to('.contents .txt', {
             opacity: 1,
             duration: .4,
@@ -36,19 +32,6 @@ let duration = 3,
             opacity: 0,
             duration: .4,
             delay: .2
-=======
-          .to('.s1 .intro .txt svg *', {
-            stroke: '#ff85a2',
-            duration: 1, ease: 'sine.inOut'
-          }, '-=100%')
-          .to('.contents .txt', {
-              opacity: 1,
-              duration: .6,
-          })
-          .to('.intro', {
-            opacity: 0,
-            duration: .4,
->>>>>>> 6ecc5b865def34e64a5b113095706170c37ee60e
           })
           .add(() => {
             $('body').css('overflow', 'auto');
@@ -57,13 +40,8 @@ let duration = 3,
 
       onStart: () => {
         gsap.to('.intro', {
-<<<<<<< HEAD
             background: 'rgba(255, 255, 255, .75)',
             duration: 3
-=======
-            background: 'rgba(255, 255, 255, .8)',
-            duration: 5
->>>>>>> 6ecc5b865def34e64a5b113095706170c37ee60e
         })
       }
     });
