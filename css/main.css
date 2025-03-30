@@ -100,6 +100,6 @@ body {background-color: #f4fbf1;}
 .s5 .guestSnap .guestSnapImg {width: 100%; margin-top: calc(50/22*1em); position: relative; border-radius: calc(20/768*100vw); overflow: hidden;}
 .s5 .guestSnap .guestSnapImg::before {content: ''; display: block; padding-top: 95%;}
 .s5 .guestSnap .guestSnapImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
-
-
-
+.s5 .guestSnap .guestSnapTxt {background: #f4fbf1; width: 100%; padding: calc(50/22*1em) calc(50/22*1em); text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
+.s5 .guestSnap .guestSnapTxt p.borderBtm {display: inline-block; border-bottom: 1px solid #99ab91; padding-bottom: calc(15/22*1em);}
+.s5 .guestSnap .guestSnapTxt p.missionTxt {margin-top: calc(25/22*1em);}
