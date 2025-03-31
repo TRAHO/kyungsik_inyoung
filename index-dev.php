@@ -568,16 +568,16 @@
                             </div>
                             
                             <div class="txt">
-                                <p>1️⃣주차 1,000대 가능</p>
-                                <p>2️⃣중앙역 환승 & 공영주차장</p>
-                                <p>3️⃣더 베니르 후문 대로변 공영주차장</p>
+                                <p><span>1️⃣</span>주차 1,000대 가능</p>
+                                <p><span>2️⃣</span>중앙역 환승 & 공영주차장</p>
+                                <p><span>3️⃣</span>더 베니르 후문 대로변 공영주차장</p>
                                 <p>
-                                    4️⃣쏘가중앙역 코레일주차장<br>
+                                    <span>4️⃣</span>쏘가중앙역 코레일주차장<br>
                                     <small>경기도 안산시 단원구 중앙대로 918</small>
                                 </p>
                                 <p>
-                                    5️⃣안산버스터미널 주유소(터미널 내)
-                                    <small>안산버스터미널 주유소(터미널 내)</small>
+                                    <span>5️⃣</span>안산버스터미널 주유소(터미널 내)<br>
+                                    <small>경기도 안산시 상록구 충장로431 에스오일 입구</small>
                                     <small>도보 11분 / 셔틀버스 운행(5분 간격)</small>
                                     <small>2시간 무료</small>
                                 </p>
@@ -600,6 +600,10 @@
                 <div class="wrap" max='500'>
                     <div class="information">
                         <b class="secTitle">예식 안내</b>
+                        <p class="subTitle">
+                            2025년 5월 24일 오후 1시 40분<br>
+                            <small>더베니르(안산)</small>
+                        </p>
 
                         <div class="info">
                             <div class="img">
@@ -607,39 +611,191 @@
                             </div>
                             
                             <div class="content">
-                                <div class="item">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-child">👶</i>
+                                
+                                <div class="calendar">
+                                    <b class="month">5월</b>
+                                    <div class="daysWrap">
+                                        <div class="head">
+                                            <div class="day"><span>일</span></div>
+                                            <div class="day"><span>월</span></div>
+                                            <div class="day"><span>화</span></div>
+                                            <div class="day"><span>수</span></div>
+                                            <div class="day"><span>목</span></div>
+                                            <div class="day"><span>금</span></div>
+                                            <div class="day"><span>토</span></div>
+                                        </div>
+                                        <div class="days">
+                                            <div class="day"><span>&nbsp;</span></div>
+                                            <div class="day"><span>&nbsp;</span></div>
+                                            <div class="day"><span>&nbsp;</span></div>
+                                            <div class="day"><span>&nbsp;</span></div>
+                                            <div class="day"><span>1</span></div>
+                                            <div class="day"><span>2</span></div>
+                                            <div class="day"><span>3</span></div>
+                                        </div>
+                                        <div class="days">
+                                            <div class="day"><span>4</span></div>
+                                            <div class="day"><span>5</span></div>
+                                            <div class="day"><span>6</span></div>
+                                            <div class="day"><span>7</span></div>
+                                            <div class="day"><span>8</span></div>
+                                            <div class="day"><span>9</span></div>
+                                            <div class="day"><span>10</span></div>
+                                        </div>
+                                        <div class="days">
+                                            <div class="day"><span>11</span></div>
+                                            <div class="day"><span>12</span></div>
+                                            <div class="day"><span>13</span></div>
+                                            <div class="day"><span>14</span></div>
+                                            <div class="day"><span>15</span></div>
+                                            <div class="day"><span>16</span></div>
+                                            <div class="day"><span>17</span></div>
+                                        </div>
+                                        <div class="days">
+                                            <div class="day"><span>18</span></div>
+                                            <div class="day"><span>19</span></div>
+                                            <div class="day"><span>20</span></div>
+                                            <div class="day"><span>21</span></div>
+                                            <div class="day"><span>22</span></div>
+                                            <div class="day"><span>23</span></div>
+                                            <div class="day dday"><span>24</span></div>
+                                        </div>
+                                        <div class="days">
+                                            <div class="day"><span>25</span></div>
+                                            <div class="day"><span>26</span></div>
+                                            <div class="day"><span>27</span></div>
+                                            <div class="day"><span>28</span></div>
+                                            <div class="day"><span>29</span></div>
+                                            <div class="day"><span>30</span></div>
+                                            <div class="day"><span>31</span></div>
+                                        </div>
                                     </div>
-                                    <p>
-                                        5-7세 아이와 동반 참석 가능합니다.
-                                    </p>
                                 </div>
-                                <div class="item">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-child">👶</i>
+
+                                <div class="ddayCounter">
+                                    <p class="secTitle">
+                                        <b>경식 <span>♥</span> 인영</b>
+                                        <small>결혼식 D-DAY</small>
+                                    </p>
+
+                                    <div class="counter">
+                                        <div class="countBox">
+                                            <div class="days">
+                                                <span class="num">0</span>
+                                                <small>일</small>
+                                            </div>
+                                            <div class="hours">
+                                                <span class="num">0</span>
+                                                <small>시간</small>
+                                            </div>
+                                            <div class="minutes">
+                                                <span class="num">0</span>
+                                                <small>분</small>
+                                            </div>
+                                            <div class="seconds">
+                                                <span class="num">0</span>
+                                                <small>초</small>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            function updateDday() {
+                                                const weddingDate = new Date('2025-05-24T13:40:00');
+                                                const now = new Date();
+                                                const diff = weddingDate - now;
+
+                                                if (diff > 0) {
+                                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                                                    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                                                    document.querySelector('.days .num').textContent = days;
+                                                    document.querySelector('.hours .num').textContent = hours;
+                                                    document.querySelector('.minutes .num').textContent = minutes;
+                                                    document.querySelector('.seconds .num').textContent = seconds;
+                                                }
+                                            }
+
+                                            setInterval(updateDday, 1000);
+                                            updateDday();
+                                        </script>
                                     </div>
-                                    <p>
-                                        5-7세 아이와 동반 참석 가능합니다.
-                                    </p>
                                 </div>
-                                <div class="item">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-child">👶</i>
+
+                                <div class="location">
+                                    <b class="secTitle">오시는 길</b>
+                                    <p class="txt">
+                                        <span>더베니르(안산)</span>
+                                        <small>경기도 안산시 단원구 중앙대로 918</small>
+                                    </p>
+
+                                    <div class="map">
+                                        <!-- * 카카오맵 - 지도퍼가기 -->
+                                        <!-- 1. 지도 노드 -->
+                                        <div id="daumRoughmapContainer1743433606415" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                                        <!--
+                                            2. 설치 스크립트
+                                            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                                        -->
+                                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                                        <!-- 3. 실행 스크립트 -->
+                                        <script charset="UTF-8">
+                                            new daum.roughmap.Lander({
+                                                "timestamp" : "1743433606415",
+                                                "key" : "2niqf",
+                                            }).render();
+                                        </script>
                                     </div>
-                                    <p>
-                                        5-7세 아이와 동반 참석 가능합니다.
-                                    </p>
                                 </div>
-                                <div class="item">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-child">👶</i>
+                                <!-- <div class="infoWrap">
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-child">👶</i>
+                                        </div>
+                                        <p>
+                                            5-7세 아이와 동반 참석 가능합니다.
+                                        </p>
                                     </div>
-                                    <p>
-                                        5-7세 아이와 동반 참석 가능합니다.
-                                    </p>
-                                </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-child">👶</i>
+                                        </div>
+                                        <p>
+                                            5-7세 아이와 동반 참석 가능합니다.
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-child">👶</i>
+                                        </div>
+                                        <p>
+                                            5-7세 아이와 동반 참석 가능합니다.
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-child">👶</i>
+                                        </div>
+                                        <p>
+                                            5-7세 아이와 동반 참석 가능합니다.
+                                        </p>
+                                    </div>
+                                </div> -->
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s10">
+                <div class="wrap" max='500'>
+                    <div class="visit">
+                        <b class="secTitle">참석여부</b>
+
+                        <div class="map">
+                            
                         </div>
                     </div>
                 </div>

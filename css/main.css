@@ -148,3 +148,72 @@ body {background-color: #f4fbf1;}
 @media screen and (max-width: 428px) {
     .s7 .timeLine .content {font-size: clamp(14px, 18/428*100vw, 18px);}
 }
+
+
+.s8 .parking {display: flex; flex-direction: column; align-items: center;}
+.s8 .parking .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px;}
+.s8 .parking .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em);}
+.s8 .parking .info .img::before {content: ''; display: block; padding-top: 100%;}
+.s8 .parking .info .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.s8 .parking .info .txt {text-align: center; font-size: inherit; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
+.s8 .parking .info .txt span {font-size: calc(20/22*1em); margin-right: calc(2/22*1em);}
+.s8 .parking .info .txt p + p {margin-top: calc(9/22*1em);}
+.s8 .parking .info .txt p small {display: block; font-size: calc(18/22*1em);}
+.s8 .parking .info .subInfo {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
+.s8 .parking .info .subInfo b {font-size: calc(22/22*1em); font-weight: 600; color: #43573a;}
+.s8 .parking .info .subInfo p {margin-top: calc(10/22*1em);}
+
+
+.s9 .information {display: flex; flex-direction: column; align-items: center;}
+.s9 .information .subTitle {text-align: center; font-size: 24px; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
+.s9 .information .subTitle small {font-size: calc(22/24*1em);}
+.s9 .information .content {width: 100%;}
+.s9 .information .calendar {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 28px;}
+.s9 .information .calendar .month {font-size: inherit; padding-bottom: calc(30/28*1em); font-weight: 600; color: #43573a;}
+.s9 .information .calendar .daysWrap {width: 100%;}
+.s9 .information .calendar .daysWrap .day {position: relative; display: block;}
+.s9 .information .calendar .daysWrap .day::before {content: ''; display: block; padding-top: 100%;}
+.s9 .information .calendar .daysWrap .day span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.s9 .information .calendar .head {border-bottom: 2px solid #43573a; margin-bottom: calc(15/28*1em); width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(20/28*1em); font-weight: 600; color: #43573a;}
+.s9 .information .calendar .head .day {width: calc(100% / 7);}
+.s9 .information .calendar .days {width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(20/28*1em);}
+.s9 .information .calendar .days .day {width: calc(100% / 7); background: #99ab91; border-radius: 50%; color: #f4fbf1;}
+.s9 .information .calendar .days .day.dday {background: #ff85a2;}
+.s9 .information .calendar .days + .days {margin-top: calc(13/28*1em);}
+.s9 .information .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px;}
+.s9 .information .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em);}
+.s9 .information .info .img::before {content: ''; display: block; padding-top: 100%;}
+.s9 .information .info .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.s9 .information .info .txt {text-align: center; font-size: inherit; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
+.s9 .information .info .txt span {font-size: calc(20/22*1em); margin-right: calc(2/22*1em);}
+.s9 .information .info .infoWrap {width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;}
+.s9 .information .info .infoWrap .item {width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; position: relative;}
+.s9 .information .info .infoWrap .item .icon {width: 20px; height: 20px; background: #43573a; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.s9 .information .info .infoWrap .item .icon i {font-size: calc(20/22*1em);}
+
+.s9 .information .info .ddayCounter {width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;}
+.s9 .information .info .ddayCounter p {text-align: center; color: #43573a; line-height: 1.55; white-space: nowrap;}
+.s9 .information .info .ddayCounter p b {font-size: calc(22/28*1em); font-weight: 600;}
+.s9 .information .info .ddayCounter p b span {font-family: 'Pretendard';}
+.s9 .information .info .ddayCounter p small {font-size: calc(20/28*1em);}
+
+.s9 .information .info .ddayCounter .counter .countBox {display: flex; gap: 20px; justify-content: center; align-items: center; font-size: 28px; color: #43573a;}
+.s9 .information .info .ddayCounter .counter .countBox > div {display: flex; flex-direction: column; align-items: center; gap: 5px;}
+.s9 .information .info .ddayCounter .counter .countBox .num {font-weight: 600; font-family: 'Pretendard';}
+.s9 .information .info .ddayCounter .counter .countBox small {font-size: calc(20/28*1em);}
+
+.s9 .information .info .location {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 24px;}
+.s9 .information .info .location .txt {text-align: center; font-size: inherit; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
+.s9 .information .info .location .txt p + p {margin-top: calc(9/24*1em);}
+.s9 .information .info .location .txt span {display: block; font-size: calc(24/24*1em);}
+.s9 .information .info .location .txt small {display: block; font-size: calc(22/24*1em);}
+
+.s9 .information .info .location .map {width: 100%; margin-top: calc(20/24*1em);}
+.s9 .information .info .location .map .root_daum_roughmap {width: 100%;}
+.s9 .information .info .location .map .root_daum_roughmap .wrap_controllers {display: none;}
+.s9 .information .info .location .map .root_daum_roughmap .cont {pointer-events: none; display: none;}
+.s9 .information .info .location .map .root_daum_roughmap .cont .section_address {display: none;}
+
+@media screen and (max-width: 428px) {
+    .s9 .information .info .ddayCounter .counter .countBox {font-size: clamp(18px, 24/428*100vw, 24px);}
+}
