@@ -557,7 +557,7 @@
                 </div>
             </section>
 
-            <section class="s8">
+            <!-- <section class="s8">
                 <div class="wrap" max='500'>
                     <div class="parking">
                         <b class="secTitle">주차 안내</b>
@@ -643,7 +643,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <?php
