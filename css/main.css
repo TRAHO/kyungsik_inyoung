@@ -84,11 +84,13 @@ body {background-color: #f4fbf1;}
 }
 
 
-.s4 .interview {display: flex; flex-direction: column; align-items: center;}
+.s4 .interview { font-size: 28px; margin-top: calc(150/28*1em); display: flex; flex-direction: column; align-items: center; border-radius: calc(20/768*100vw); overflow: hidden; border: 2px solid #43573a; padding: calc(40/28*1em) 0;}
+.s4 .interview .secTitle {margin-top: 0;}
 .s4 .interview .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
 .s4 .interview .interviewBtn { background: #fff; color: #43573a; border: 1px solid #43573a; outline: none; font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em); line-height: 1.55; white-space: nowrap;}
 
 @media screen and (max-width: 428px) {
+    .s4 .interview {font-size: clamp(18px, 28/480*100vw, 28px);}
     .s4 .interview .txt {font-size: clamp(14px, 18/428*100vw, 18px);}
     .s4 .interview .interviewBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
 }
@@ -100,6 +102,49 @@ body {background-color: #f4fbf1;}
 .s5 .guestSnap .guestSnapImg {width: 100%; margin-top: calc(50/22*1em); position: relative; border-radius: calc(20/768*100vw); overflow: hidden;}
 .s5 .guestSnap .guestSnapImg::before {content: ''; display: block; padding-top: 95%;}
 .s5 .guestSnap .guestSnapImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
-.s5 .guestSnap .guestSnapTxt {background: #f4fbf1; width: 100%; padding: calc(50/22*1em) calc(50/22*1em); text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
-.s5 .guestSnap .guestSnapTxt p.borderBtm {display: inline-block; border-bottom: 1px solid #99ab91; padding-bottom: calc(15/22*1em);}
-.s5 .guestSnap .guestSnapTxt p.missionTxt {margin-top: calc(25/22*1em);}
+.s5 .guestSnap .guestSnapTxt {background: #f4fbf1; width: 100%; box-sizing: border-box; padding: calc(50/22*1em) calc(50/22*1em); text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
+.s5 .guestSnap .guestSnapTxt .borderBtm {display: inline-block; border-bottom: 1px solid #99ab91; padding-bottom: calc(15/22*1em);}
+.s5 .guestSnap .guestSnapTxt .headTxt {font-size: calc(22/22*1em); margin-top: calc(25/22*1em);}
+.s5 .guestSnap .guestSnapTxt .missionTxt {margin-top: calc(25/22*1em);}
+.s5 .guestSnap .guestSnapTxt .missionTxt p small {font-size: calc(20/22*1em);}
+.s5 .guestSnap .guestSnapTxt .endTxt {margin-top: calc(25/22*1em);}
+.s5 .guestSnap .guestSnapTxt .endTxt small {font-size: calc(20/22*1em);}
+.s5 .guestSnap .guestSnapTxt button {background: #fff; color: #43573a; border: 1px solid #43573a; outline: none; font-size: inherit; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em); line-height: 1.55; white-space: nowrap;}
+.s5 .guestSnap .guestSnapTxt button small {font-size: calc(18/22*1em);}
+
+@media screen and (max-width: 428px) {
+    .s5 .guestSnap .subTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s5 .guestSnap .guestSnapTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
+
+.s6 .gallery {display: flex; flex-direction: column; align-items: center;}
+.s6 .gallery .secTitle {margin-bottom: calc(50/22*1em);}
+.s6 .gallery .galleryGrid {width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;}
+.s6 .gallery .galleryGrid .galleryItem {width: 100%; position: relative;}
+.s6 .gallery .galleryGrid .galleryItem::before {content: ''; display: block; padding-top: 100%;}
+.s6 .gallery .galleryGrid .galleryItem img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+
+.s7 .timeLine {display: flex; flex-direction: column; align-items: center;}
+.s7 .timeLine .content {width: 100%; display: flex; flex-direction: column; align-items: center; position: relative; padding: calc(30/22*1em) 0; margin-top: calc(50/22*1em); font-size: 22px; line-height: 1.4;}
+.s7 .timeLine .content .line {width: 2px; height: 100%; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: #ddd;}
+.s7 .timeLine .content .line .actLine {width: 100%; height: 100%; background: #43573a;}
+
+.s7 .timeLine .content .itemWrap {width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px;}
+.s7 .timeLine .content .itemWrap .item {width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; position: relative;}
+/* .s7 .timeLine .content .itemWrap .item:nth-child(2n) {text-align: right;} */
+.s7 .timeLine .content .itemWrap .item > div {width: 45%;}
+.s7 .timeLine .content .itemWrap .item .img {position: relative;}
+.s7 .timeLine .content .itemWrap .item .img::before {content: ''; display: block; padding-top: 100%;}
+.s7 .timeLine .content .itemWrap .item .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.s7 .timeLine .content .itemWrap .item .dot {width: 10px; height: 10px; background: #43573a; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.s7 .timeLine .content .itemWrap .item .txt {text-align: center; }
+.s7 .timeLine .content .itemWrap .item:nth-child(2n) .txt {order: -1; }
+.s7 .timeLine .content .itemWrap .item .txt b {font-size: calc(22/22*1em); font-weight: 600; color: #43573a;}
+.s7 .timeLine .content .itemWrap .item .txt p { margin-top: calc(10/22*1em);}
+
+
+@media screen and (max-width: 428px) {
+    .s7 .timeLine .content {font-size: clamp(14px, 18/428*100vw, 18px);}
+}

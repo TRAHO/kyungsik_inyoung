@@ -327,7 +327,7 @@
             </section>
 
             <section class="s4">
-                <div class="wrap">
+                <div class="wrap" max='500'>
                     <div class="interview">
                         <b class="secTitle">웨딩 인터뷰</b>
 
@@ -364,29 +364,282 @@
                                 <p class="headTxt">✨ 특별한 미션에 참여해주세요 ✨</p>
                                 
                                 <div class="missionTxt">
-                                    <p> 신부 대기실에서 설렘 가득한 순간</p>
-                                    <p> 행복한 웃음이 가득한 신랑신부부</p>
-                                    <p> 사랑스럽게 마주보는 신랑신부</p>
-                                    <p> 함께 축하해 주시는 여러분의 모습</p>
-                                    <p> 여러분이 생각하는 최고의 순간!</p>
-                                    <p> 신랑신부와 함께한 친구들의 모습</p>
-                                    <p> 키스 타임의 달콤한 순간!</p>
-                                    <p> 행복한 피날레 행진!</p>
-                                    <p> 부케 던지기 현장</p>
-                                    <p> 가족과의 따뜻한 순간</p>
+                                    <p>1. 신부 대기실에서 설렘 가득한 순간 <small>💖</small></p>
+                                    <p>2. 행복한 웃음이 가득한 신랑신부 <small>😊</small></p>
+                                    <p>3. 사랑스럽게 마주보는 신랑신부 <small>😍</small></p>
+                                    <p>4. 함께 축하해 주시는 여러분의 모습 <small>🎉</small></p>
+                                    <p>5. 여러분이 생각하는 최고의 순간! <small>✨</small></p>
+                                    <p>6. 신랑신부와 함께한 친구들의 모습 <small>👫</small></p>
+                                    <p>7. 키스 타임의 달콤한 순간! <small>💋</small></p>
+                                    <p>8. 신랑신부의 행복한 피날레 행진! <small>🎊</small></p>
+                                    <p>9. 즐거운 부케 던지기의 현장! <small>💐</small></p>
+                                    <p>10. 가족과 함께하는 소중한 시간 <small>👨‍👩‍👧‍👦</small></p>
                                 </div>
                                 <p class="endTxt">
                                     미션에 참여해 주신 분들 중<br>
                                     가장 멋진 순간을 남겨주신 분께<br>
-                                    맛있는 밥 한 끼를 쏘겠습니다!<br>
+                                    맛있는 밥 한 끼를 쏘겠습니다! <small>💝</small><br>
                                     <br>
                                     여러분의 소중한 순간들이<br>
                                     저희의 결혼을 더욱 빛나게 해줄 거예요<br>
-                                    많은 참여 부탁드려요!💓
+                                    많은 참여 부탁드려요! <small>💑</small>
                                 </p>
                             </div>
 
-                            <button class="guestSnapBtn">사진 업로드<?php if(date('m-d') === '05-24'): ?><small>5월 24일 오픈</small><?php endif; ?></button>
+                            <button class="guestSnapBtn">
+                                사진 업로드
+                                <?php if(date('m-d') !== '05-24'): ?>
+                                    <small>5월 24일 오픈</small>
+                                <?php endif; ?>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s6">
+                <div class="wrap" max='500'>
+                    <div class="gallery">
+                        <b class="secTitle">갤러리</b>
+
+                        <div class="galleryGrid">
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img1.jpg" alt="갤러리 이미지 1">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img2.jpg" alt="갤러리 이미지 2">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img3.jpg" alt="갤러리 이미지 3">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img4.jpg" alt="갤러리 이미지 4">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img5.jpg" alt="갤러리 이미지 5">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img6.jpg" alt="갤러리 이미지 6">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                            </div>
+                            <div class="galleryItem">
+                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s7">
+                <div class="wrap" max='500'>
+                    
+                    <div class="timeLine">
+                        <b class="secTitle">우리의 시간</b>
+                        
+                        <div class="content">
+                            <div class="line">
+                                <div class="actLine"></div>
+                            </div>
+
+                            <div class="itemWrap">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="/asset/img/timeLine/img1.jpg" alt="우리의 시간 이미지 1">
+                                    </div>
+
+                                    <span class="dot"></span>
+
+                                    <div class="txt">
+                                        <b>첫 만남</b>
+                                        <p>
+                                            저희는 소개팅으로<br>
+                                            <span>처음</span> 만났어요.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="/asset/img/timeLine/img1.jpg" alt="우리의 시간 이미지 1">
+                                    </div>
+
+                                    <span class="dot"></span>
+
+                                    <div class="txt">
+                                        <b>200일</b>
+                                        <p>
+                                            200일 기념으로 <br>
+                                            올림픽공원에서 <br>
+                                            스냅 사진을 찍었어요!<br>
+                                            아주 더웠답니다 ㅎ
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="/asset/img/timeLine/img1.jpg" alt="우리의 시간 이미지 1">
+                                    </div>
+
+                                    <span class="dot"></span>
+
+                                    <div class="txt">
+                                        <b>1주년</b>
+                                        <p>
+                                            1주년의 하루는<br>
+                                            다툼으로 시작했지만<br>
+                                            커플링도 맞추고 맛있는<br>
+                                            커피와 밥도 먹었어요.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="/asset/img/timeLine/img1.jpg" alt="우리의 시간 이미지 1">
+                                    </div>
+
+                                    <span class="dot"></span>
+
+                                    <div class="txt">
+                                        <b>Wedding Day</b>
+                                        <p>
+                                            1년 반의 시간이 지나,<br>
+                                            5월 24일<br>
+                                            저희는 결혼을 합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s8">
+                <div class="wrap" max='500'>
+                    <div class="parking">
+                        <b class="secTitle">주차 안내</b>
+
+                        <div class="info">
+                            <div class="img">
+                                <img src="/asset/img/parking/img1.jpg" alt="주차 안내 이미지 1">
+                            </div>
+                            
+                            <div class="txt">
+                                <p>1️⃣주차 1,000대 가능</p>
+                                <p>2️⃣중앙역 환승 & 공영주차장</p>
+                                <p>3️⃣더 베니르 후문 대로변 공영주차장</p>
+                                <p>
+                                    4️⃣쏘가중앙역 코레일주차장<br>
+                                    <small>경기도 안산시 단원구 중앙대로 918</small>
+                                </p>
+                                <p>
+                                    5️⃣안산버스터미널 주유소(터미널 내)
+                                    <small>안산버스터미널 주유소(터미널 내)</small>
+                                    <small>도보 11분 / 셔틀버스 운행(5분 간격)</small>
+                                    <small>2시간 무료</small>
+                                </p>
+                            </div>
+
+                            <div class="subInfo">
+                                <b>안내사항</b>
+                                <p>
+                                    주차 요원의 안내를 받으세요.<br>
+                                    주차장이 혼잡할 수 있으니<br>
+                                    가능한 대중교통 이용을 부탁드립니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s9">
+                <div class="wrap" max='500'>
+                    <div class="information">
+                        <b class="secTitle">예식 안내</b>
+
+                        <div class="info">
+                            <div class="img">
+                                <img src="/asset/img/information/img1.jpg" alt="예식 안내 이미지 1">
+                            </div>
+                            
+                            <div class="content">
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-child">👶</i>
+                                    </div>
+                                    <p>
+                                        5-7세 아이와 동반 참석 가능합니다.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-child">👶</i>
+                                    </div>
+                                    <p>
+                                        5-7세 아이와 동반 참석 가능합니다.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-child">👶</i>
+                                    </div>
+                                    <p>
+                                        5-7세 아이와 동반 참석 가능합니다.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-child">👶</i>
+                                    </div>
+                                    <p>
+                                        5-7세 아이와 동반 참석 가능합니다.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
