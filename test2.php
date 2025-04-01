@@ -404,67 +404,67 @@
 
                         <div class="galleryGrid">
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img1.jpg" alt="갤러리 이미지 1">
+                                <img src="/asset/img/gallery/thumb/1.jpg" alt="갤러리 이미지 1">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img2.jpg" alt="갤러리 이미지 2">
+                                <img src="/asset/img/gallery/thumb/2.jpg" alt="갤러리 이미지 2">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img3.jpg" alt="갤러리 이미지 3">
+                                <img src="/asset/img/gallery/thumb/3.jpg" alt="갤러리 이미지 3">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img4.jpg" alt="갤러리 이미지 4">
+                                <img src="/asset/img/gallery/thumb/4.jpg" alt="갤러리 이미지 4">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img5.jpg" alt="갤러리 이미지 5">
+                                <img src="/asset/img/gallery/thumb/5.jpg" alt="갤러리 이미지 5">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img6.jpg" alt="갤러리 이미지 6">
+                                <img src="/asset/img/gallery/thumb/6.jpg" alt="갤러리 이미지 6">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                                <img src="/asset/img/gallery/thumb/7.jpg" alt="갤러리 이미지 7">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                                <img src="/asset/img/gallery/thumb/8.jpg" alt="갤러리 이미지 8">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                                <img src="/asset/img/gallery/thumb/9.jpg" alt="갤러리 이미지 9">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                                <img src="/asset/img/gallery/thumb/10.jpg" alt="갤러리 이미지 7">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                                <img src="/asset/img/gallery/thumb/a11.jpg" alt="갤러리 이미지 8">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                                <img src="/asset/img/gallery/thumb/a12.jpg" alt="갤러리 이미지 9">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                                <img src="/asset/img/gallery/thumb/a13.jpg" alt="갤러리 이미지 7">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                                <img src="/asset/img/gallery/thumb/a14.jpg" alt="갤러리 이미지 8">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                                <img src="/asset/img/gallery/thumb/a15.jpg" alt="갤러리 이미지 9">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                                <img src="/asset/img/gallery/thumb/a16.jpg" alt="갤러리 이미지 7">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                                <img src="/asset/img/gallery/thumb/a17.jpg" alt="갤러리 이미지 8">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                                <img src="/asset/img/gallery/thumb/a18.jpg" alt="갤러리 이미지 9">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img7.jpg" alt="갤러리 이미지 7">
+                                <img src="/asset/img/gallery/thumb/a19.jpg" alt="갤러리 이미지 7">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img8.jpg" alt="갤러리 이미지 8">
+                                <img src="/asset/img/gallery/thumb/a20.jpg" alt="갤러리 이미지 8">
                             </div>
                             <div class="galleryItem">
-                                <img src="/asset/img/gallery/img9.jpg" alt="갤러리 이미지 9">
+                                <img src="/asset/img/gallery/thumb/a21.jpg" alt="갤러리 이미지 9">
                             </div>
                         </div>
                     </div>
