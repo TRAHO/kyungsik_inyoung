@@ -153,7 +153,7 @@ body {background-color: #f4fbf1;}
 .s8 .parking {display: flex; flex-direction: column; align-items: center;}
 .s8 .parking .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px;}
 .s8 .parking .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em);}
-.s8 .parking .info .img::before {content: ''; display: block; padding-top: 100%;}
+.s8 .parking .info .img::before {content: ''; display: block; padding-top: calc(493/768*100%);}
 .s8 .parking .info .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .s8 .parking .info .txt {text-align: center; font-size: inherit; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
 .s8 .parking .info .txt span {font-size: calc(20/22*1em); margin-right: calc(2/22*1em);}
@@ -168,7 +168,7 @@ body {background-color: #f4fbf1;}
 .s9 .information .subTitle {text-align: center; font-size: 24px; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
 .s9 .information .subTitle small {font-size: calc(22/24*1em);}
 .s9 .information .content {width: 100%;}
-.s9 .information .calendar {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 28px;}
+.s9 .information .calendar {width: 95%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; font-size: 28px;}
 .s9 .information .calendar .month {font-size: inherit; padding-bottom: calc(30/28*1em); font-weight: 600; color: #43573a;}
 .s9 .information .calendar .daysWrap {width: 100%;}
 .s9 .information .calendar .daysWrap .day {position: relative; display: block;}

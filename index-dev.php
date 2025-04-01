@@ -564,7 +564,7 @@
 
                         <div class="info">
                             <div class="img">
-                                <img src="/asset/img/parking/img1.jpg" alt="주차 안내 이미지 1">
+                                <img src="/asset/img/simple_map.jpg" alt="주차 안내 이미지 1">
                             </div>
                             
                             <div class="txt">
