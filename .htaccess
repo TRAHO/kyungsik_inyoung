@@ -1,0 +1,16 @@
+# 캐시 제어 설정
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Header unset ETag
+    FileETag None
+</IfModule>
+
+# PHP 파일에 대한 캐시 방지
+<FilesMatch "\.php$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+</FilesMatch>
+
+# 정적 파일에 대한 캐시 설정
+<FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+</FilesMatch> 
