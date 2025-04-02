@@ -682,19 +682,19 @@
                                         <div class="countBox">
                                             <div class="days">
                                                 <span class="num">0</span>
-                                                <small>일</small>
+                                                <small>Days</small>
                                             </div>
                                             <div class="hours">
                                                 <span class="num">0</span>
-                                                <small>시간</small>
+                                                <small>Hours</small>
                                             </div>
                                             <div class="minutes">
                                                 <span class="num">0</span>
-                                                <small>분</small>
+                                                <small>Minutes</small>
                                             </div>
                                             <div class="seconds">
                                                 <span class="num">0</span>
-                                                <small>초</small>
+                                                <small>Seconds</small>
                                             </div>
                                         </div>
                                         <script>
@@ -747,6 +747,46 @@
                                                 "key" : "2niqf",
                                             }).render();
                                         </script>
+                                    </div>
+
+                                    <div class="locationInfo">
+                                        <div class="item">
+                                            <div class="hd">
+                                                <span>🚇</span>
+                                                <b>지하철</b>
+                                            </div>
+                                            <p>
+                                                4호선<span>·</span>수인분당선 [중앙역 2번 출구] 로 나오셔서 <br>
+                                                50m앞 정면 횡단보도를 건넌 후 왼쪽으로 직진 (도보 3분)
+                                            </p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="hd">
+                                                <span>🚌</span>
+                                                <b>버스</b>
+                                            </div>
+                                            <p>
+                                                중앙역2번출구 정류장 하차 [18361]
+                                                <small>일반버스 3, 7, 9, 10, 60A, 60B, 62, 70A, 71, 71-1, 76, 77, 80B, 80C, 123, 123-1</small>
+                                            </p>
+                                        </div>
+                                        <div class="item">
+                                            <div class="hd">
+                                                <span>🚗</span>
+                                                <b>자가용</b>
+                                            </div>
+                                            <p>
+                                                네비게이션 : "더 베니르" 또는 "031-484-8300" 입력
+                                                <small>주소 검색 : "안산 광덕4로 256" 또는 "안산 고잔동 729-8" 검색</small>
+                                            </p>
+                                            <p>
+                                                주차장 안내 : 2시간 무료
+                                                <small>중앙역 환승 & 공영주차장</small>
+                                                <small>더 베니르 후문 대로변 공영주차장</small>
+                                                <small>쏘가중앙역 코레일주차장 : 경기도 안산시 단원구 중앙대로 918</small>
+                                                <small>안산버스터미널 주유소(터미널 내) : 경기도 안산시 상록구 충장로431 에스오일 입구 도보 11분 / 셔틀버스 운행(5분 간격)</small>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- <div class="infoWrap">

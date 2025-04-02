@@ -66,16 +66,18 @@ body {background-color: #f4fbf1;}
 .s3 .profileImg {position: relative; width: 100%; margin: 0 auto; overflow: hidden; border-radius: calc(20/768*100vw);}
 .s3 .profileImg::before {content: ''; display: block; padding-top: calc(546/664*100%);}
 .s3 .profileImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
-.s3 .profile {display: flex; justify-content: space-between; margin-top: calc(20/24*1em); font-size: 24px; line-height: 1.4; width: 90%; margin-left: auto; margin-right: auto;}
-.s3 .profile .person {width: calc(50% - (10/24*1em)); display: flex; flex-direction: column; align-items: center;}
-.s3 .profile .person .name {width: 100%; display: flex; justify-content: center; align-items: flex-end; gap: calc(7/24*1em); background: #fff; border-radius: calc(10/768*100vw); padding: calc(3/24*1em) calc(20/24*1em); box-sizing: border-box;}
-.s3 .profile .person:first-child .name {border-bottom: 1px solid #6d8efa;}
+.s3 .profile {display: flex; justify-content: space-between; margin-top: calc(30/24*1em); font-size: 24px; line-height: 1.4; width: 100%; margin-left: auto; margin-right: auto;}
+.s3 .profile .person {width: calc(50% - (15/24*1em)); display: flex; flex-direction: column; align-items: center;}
+.s3 .profile .person .name {width: calc(160/24*1em); display: flex; justify-content: center; align-items: flex-end; gap: calc(7/24*1em); background: #fff; padding: calc(7/24*1em) calc(20/24*1em); box-sizing: border-box;}
+.s3 .profile .person:first-child .name {border-bottom: 2px solid #6d8efa;}
 .s3 .profile .person:first-child .name small {color: #6d8efa;}
-.s3 .profile .person:last-child .name {border-bottom: 1px solid #ff85a2;}
+.s3 .profile .person:last-child .name {border-bottom: 2px solid #ff85a2;}
 .s3 .profile .person:last-child .name small {color: #ff85a2;}
 .s3 .profile .person .name small {font-size: calc(20/24*1em);}
 .s3 .profile .person .name span {font-size: calc(24/24*1em);}
-.s3 .profile .person .introduce {width: 100%; margin-top: calc(20/24*1em); display: flex; flex-direction: column; align-items: center;}
+.s3 .profile .person .introduce {width: 97%; padding: calc(30/24*1em) 0; margin: 0 auto; margin-top: calc(10/24*1em); display: flex; flex-direction: column; align-items: center; border-radius: calc(10/768*100vw); border-style: solid; border-width: 2px;}
+.s3 .profile .person:first-child .introduce {border-color: #6d8efa;}
+.s3 .profile .person:last-child .introduce {border-color: #ff85a2;}
 .s3 .profile .person .introduce span {font-size: calc(24/24*1em);}
 .s3 .profile .person .introduce small { display: inline-block; margin-top: calc(15/20*1em); font-size: calc(20/24*1em);}
 
@@ -84,7 +86,7 @@ body {background-color: #f4fbf1;}
 }
 
 
-.s4 .interview { font-size: 28px; margin-top: calc(150/28*1em); display: flex; flex-direction: column; align-items: center; border-radius: calc(20/768*100vw); overflow: hidden; border: 2px solid #43573a; padding: calc(40/28*1em) 0;}
+.s4 .interview { font-size: 28px; margin-top: calc(150/28*1em); display: flex; flex-direction: column; align-items: center; border-radius: calc(20/768*100vw); overflow: hidden; border: 2px solid #43573a; border-width: 2px 0; padding: calc(40/28*1em) 0;}
 .s4 .interview .secTitle {margin-top: 0;}
 .s4 .interview .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
 .s4 .interview .interviewBtn { background: #fff; color: #43573a; border: 1px solid #43573a; outline: none; font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em); line-height: 1.55; white-space: nowrap;}
@@ -163,13 +165,18 @@ body {background-color: #f4fbf1;}
 .s8 .parking .info .subInfo b {font-size: calc(22/22*1em); font-weight: 600; color: #43573a;}
 .s8 .parking .info .subInfo p {margin-top: calc(10/22*1em);}
 
+@media screen and (max-width: 428px) {
+    .s8 .parking .info {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s8 .parking .info .subInfo {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
 
 .s9 .information {display: flex; flex-direction: column; align-items: center;}
 .s9 .information .subTitle {text-align: center; font-size: 24px; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
 .s9 .information .subTitle small {font-size: calc(22/24*1em);}
 .s9 .information .content {width: 100%;}
 .s9 .information .calendar {width: 95%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; font-size: 28px;}
-.s9 .information .calendar .month {font-size: inherit; padding-bottom: calc(30/28*1em); font-weight: 600; color: #43573a;}
+.s9 .information .calendar .month {font-size: calc(34/28*1em); padding-bottom: calc(20/34*1em); font-weight: 600; color: #43573a;}
 .s9 .information .calendar .daysWrap {width: 100%;}
 .s9 .information .calendar .daysWrap .day {position: relative; display: block;}
 .s9 .information .calendar .daysWrap .day::before {content: ''; display: block; padding-top: 100%;}
@@ -197,10 +204,11 @@ body {background-color: #f4fbf1;}
 .s9 .information .info .ddayCounter p b span {font-family: 'Pretendard';}
 .s9 .information .info .ddayCounter p small {font-size: calc(20/28*1em);}
 
-.s9 .information .info .ddayCounter .counter .countBox {display: flex; gap: 20px; justify-content: center; align-items: center; font-size: 28px; color: #43573a;}
-.s9 .information .info .ddayCounter .counter .countBox > div {display: flex; flex-direction: column; align-items: center; gap: 5px;}
-.s9 .information .info .ddayCounter .counter .countBox .num {font-weight: 600; font-family: 'Pretendard';}
-.s9 .information .info .ddayCounter .counter .countBox small {font-size: calc(20/28*1em);}
+.s9 .information .info .ddayCounter .counter {width: 100%; margin-top: calc(50/28*1em);}
+.s9 .information .info .ddayCounter .counter .countBox {display: flex; gap: 20px; justify-content: space-between; align-items: center; font-size: 28px; color: #43573a;}
+.s9 .information .info .ddayCounter .counter .countBox > div { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;}
+.s9 .information .info .ddayCounter .counter .countBox .num {width: calc(70/28*1em); height: calc(70/28*1em);  border-radius: 50%; border: 2px solid #43573a; border-width: 2px 0; font-weight: 600; font-family: 'Pretendard'; display: flex; align-items: center; justify-content: center;}
+.s9 .information .info .ddayCounter .counter .countBox small {font-size: calc(18/28*1em); margin-top: calc(5/18*1em);}
 
 .s9 .information .info .location {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 24px;}
 .s9 .information .info .location .txt {text-align: center; font-size: inherit; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
@@ -214,6 +222,33 @@ body {background-color: #f4fbf1;}
 .s9 .information .info .location .map .root_daum_roughmap .cont {pointer-events: none; display: none;}
 .s9 .information .info .location .map .root_daum_roughmap .cont .section_address {display: none;}
 
+.s9 .information .info .location .locationInfo {word-break: keep-all; font-size: 26px; margin-top: calc(60/26*1em);}
+.s9 .information .info .location .locationInfo .item {display: flex; flex-direction: column; align-items: flex-start; position: relative;}
+.s9 .information .info .location .locationInfo .item + .item {margin-top: calc(60/26*1em);}
+.s9 .information .info .location .locationInfo .item .hd {display: flex; align-items: center; gap: calc(5/26*1em); margin-bottom: calc(18/26*1em);}
+.s9 .information .info .location .locationInfo .item .hd span {font-size: calc(28/26*1em);}
+.s9 .information .info .location .locationInfo .item .hd b {font-size: calc(26/26*1em); font-weight: 600; color: #43573a;}
+.s9 .information .info .location .locationInfo .item p {font-size: calc(22/26*1em); line-height: 1.4; font-weight: 600;}
+.s9 .information .info .location .locationInfo .item p + p {margin-top: calc(30/22*1em);}
+.s9 .information .info .location .locationInfo .item p span {font-family: 'Pretendard';}
+.s9 .information .info .location .locationInfo .item p small {font-weight: 400; display: block; font-size: calc(20/26*1em); margin-top: calc(5/20*1em);}
+
 @media screen and (max-width: 428px) {
+    .s9 .information .subTitle {font-size: clamp(14px, 20/428*100vw, 20px);}
+    .s9 .information .calendar {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s9 .information .info {font-size: clamp(14px, 18/428*100vw, 18px);}
     .s9 .information .info .ddayCounter .counter .countBox {font-size: clamp(18px, 24/428*100vw, 24px);}
+    .s9 .information .info .location {font-size: clamp(16px, 20/428*100vw, 20px);}
+    .s9 .information .info .location .locationInfo {font-size: clamp(18px, 22/428*100vw, 22px);}
+    .s9 .information .info .location .locationInfo .item p {font-size: clamp(16px, 18/22*1em, 18px);}
+    .s9 .information .info .location .locationInfo .item p small {font-size: clamp(14px, 16/18*1em, 16px);}
 }
+
+
+.s10 .visit {display: flex; flex-direction: column; align-items: center;}
+.s10 .visit .secTitle {text-align: center; font-size: 24px; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
+.s10 .visit .secTitle small {font-size: calc(22/24*1em);}
+.s10 .visit .map {width: 100%; margin-top: calc(50/24*1em);}
+.s10 .visit .map .root_daum_roughmap {width: 100%;}
+
+
