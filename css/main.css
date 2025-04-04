@@ -97,7 +97,7 @@ body {background-color: #f4fbf1;}
 .s4 .interview { font-size: 28px; margin-top: calc(150/28*1em); display: flex; flex-direction: column; align-items: center; border-radius: calc(20/768*100vw); overflow: hidden; border: 2px solid #43573a; border-width: 2px 0; padding: calc(40/28*1em) 0;}
 .s4 .interview .secTitle {margin-top: 0;}
 .s4 .interview .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
-.s4 .interview .interviewBtn {font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);}
+.s4 .interview .interviewBtn {font-size: 22px; margin-top: calc(30/22*1em); padding: calc(7/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);}
 
 @media screen and (max-width: 428px) {
     .s4 .interview {font-size: clamp(18px, 28/480*100vw, 28px);}
@@ -265,12 +265,14 @@ body {background-color: #f4fbf1;}
 .s11 .gift {display: flex; flex-direction: column; align-items: center;}
 .s11 .gift .secTitle {margin-bottom: calc(40/22*1em);}
 .s11 .gift .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px; gap: calc(10/22*1em);}
-.s11 .gift .info .item {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(10/22*1em); border-radius: calc(20/22*1em); overflow: hidden;}
+.s11 .gift .info .item {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(10/22*1em); overflow: hidden;}
 .s11 .gift .info .item .hd {display: flex; align-items: center; gap: calc(5/22*1em); padding: calc(10/22*1em);}
 .s11 .gift .info .item .hd b {font-size: calc(22/22*1em); font-weight: 600;}
 .s11 .gift .info .item:nth-child(1) .hd b {color: #6d8efa;}
 .s11 .gift .info .item:nth-child(2) .hd b {color: #ff85a2;}
 .s11 .gift .info .item .hd span {font-size: calc(22/22*1em);}
+.s11 .gift .info .item .hd span i {transition: .4s;}
+.s11 .gift .info .item .hd.active span i {transform: rotate(-180deg);}
 .s11 .gift .info .item .hideBlock {display: none; color: #43573a; width: 100%; max-width: 410px; box-sizing: border-box; padding: calc(36/22*1em) calc(30/22*1em); border-radius: calc(10/22*1em); overflow: hidden;}
 .s11 .gift .info .item:nth-child(1) .hideBlock {border: 1px solid #6d8efa;}
 .s11 .gift .info .item:nth-child(2) .hideBlock {border: 1px solid #ff85a2;}
@@ -345,12 +347,19 @@ body {background-color: #f4fbf1;}
 .fullPopup .popupBox .top {position: relative; width: 100%; display: flex; align-items: center; justify-content: center; font-size: calc(22/22*1em); padding: calc(15/22*1em) 0; border-bottom: 0.5px solid #43573a54;}
 .fullPopup .popupBox .top .tit {font-weight: 600; font-size: calc(24/22*1em); color: #43573a;}
 .fullPopup .popupBox .top .close {cursor: pointer; font-size: inherit; padding: 0; color: #43573a; border: none; outline: none; background: transparent; position: absolute; top: 50%; right: 0px; transform: translateY(-50%); width: calc(50/22*1em); height: calc(50/22*1em); display: flex; align-items: center; justify-content: center;}
-.fullPopup .popupBox .cont {padding: calc(40/22*1em) calc(20/22*1em);}
-
-.fullPopup .popupBox .cont .item {display: flex; flex-direction: column; align-items: left; gap: calc(10/22*1em);}
-.fullPopup .popupBox .cont .item .q {font-size: calc(22/22*1em); font-weight: 600; color: #43573a;}
-.fullPopup .popupBox .cont .item .a {font-size: calc(20/22*1em); color: #43573a;}
-.fullPopup .popupBox .cont .item .a b {font-weight: 600; font-size: calc(20/20*1em);}
+.fullPopup .popupBox .cont {flex-grow: 1; overflow-y: auto; width: 100%; box-sizing: border-box;}
+.fullPopup .popupBox .cont::-webkit-scrollbar {display: none;}
+.fullPopup .popupBox .cont .item {display: flex; flex-direction: column; align-items: left; gap: calc(10/22*1em); padding: calc(40/22*1em) calc(40/22*1em); box-sizing: border-box; border-bottom: 1px solid #43573a54;}
+.fullPopup .popupBox .cont .item .q {font-size: calc(22/22*1em); font-weight: 600; color: #43573a; padding-bottom: calc(10/22*1em);}
+.fullPopup .popupBox .cont .item .a {font-size: calc(20/22*1em); color: #000; line-height: 1.5; word-break: keep-all;}
+.fullPopup .popupBox .cont .item .a + .a {margin-top: calc(10/20*1em);}
+.fullPopup .popupBox .cont .item .a b {font-weight: 600; font-size: calc(20/20*1em); padding: 0 calc(3/20*1em);}
+.fullPopup .popupBox .cont .item .a._1 b {background: #6d8efa71;}
+.fullPopup .popupBox .cont .item .a._2 b {background: #ff85a271;}
 .fullPopup .popupBox .cont .item .a b + b {margin-top: calc(10/20*1em);}
 
-
+@media screen and (max-width: 428px) {
+    .fullPopup .popupBox {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .fullPopup .popupBox .cont .item {padding: calc(40/22*1em) calc(20/22*1em);}
+    .fullPopup .popupBox .cont .item .a .br {display: none;}
+}

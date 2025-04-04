@@ -122,3 +122,19 @@ $('.rsvp .close').on('click', function() {
   $('.rsvp').fadeOut();
   scrollUse = true;
 });
+
+
+$('.s4 .interview .interviewBtn').on('click', function() {
+  $('.interviewPopup').fadeIn();
+  scrollUse = false;
+});
+$('.interviewPopup .close').on('click', function() {
+  $('.interviewPopup').fadeOut();
+  scrollUse = true;
+});
+
+
+$('.s11 .gift .info .item .hd').on('click', function() {
+  $(this).toggleClass('active');
+  $(this).siblings('.hideBlock').slideToggle();
+});
