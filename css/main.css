@@ -16,14 +16,17 @@ body {background-color: #f4fbf1;}
 .petals-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000; }
 .petal { position: absolute; opacity: 0; transform-origin: center; }
 
-.secTitle {display: inline-block; border-radius: calc(10/28*1em); border-bottom: 2px solid #99ab91; padding: calc(10/28*1em) calc(30/28*1em); font-size: 28px; font-weight: 600; color: #43573a; text-align: center; margin-top: calc(140/30*1em);}
+.secTitle {display: inline-block; border-radius: calc(10/28*1em); border-bottom: 2px solid #43573a; padding: calc(10/28*1em) calc(30/28*1em); font-size: 28px; font-weight: 600; color: #43573a; text-align: center; margin-top: calc(140/30*1em);}
+
+.btnStyle { background: #43573a; color: #f4fbf1; border: none; outline: none; line-height: 1.55; white-space: nowrap;}
+/* font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);  */
 
 @media screen and (max-width: 768px) {
     .petal { transform: scale(0.7); }
 }
 @media screen and (max-width: 480px) {
     .petal { transform: scale(0.5); }
-    .secTitle {font-size: clamp(18px, 28/480*100vw, 28px);}
+    .secTitle {font-size: clamp(18px, 24/480*100vw, 24px);}
 }
 
 
@@ -33,10 +36,12 @@ body {background-color: #f4fbf1;}
 
 .s1 .intro {backdrop-filter: blur(2px); text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index: 1;}
 .s1 .intro .txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.s1 .intro .txt svg {opacity: 0;}
 .s1 .intro .txt svg * {stroke: #99ab91;}
 /* .s1 .intro .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 
-.s1 .contents {box-shadow: inset 0 0 65px 35px rgba(255, 255, 255, 1); background-image: url(/asset/img/front-visual.jpg); background-size: cover; background-position: 56% 50%; text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.s1 .contents {box-shadow: inset 0 -25px 75px 80px rgba(255, 255, 255, 1); background-image: url(/asset/img/front-visual.jpg); background-size: cover; background-position: 56% 50%; text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.s1 .contents::before {content: ''; display: block; position: absolute; top: 100%; left: 0; width: 100%; height: 2px; background: #fff; z-index: 1; transform: translateY(-50%);}
 .s1 .contents .txt {opacity: 0; position: absolute; top: 85%; left: 50%; transform: translate(-50%, -50%);}
 /* .s1 .contents .txt h1 {color: #99ab91; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);} */
 .s1 .contents .txt svg {transform: scale(0.75);}
@@ -53,7 +58,8 @@ body {background-color: #f4fbf1;}
 .s2 .welcome p + p {margin-top: 20px;}
 
 .s2 .inviteTxt {text-align: center; font-size: 22px; margin-top: calc(100/22*1em); padding-bottom: calc(120/22*1em); line-height: 1.55; white-space: nowrap;}
-.s2 .inviteTxt b {font-size: 28px;}
+.s2 .inviteTxt b {font-size: 28px; display: flex; align-items: center; justify-content: center; text-align: center;}
+.s2 .inviteTxt b small {font-size: calc(20/28*1em);}
 .s2 .inviteTxt p {margin-top: calc(30/22*1em);}
 
 @media screen and (max-width: 428px) {
@@ -67,7 +73,7 @@ body {background-color: #f4fbf1;}
 .s3 .profileImg::before {content: ''; display: block; padding-top: calc(546/664*100%);}
 .s3 .profileImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .s3 .profile {display: flex; justify-content: space-between; margin-top: calc(30/24*1em); font-size: 24px; line-height: 1.4; width: 100%; margin-left: auto; margin-right: auto;}
-.s3 .profile .person {color: #414d3c; width: calc(50% - (15/24*1em)); display: flex; flex-direction: column; align-items: center;}
+.s3 .profile .person {color: #000; width: calc(50% - (15/24*1em)); display: flex; flex-direction: column; align-items: center;}
 .s3 .profile .person .name {width: calc(160/24*1em); display: flex; justify-content: center; align-items: flex-end; gap: calc(7/24*1em); padding: calc(3/24*1em) calc(20/24*1em); box-sizing: border-box;}
 .s3 .profile .person:first-child .name {border-bottom: 2px solid #6d8efa;}
 .s3 .profile .person:first-child .name small {color: #6d8efa;}
@@ -91,7 +97,7 @@ body {background-color: #f4fbf1;}
 .s4 .interview { font-size: 28px; margin-top: calc(150/28*1em); display: flex; flex-direction: column; align-items: center; border-radius: calc(20/768*100vw); overflow: hidden; border: 2px solid #43573a; border-width: 2px 0; padding: calc(40/28*1em) 0;}
 .s4 .interview .secTitle {margin-top: 0;}
 .s4 .interview .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
-.s4 .interview .interviewBtn { background: #fff; color: #43573a; border: 1px solid #43573a; outline: none; font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em); line-height: 1.55; white-space: nowrap;}
+.s4 .interview .interviewBtn {font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);}
 
 @media screen and (max-width: 428px) {
     .s4 .interview {font-size: clamp(18px, 28/480*100vw, 28px);}
@@ -113,8 +119,8 @@ body {background-color: #f4fbf1;}
 .s5 .guestSnap .guestSnapTxt .missionTxt p small {font-size: calc(20/22*1em);}
 .s5 .guestSnap .guestSnapTxt .endTxt {margin-top: calc(25/22*1em);}
 .s5 .guestSnap .guestSnapTxt .endTxt small {font-size: calc(20/22*1em);}
-.s5 .guestSnap .guestSnapTxt button {background: #fff; color: #43573a; border: 1px solid #43573a; outline: none; font-size: inherit; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em); line-height: 1.55; white-space: nowrap;}
-.s5 .guestSnap .guestSnapTxt button small {font-size: calc(18/22*1em);}
+.s5 .guestSnap .guestSnapTxt .guestSnapBtn {font-size: inherit; margin-top: calc(30/22*1em); padding: calc(7/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);}
+.s5 .guestSnap .guestSnapTxt .guestSnapBtn small {font-size: calc(18/22*1em);}
 
 @media screen and (max-width: 428px) {
     .s5 .guestSnap .subTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
@@ -178,7 +184,7 @@ body {background-color: #f4fbf1;}
 .s9 .information .subTitle small {font-size: calc(22/24*1em);}
 .s9 .information .content {width: 100%;}
 .s9 .information .calendar {width: 95%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; font-size: 28px;}
-.s9 .information .calendar .month {font-size: calc(34/28*1em); padding-bottom: calc(20/34*1em); font-weight: 600; color: #43573a;}
+.s9 .information .calendar .month {font-size: calc(30/28*1em); padding-bottom: calc(20/34*1em); font-weight: 600; color: #43573a;}
 .s9 .information .calendar .daysWrap {width: 100%;}
 .s9 .information .calendar .daysWrap .day {position: relative; display: block;}
 .s9 .information .calendar .daysWrap .day::before {content: ''; display: block; padding-top: 100%;}
@@ -186,8 +192,8 @@ body {background-color: #f4fbf1;}
 .s9 .information .calendar .head {border-bottom: 2px solid #43573a; margin-bottom: calc(15/28*1em); width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(20/28*1em); font-weight: 600; color: #43573a;}
 .s9 .information .calendar .head .day {width: calc(100% / 7);}
 .s9 .information .calendar .days {width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(20/28*1em);}
-.s9 .information .calendar .days .day {width: calc(100% / 7); background: #99ab91; border-radius: 50%; color: #f4fbf1;}
-.s9 .information .calendar .days .day.dday {background: #ff85a2;}
+.s9 .information .calendar .days .day {width: calc(100% / 7); color: #43573a; border-radius: 50%;}
+.s9 .information .calendar .days .day.dday {background: #ff85a2; color: #f4fbf1;}
 .s9 .information .calendar .days + .days {margin-top: calc(13/28*1em);}
 .s9 .information .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px;}
 .s9 .information .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em);}
@@ -206,10 +212,10 @@ body {background-color: #f4fbf1;}
 .s9 .information .info .ddayCounter p b span {font-family: 'Pretendard';}
 .s9 .information .info .ddayCounter p small {font-size: calc(20/28*1em);}
 
-.s9 .information .info .ddayCounter .counter {width: 100%; margin-top: calc(50/28*1em);}
+.s9 .information .info .ddayCounter .counter {width: 90%; margin-top: calc(50/28*1em);}
 .s9 .information .info .ddayCounter .counter .countBox {display: flex; gap: 20px; justify-content: space-between; align-items: center; font-size: 28px; color: #43573a;}
 .s9 .information .info .ddayCounter .counter .countBox > div { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;}
-.s9 .information .info .ddayCounter .counter .countBox .num {width: calc(80/28*1em); height: calc(80/28*1em);  border-radius: 50%; border: 2px solid #43573a; border-width: 2px 0; font-weight: 600; font-family: 'Pretendard'; display: flex; align-items: center; justify-content: center;}
+.s9 .information .info .ddayCounter .counter .countBox .num {width: calc(75/28*1em); height: calc(75/28*1em);  border-radius: 50%; border: 2px solid #43573a; border-width: 2px 0; font-weight: 600; font-family: 'Pretendard'; display: flex; align-items: center; justify-content: center;}
 .s9 .information .info .ddayCounter .counter .countBox small {font-size: calc(18/28*1em); margin-top: calc(5/18*1em);}
 
 .s9 .information .info .location {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 24px;}
@@ -224,13 +230,13 @@ body {background-color: #f4fbf1;}
 .s9 .information .info .location .map .root_daum_roughmap .cont {pointer-events: none; display: none;}
 .s9 .information .info .location .map .root_daum_roughmap .cont .section_address {display: none;}
 
-.s9 .information .info .location .locationInfo {word-break: keep-all; font-size: 26px; margin-top: calc(60/26*1em);}
+.s9 .information .info .location .locationInfo {width: 100%; word-break: keep-all; font-size: 26px; margin-top: calc(60/26*1em);}
 .s9 .information .info .location .locationInfo .item {display: flex; flex-direction: column; align-items: flex-start; position: relative;}
 .s9 .information .info .location .locationInfo .item + .item {margin-top: calc(60/26*1em);}
 .s9 .information .info .location .locationInfo .item .hd {display: flex; align-items: center; gap: calc(5/26*1em); margin-bottom: calc(18/26*1em);}
 .s9 .information .info .location .locationInfo .item .hd span {font-size: calc(28/26*1em);}
 .s9 .information .info .location .locationInfo .item .hd b {font-size: calc(26/26*1em); font-weight: 600; color: #43573a;}
-.s9 .information .info .location .locationInfo .item p {font-size: calc(22/26*1em); line-height: 1.4; font-weight: 600;}
+.s9 .information .info .location .locationInfo .item p {font-size: calc(22/26*1em); line-height: 1.4;}
 .s9 .information .info .location .locationInfo .item p + p {margin-top: calc(30/22*1em);}
 .s9 .information .info .location .locationInfo .item p span {font-family: 'Pretendard';}
 .s9 .information .info .location .locationInfo .item p small {font-weight: 400; display: block; font-size: calc(20/26*1em); margin-top: calc(5/20*1em);}
@@ -248,9 +254,103 @@ body {background-color: #f4fbf1;}
 
 
 .s10 .visit {display: flex; flex-direction: column; align-items: center;}
-.s10 .visit .secTitle {text-align: center; font-size: 24px; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
-.s10 .visit .secTitle small {font-size: calc(22/24*1em);}
-.s10 .visit .map {width: 100%; margin-top: calc(50/24*1em);}
-.s10 .visit .map .root_daum_roughmap {width: 100%;}
+.s10 .visit .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
+.s10 .visit .visitBtn {font-size: 22px; margin-top: calc(40/22*1em); padding: calc(7/22*1em) calc(30/22*1em); border-radius: calc(7/22*1em);}
+
+@media screen and (max-width: 428px) {
+    .s10 .visit .txt {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s10 .visit .visitBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
+.s11 .gift {display: flex; flex-direction: column; align-items: center;}
+.s11 .gift .secTitle {margin-bottom: calc(40/22*1em);}
+.s11 .gift .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px; gap: calc(10/22*1em);}
+.s11 .gift .info .item {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(10/22*1em); border-radius: calc(20/22*1em); overflow: hidden;}
+.s11 .gift .info .item .hd {display: flex; align-items: center; gap: calc(5/22*1em); padding: calc(10/22*1em);}
+.s11 .gift .info .item .hd b {font-size: calc(22/22*1em); font-weight: 600;}
+.s11 .gift .info .item:nth-child(1) .hd b {color: #6d8efa;}
+.s11 .gift .info .item:nth-child(2) .hd b {color: #ff85a2;}
+.s11 .gift .info .item .hd span {font-size: calc(22/22*1em);}
+.s11 .gift .info .item .hideBlock {display: none; color: #43573a; width: 100%; max-width: 410px; box-sizing: border-box; padding: calc(36/22*1em) calc(30/22*1em); border-radius: calc(10/22*1em); overflow: hidden;}
+.s11 .gift .info .item:nth-child(1) .hideBlock {border: 1px solid #6d8efa;}
+.s11 .gift .info .item:nth-child(2) .hideBlock {border: 1px solid #ff85a2;}
+.s11 .gift .info .item .hideBlock .name {display: flex; align-items: center; gap: calc(5/22*1em); margin-bottom: calc(15/22*1em);}
+.s11 .gift .info .item .hideBlock .name span {font-size: calc(20/22*1em);}
+.s11 .gift .info .item .hideBlock .name b {font-size: calc(20/22*1em);}
+.s11 .gift .info .item .hideBlock .bankWrap {display: flex; align-items: center; justify-content: space-between; gap: calc(5/22*1em);}
+.s11 .gift .info .item .hideBlock .bankWrap .bank {display: flex; align-items: center; gap: calc(5/22*1em);}
+.s11 .gift .info .item .hideBlock .bankWrap .bank span {font-size: calc(20/22*1em);}
+.s11 .gift .info .item .hideBlock .bankWrap .copy {display: flex; align-items: center; gap: calc(7/22*1em);}
+.s11 .gift .info .item .hideBlock .bankWrap .copy .icon {width: calc(55/22*1em); display: flex; align-items: center;}
+.s11 .gift .info .item .hideBlock .bankWrap .copy .icon img {width: 100%; height: 100%; object-fit: cover;}
+.s11 .gift .info .item .hideBlock .bankWrap .copy span {font-size: calc(20/22*1em);}
+
+@media screen and (max-width: 428px) {
+    .s11 .gift .info {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
+
+.s12 .guestbook {display: flex; flex-direction: column; align-items: center; gap: calc(50/22*1em);}
+.s12 .guestbook .listBox {font-size: 22px; width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden;}
+.s12 .guestbook .listBox .noneItem {padding: calc(175/22*1em) 0; text-align: center; font-weight: 600; color: #43573a; line-height: 1.55; white-space: nowrap;}
+.s12 .guestbook .listBox .list {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(20/22*1em);}
+.s12 .guestbook .listBox .list .item {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(20/22*1em);}
+.s12 .btnWrap {font-size: 22px; margin-top: calc(10/22*1em); margin-bottom: calc(140/22*1em); width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(10/22*1em);}
+.s12 .btnWrap .guestbookBtn {font-size: inherit; padding: calc(10/22*1em) 0; width: calc(100% / 2); border-radius: calc(5/22*1em);}
+
+@media screen and (max-width: 428px) {
+    .s12 .guestbook .listBox {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s12 .btnWrap .guestbookBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
+}
+
+
+.s13 {display: flex; flex-direction: column; align-items: center;}
+.s13 .together {width: 100%; background: #eefae9; color: #43573a; font-size: 22px; margin-bottom: calc(140/22*1em); padding: calc(50/22*1em) 0; line-height: 1.55; white-space: nowrap; text-align: center;}
+.s13 .together .time {font-size: calc(20/22*1em); }
+.s13 .img {width: 100%;}
+.s13 .img img {width: 100%; height: 100%; object-fit: cover;}
+.s13 .txt {width: 100%; text-align: center; font-size: 20px; padding: calc(15/20*1em) 0; white-space: nowrap; color: #43573a;}
+
+@media screen and (max-width: 428px) {
+    .s13 .together {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s13 .txt {font-size: clamp(14px, 16/428*100vw, 16px);}
+}
+
+
+.popup {font-family: 'Cafe24Oneprettynight'; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 9999; display: none;}
+.popup .popupBox {font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; box-sizing: border-box; max-width: 428px; background: #fff; border-radius: 10px; overflow: hidden; padding: calc(50/24*1em) calc(30/24*1em);}
+.popup .popupBox .close {cursor: pointer; font-size: inherit; padding: 0; color: #43573a; border: none; outline: none; background: transparent; position: absolute; top: 0px; right: 0px; width: calc(50/24*1em); height: calc(50/24*1em); display: flex; align-items: center; justify-content: center;}
+.rsvp .rsvpBox .rsvpTxt {display: flex; flex-direction: column; align-items: center; gap: calc(10/24*1em); text-align: center;}
+.rsvp .rsvpBox .rsvpTxt .tit {font-weight: 600; font-size: calc(24/24*1em); color: #43573a; margin-bottom: calc(20/24*1em);}
+.rsvp .rsvpBox .rsvpTxt .txt {font-size: calc(22/24*1em); line-height: 1.5;}
+.rsvp .rsvpBox .rsvpTxt .info {width: 100%; font-size: calc(20/24*1em); margin-top: calc(10/24*1em); border-top: 0.5px solid #43573a54; display: flex; flex-direction: column; align-items: center;}
+.rsvp .rsvpBox .rsvpTxt .info .name {font-size: calc(20/20*1em);}
+.rsvp .rsvpBox .rsvpTxt .info .name span {display: inline-block; margin-right: calc(5/20*1em); padding: calc(30/20*1em) 0;}
+.rsvp .rsvpBox .rsvpTxt .info .name .name1 {color: #6d8efa;}
+.rsvp .rsvpBox .rsvpTxt .info .name .name2 {color: #ff85a2  ;}
+.rsvp .rsvpBox .rsvpTxt .info .location {margin-top: calc(10/20*1em);}
+.rsvp .rsvpBox .rsvpTxt .bottom {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(10/20*1em); font-size: calc(20/24*1em); margin-top: calc(20/20*1em);}
+.rsvp .rsvpBox .rsvpTxt .bottom .rsvpBtn {font-size: inherit; padding: calc(10/20*1em) 0; width: 100%; border-radius: calc(5/20*1em);}
+.rsvp .rsvpBox .rsvpTxt .bottom .check {display: flex; align-items: center; gap: calc(5/18*1em); font-size: calc(18/20*1em);}
+.rsvp .rsvpBox .rsvpTxt .bottom .check input {display: none;}
+.rsvp .rsvpBox .rsvpTxt .bottom .check label {display: flex; align-items: center; gap: calc(5/18*1em);}
+
+@media screen and (max-width: 428px) {
+    .popup .popupBox {font-size: clamp(16px, 20/428*100vw, 20px);}
+}
+
+
+.fullPopup {font-family: 'Cafe24Oneprettynight'; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; background: #fff;}
+.fullPopup .popupBox {width: 100%; height: 100%; font-size: 22px; display: flex; flex-direction: column; align-items: center;;}
+.fullPopup .popupBox .top {position: relative; width: 100%; display: flex; align-items: center; justify-content: center; font-size: calc(22/22*1em); padding: calc(15/22*1em) 0; border-bottom: 0.5px solid #43573a54;}
+.fullPopup .popupBox .top .tit {font-weight: 600; font-size: calc(24/22*1em); color: #43573a;}
+.fullPopup .popupBox .top .close {cursor: pointer; font-size: inherit; padding: 0; color: #43573a; border: none; outline: none; background: transparent; position: absolute; top: 50%; right: 0px; transform: translateY(-50%); width: calc(50/22*1em); height: calc(50/22*1em); display: flex; align-items: center; justify-content: center;}
+.fullPopup .popupBox .cont {padding: calc(40/22*1em) calc(20/22*1em);}
+
+.fullPopup .popupBox .cont .item {display: flex; flex-direction: column; align-items: left; gap: calc(10/22*1em);}
+.fullPopup .popupBox .cont .item .q {font-size: calc(22/22*1em); font-weight: 600; color: #43573a;}
+.fullPopup .popupBox .cont .item .a {font-size: calc(20/22*1em); color: #43573a;}
+.fullPopup .popupBox .cont .item .a b {font-weight: 600; font-size: calc(20/20*1em);}
+.fullPopup .popupBox .cont .item .a b + b {margin-top: calc(10/20*1em);}
 
 

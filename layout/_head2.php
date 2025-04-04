@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/layout.css">
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="/plugin/XEIcon-master/xeicon.min.css">
     <link rel="stylesheet" href="/plugin/swiper11.0.4/swiper.css">
     <!-- <link rel="stylesheet" href="/plugin/fullpage/jquery.fullpage.min.css"> -->
     

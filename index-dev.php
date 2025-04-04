@@ -275,7 +275,7 @@
                     </div>
 
                     <div class="inviteTxt">
-                        <b>♥️저희 결혼합니다♥️</b>
+                        <b><small>♥️</small>저희 결혼합니다<small>♥️</small></b>
 
                         <p>
                             저희의 결혼 소식을 <br>
@@ -336,7 +336,7 @@
                             아래 버튼을 통해 확인해보세요.
                         </p>
                         
-                        <button class="interviewBtn">인터뷰 보러 가기&nbsp;&nbsp;&gt;</button>
+                        <button class="interviewBtn btnStyle">인터뷰 보러 가기&nbsp;&nbsp;&gt;</button>
                     </div>
                 </div>
             </section>
@@ -386,7 +386,7 @@
                                 </p>
                             </div>
 
-                            <button class="guestSnapBtn">
+                            <button class="guestSnapBtn btnStyle">
                                 사진 업로드
                                 <?php if(date('m-d') !== '05-24'): ?>
                                     <small>5월 24일 오픈</small>
@@ -779,13 +779,6 @@
                                                 네비게이션 : "더 베니르" 또는 "031-484-8300" 입력
                                                 <small>주소 검색 : "안산 광덕4로 256" 또는 "안산 고잔동 729-8" 검색</small>
                                             </p>
-                                            <p>
-                                                주차장 안내 : 2시간 무료
-                                                <small>중앙역 환승 & 공영주차장</small>
-                                                <small>더 베니르 후문 대로변 공영주차장</small>
-                                                <small>쏘가중앙역 코레일주차장 : 경기도 안산시 단원구 중앙대로 918</small>
-                                                <small>안산버스터미널 주유소(터미널 내) : 경기도 안산시 상록구 충장로431 에스오일 입구 도보 11분 / 셔틀버스 운행(5분 간격)</small>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -832,19 +825,229 @@
             <section class="s10">
                 <div class="wrap" max='500'>
                     <div class="visit">
-                        <b class="secTitle">참석여부</b>
+                        <b class="secTitle">참석 의사</b>
 
-                        <div class="map">
-                            
+                        <p class="txt">
+                            소중한 시간을 내어 결혼식에<br>
+                            참석해주시는 모든 분들께 감사드립니다.<br>
+                            아래 버튼을 통해 참석 여부를 <br>
+                            알려주시면 더욱 감사하겠습니다.
+                        </p>
+
+                        <button class="visitBtn btnStyle">참석 여부 전달</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s11">
+                <div class="wrap" max='500'>
+                    <div class="gift">
+                        <b class="secTitle">마음 전하실 곳</b>
+
+                        <div class="info">
+                            <div class="item">
+                                <div class="hd">
+                                    <b>신랑측</b>
+                                    <span><i class="xi-angle-down-min"></i></span>
+                                </div>
+                                <div class="hideBlock">
+                                    <div class="name">
+                                        <span>신랑</span>
+                                        <b>신경식</b>
+                                    </div>
+                                    
+                                    <div class="bankWrap">
+                                        <div class="bank">
+                                            <span>카카오뱅크</span>
+                                            <b>3333-04-1109486</b>
+                                        </div>
+
+                                        <div class="copy">
+                                            <div class="icon">
+                                                <img src="/asset/img/kakaopayIcon.png" alt="카카오페이 아이콘">
+                                            </div>
+                                            <span><i class="xi-document"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hd">
+                                    <b>신부측</b>
+                                    <span><i class="xi-angle-down-min"></i></span>
+                                </div>
+                                <div class="hideBlock">
+                                    <div class="name">
+                                        <span>신부</span>
+                                        <b>김인영</b>
+                                    </div>
+                                    <div class="bankWrap">
+                                        <div class="bank">
+                                            <span>카카오뱅크</span>
+                                            <b>3333-12-9061065</b>
+                                        </div>
+
+                                        <div class="copy">
+                                            <div class="icon">
+                                                <img src="/asset/img/kakaopayIcon.png" alt="카카오페이 아이콘">
+                                            </div>
+                                            <span><i class="xi-document"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="s12">
+                <div class="wrap" max='500'>
+                    <div class="guestbook">
+                        <b class="secTitle">방명록</b>
+
+                        <div class="listBox">
+                            <p class="noneItem">
+                                아직 작성된 방명록이 없습니다. <br>
+                                첫 번째 방명록을 남겨주세요!
+                            </p>
+
+                            <div class="list">
+                                <div class="item">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btnWrap">
+                        <button class="guestbookBtn btnStyle">전체보기</button>
+                        <button class="guestbookBtn btnStyle">작성</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s13">
+                <div class="together">
+                    <p class="subTitle">함께한 시간</p>
+                    <p class="time">1,234일 12시간 30분 15초</p>
+                </div>
+
+                <div class="img">
+                    <img src="/asset/img/outro.jpg" alt="아웃트로 이미지">
+                </div>
+
+                <!-- <p class="txt">축하해주신 모든 분들께 감사드립니다.</p> -->
             </section>
         </main>
 
         <?php
             include_once $_SERVER["DOCUMENT_ROOT"]."/comp/footer.php";
         ?>
+    </div>
+</div>
+
+<!-- rsvp direct -->
+<div class="rsvp popup">
+    <div class="rsvpBox popupBox">
+        <button class="close">
+            <i class="xi-close"></i>
+        </button>
+
+        <div class="rsvpTxt">
+            <b class="tit">참석 여부 전달</b>
+            <p class="txt">
+                소중한 시간을 내어 결혼식에<br>
+                참석해주시는 모든 분들께 감사드립니다.<br>
+                아래 버튼을 통해 참석 여부를 <br>
+                알려주시면 더욱 감사하겠습니다.
+            </p>
+
+            <div class="info">
+                <p class="name">
+                    <span class="name1">신랑</span>신경식<small class="heart"> ♥ </small><span class="name2">신부</span>김인영
+                </p>
+                <p class="date">2025년 5월 24일 오후 1시 40분</p>
+                <p class="location">더베니르(안산)</p>
+            </div>
+
+            <div class="bottom">
+                <button class="rsvpBtn btnStyle">참석 여부 전달</button>
+                <div class="check">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <span><i class="xi-check-circle-o"></i></span>
+                        <p>오늘하루 보지않기</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- interview -->
+<div class="interview fullPopup">
+    <div class="interviewBox popupBox">
+        <div class="top">
+            <b class="tit">신랑 신부 인터뷰</b>
+            <button class="close">
+                <i class="xi-close"></i>
+            </button>
+        </div>
+
+        <div class="cont">
+            <div class="item">
+                <p class="q">
+                    1. 결혼하시는 소감이 어떠세요?
+                </p>
+                <p class="a">
+                    <b>경식</b><br>
+                    실감이 안나고 믿기지 않습니다.<br>
+                    현실성이 없고 꿈만 같은 기분이에요.<br>
+                    하나님이 정말 기도를 들으시는 분이구나 라는 것을 다시 한번 크게 느끼게 되는 계기가 됬습니다.<br>
+                    그래서 앞으로의 삶이 기대가 됩니다!
+                </p>
+                <p class="a">
+                    <b>인영</b><br>
+                    저는 늘 데이트 할 때마다 헤어지는게 싫었는데 이제는 늘 함께 할 수 있다는 것이 기대가 되고 좋은 것 같아요. <br>
+                    그리고 함께 요리해먹고 산책하고 대화하고 할 수 있는 소소한 일상들이 재밌을 것 같아요 !
+                </p>
+            </div>
+
+            <div class="item">
+                <p class="q">
+                    2. 처음에 어떻게 만나셨어요?
+                </p>
+                <p class="a">
+                    지인이 소개팅을 주선해줬어요.<br>
+                    저희는 사당에서 소개팅했어요..!!!<br>
+                    신랑은 마음에 들면 데려다 주겠다고 이야기 했고,<br>
+                    신부는 마음에 들면 쪽지랑 립밤을 선물로 주고자 했는데<br>
+                    첫 만남에 이 모든게 이루어졌어요 .. :)
+                </p>
+            </div>
+
+            <div class="item">
+                <p class="q">
+                    3. 신혼여행은 어디로 가시나요?
+                </p>
+                <p class="a">
+                    발리로 떠납니다!!!!!<br>
+                    저희는 휴양지를 선택했답니다.
+                </p>
+            </div>
+
+            <div class="item">
+                <p class="q">
+                    4. 두분은 어떤 가정을 이루고 싶나요?
+                </p>
+                <p class="a">
+                    하나님 사랑, 이웃 사랑하는 가정을 이루고 싶어요.<br>
+                    하나님이 가장 기뻐하시는 가정이 되고 싶고, 늘 하나님 중심으로 생각하고 바라보는 가정이 되길 소망해요.<br>
+                    매일 가정예배도 꼭 꼭 드리고 싶어요.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -1,4 +1,47 @@
-// gsap.from('.s1 .svgDraw path', {duration: 1, drawSVG: 0, ease: 'none'});
+let scrollUse = false;
+
+window.addEventListener('scroll', (e) => {
+  if(!scrollUse) {
+    if(e.cancelable) {
+      e.preventDefault();
+      e.stopPropagation(); 
+    }
+    return false;
+  }
+}, {passive: false});
+
+window.addEventListener('touchmove', (e) => {
+  if(!scrollUse) {
+    if(e.cancelable) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    return false; 
+  }
+}, {passive: false});
+
+window.addEventListener('mousewheel', (e) => {
+  if(!scrollUse) {
+    if(e.cancelable) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    return false;
+  }
+}, {passive: false});
+
+window.addEventListener('wheel', (e) => {
+  if(!scrollUse) {
+    if(e.cancelable) {
+      e.preventDefault(); 
+      e.stopPropagation();
+    }
+    return false;
+  }
+}, {passive: false});
+
+
+
 window.addEventListener('load', () => {
   setTimeout(() => {
     window.scrollTo(0, 1);
@@ -35,6 +78,7 @@ let duration = 3,
           })
           .add(() => {
             $('body').css('overflow', 'auto');
+            scrollUse = true;
           })
       },
 
@@ -42,6 +86,11 @@ let duration = 3,
         gsap.to('.intro', {
             background: 'rgba(255, 255, 255, .75)',
             duration: 3
+        })
+        gsap.to('.intro .txt svg', {
+          opacity: 1,
+          duration: .2,
+          ease: 'sine.inOut'
         })
       }
     });
@@ -54,4 +103,22 @@ paths.forEach(segment => {
     duration: duration * (segment.getTotalLength() / distance),
     ease: "power3.inOut"
   });
+});
+
+
+ScrollTrigger.create({
+  trigger: '.s3 .profileImg',
+  start: 'top 50%',
+  end: 'bottom 50%',
+  onEnter: () => {
+    if(!$('.rsvp').hasClass('active')) {
+      scrollUse = false;
+      $('.rsvp').fadeIn();
+      $('.rsvp').addClass('active');
+    }
+  }
+});
+$('.rsvp .close').on('click', function() {
+  $('.rsvp').fadeOut();
+  scrollUse = true;
 });
