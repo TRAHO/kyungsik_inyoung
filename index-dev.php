@@ -387,8 +387,52 @@
                             </div>
 
                             <input type="file" id="guestSnapFile" accept="image/*" multiple style="display: none;">
-                            <div class="guestSnapList"></div>
+                            <div id="lightgallery_snap" class="guestSnapList" id="lightgallery_snap">
+                            <?php
+                            // 이미지 디렉토리 경로 
+                            $guestSnapDir = 'asset/img/snap/';
                             
+                            // 디렉토리가 존재하고 읽을 수 있는지 확인
+                            if(is_dir($guestSnapDir) && is_readable($guestSnapDir)) {
+                                // 이미지 파일 가져오기 
+                                $images = glob($guestSnapDir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+                                
+                                if(!empty($images)) {
+                                    echo '<div class="swiper guestSnapSwiper">';
+                                    echo '<div class="swiper-wrapper">';
+                                    
+                                    // 9개씩 그룹화 (3x3)
+                                    $imageGroups = array_chunk($images, 9);
+                                    
+                                    foreach($imageGroups as $group) {
+                                        echo '<div class="swiper-slide">';
+                                        echo '<div class="grid-gallery" style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">';
+                                        
+                                        foreach($group as $image) {
+                                            echo '<a href="' . $image . '" class="gallery-item" data-src="' . $image . '">';
+                                            echo '<img src="' . $image . '" alt="게스트 스냅 이미지" style="width:100%; height:100%; object-fit:cover;">';
+                                            echo '</a>';
+                                        }
+                                        
+                                        // 9개 채우기 위해 빈 셀 추가
+                                        for($i = count($group); $i < 9; $i++) {
+                                            echo '<div class="empty-cell" style="aspect-ratio:1"></div>';
+                                        }
+                                        
+                                        echo '</div>'; // grid-gallery
+                                        echo '</div>'; // swiper-slide
+                                    }
+                                    
+                                    echo '</div>'; // swiper-wrapper
+                                    echo '<div class="swiper-pagination"></div>';
+                                    echo '</div>'; // swiper
+                                } else {
+                                    echo '<p class="noImage">아직 업로드된 이미지가 없습니다.</p>';
+                                }
+                            }
+                            ?>
+                            </div>
+
                             <button class="guestSnapBtn btnStyle">
                                 사진 업로드
                                 <?php if(date('m-d') !== '05-24'): ?>

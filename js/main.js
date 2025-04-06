@@ -179,6 +179,58 @@ $('.interviewPopup .close').on('click', function() {
 });
 
 
+
+// 게스트 스냅
+let snapSwiper = new Swiper('.guestSnapSwiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
+
+// lightgallery 초기화
+$(document).ready(function() {
+  $('.gallery-item').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const items = [];
+    $('.gallery-item').each(function() {
+      items.push({
+        src: $(this).data('src'),
+        thumb: $(this).data('src')
+      });
+    });
+    
+    const currentIndex = $('.gallery-item').index(this);
+    
+    $(this).lightGallery({
+      dynamic: true,
+      dynamicEl: items,
+      index: currentIndex,
+      mode: 'lg-slide',
+      speed: 600,
+      download: false,
+      counter: true,
+      controls: true,
+      closable: true,
+      escKey: true,
+      keyPress: true,
+      zoomFromOrigin: false,
+      actualSize: false,
+      showZoom: false,
+      zoom: false,
+      fullScreen: false,
+      share: false,
+      autoplayControls: false,
+      thumbnail: false
+    });
+  });
+});
+
+
 // 갤러리
 $("#lightgallery").lightGallery({
   // 옵션 설정
