@@ -654,7 +654,7 @@
 
                         <div class="info">
                             <div class="img">
-                                <img src="/asset/img/information/img1.jpg" alt="예식 안내 이미지 1">
+                                <img src="/asset/img/wedding.jpg" alt="예식 안내 이미지 1">
                             </div>
                             
                             <div class="content">
