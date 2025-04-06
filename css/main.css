@@ -47,7 +47,7 @@ body {background-color: #f4fbf1;}
 .s1 .contents .txt svg {transform: scale(0.75);}
 .s1 .contents .txt svg * {stroke: #ff85a2;}
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 500px) {
     .s1 .txt svg {width: 85vw;} 
 }
 
@@ -62,10 +62,10 @@ body {background-color: #f4fbf1;}
 .s2 .inviteTxt b small {font-size: calc(20/28*1em);}
 .s2 .inviteTxt p {margin-top: calc(30/22*1em);}
 
-@media screen and (max-width: 428px) {
-    .s2 .welcome {font-size: clamp(14px, 16/428*100vw, 16px);}
-    .s2 .inviteTxt {font-size: clamp(14px, 16/428*100vw, 16px);}
-    .s2 .inviteTxt b {font-size: clamp(18px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s2 .welcome {font-size: clamp(14px, 16/500*100vw, 16px);}
+    .s2 .inviteTxt {font-size: clamp(14px, 16/500*100vw, 16px);}
+    .s2 .inviteTxt b {font-size: clamp(18px, 18/500*100vw, 18px);}
 }
 
 
@@ -89,8 +89,8 @@ body {background-color: #f4fbf1;}
 .s3 .profile .person .introduce span {font-size: calc(24/24*1em);}
 .s3 .profile .person .introduce small { display: inline-block; margin-top: calc(1/20*1em); font-size: calc(20/24*1em);}
 
-@media screen and (max-width: 428px) {
-    .s3 .profile {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s3 .profile {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 
@@ -99,10 +99,10 @@ body {background-color: #f4fbf1;}
 .s4 .interview .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
 .s4 .interview .interviewBtn {font-size: 22px; margin-top: calc(30/22*1em); padding: calc(7/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);}
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 500px) {
     .s4 .interview {font-size: clamp(18px, 28/480*100vw, 28px);}
-    .s4 .interview .txt {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s4 .interview .interviewBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
+    .s4 .interview .txt {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s4 .interview .interviewBtn {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 
@@ -128,9 +128,9 @@ body {background-color: #f4fbf1;}
 .s5 .guestSnap .guestSnapList .swiper .swiper-slide .grid-gallery .gallery-item img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 
 
-@media screen and (max-width: 428px) {
-    .s5 .guestSnap .subTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s5 .guestSnap .guestSnapTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s5 .guestSnap .subTxt {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s5 .guestSnap .guestSnapTxt {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 .s6 .gallery {display: flex; flex-direction: column; align-items: center;}
@@ -160,8 +160,8 @@ body {background-color: #f4fbf1;}
 .s7 .timeLine .content .itemWrap .item .txt p { margin-top: calc(10/22*1em);}
 
 
-@media screen and (max-width: 428px) {
-    .s7 .timeLine .content {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s7 .timeLine .content {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 
@@ -178,9 +178,9 @@ body {background-color: #f4fbf1;}
 .s8 .parking .info .subInfo b {font-size: calc(22/22*1em); font-weight: 600; color: #43573a;}
 .s8 .parking .info .subInfo p {margin-top: calc(10/22*1em);}
 
-@media screen and (max-width: 428px) {
-    .s8 .parking .info {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s8 .parking .info .subInfo {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s8 .parking .info {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s8 .parking .info .subInfo {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 
@@ -246,13 +246,13 @@ body {background-color: #f4fbf1;}
 .s9 .information .info .location .locationInfo .item p span {font-family: 'Pretendard';}
 .s9 .information .info .location .locationInfo .item p small {font-weight: 400; display: block; font-size: calc(20/26*1em); margin-top: calc(5/20*1em);}
 
-@media screen and (max-width: 428px) {
-    .s9 .information .subTitle {font-size: clamp(14px, 20/428*100vw, 20px);}
-    .s9 .information .calendar {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s9 .information .info {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s9 .information .info .ddayCounter .counter .countBox {font-size: clamp(18px, 24/428*100vw, 24px);}
-    .s9 .information .info .location {font-size: clamp(16px, 20/428*100vw, 20px);}
-    .s9 .information .info .location .locationInfo {font-size: clamp(18px, 20/428*100vw, 20px);}
+@media screen and (max-width: 500px) {
+    .s9 .information .subTitle {font-size: clamp(14px, 20/500*100vw, 20px);}
+    .s9 .information .calendar {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s9 .information .info {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s9 .information .info .ddayCounter .counter .countBox {font-size: clamp(18px, 24/500*100vw, 24px);}
+    .s9 .information .info .location {font-size: clamp(16px, 20/500*100vw, 20px);}
+    .s9 .information .info .location .locationInfo {font-size: clamp(18px, 20/500*100vw, 20px);}
     .s9 .information .info .location .locationInfo .item p {font-size: clamp(16px, 18/22*1em, 18px);}
     .s9 .information .info .location .locationInfo .item p small {font-size: clamp(14px, 16/18*1em, 16px);}
 }
@@ -262,9 +262,9 @@ body {background-color: #f4fbf1;}
 .s10 .visit .txt {text-align: center; font-size: 22px; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
 .s10 .visit .visitBtn {font-size: 22px; margin-top: calc(40/22*1em); padding: calc(7/22*1em) calc(30/22*1em); border-radius: calc(7/22*1em);}
 
-@media screen and (max-width: 428px) {
-    .s10 .visit .txt {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s10 .visit .visitBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s10 .visit .txt {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s10 .visit .visitBtn {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 .s11 .gift {display: flex; flex-direction: column; align-items: center;}
@@ -292,8 +292,8 @@ body {background-color: #f4fbf1;}
 .s11 .gift .info .item .hideBlock .bankWrap .copy .icon img {width: 100%; height: 100%; object-fit: cover;}
 .s11 .gift .info .item .hideBlock .bankWrap .copy span {font-size: calc(20/22*1em);}
 
-@media screen and (max-width: 428px) {
-    .s11 .gift .info {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s11 .gift .info {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 
@@ -311,9 +311,9 @@ body {background-color: #f4fbf1;}
 .s12 .btnWrap {font-size: 22px; margin-top: calc(10/22*1em); margin-bottom: calc(140/22*1em); width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(10/22*1em);}
 .s12 .btnWrap .guestbookBtn {font-size: inherit; padding: calc(10/22*1em) 0; width: calc(100% / 2); border-radius: calc(5/22*1em);}
 
-@media screen and (max-width: 428px) {
-    .s12 .guestbook .listBox {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s12 .btnWrap .guestbookBtn {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .s12 .guestbook .listBox {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s12 .btnWrap .guestbookBtn {font-size: clamp(14px, 18/500*100vw, 18px);}
 }
 
 
@@ -324,14 +324,14 @@ body {background-color: #f4fbf1;}
 .s13 .img img {width: 100%; height: 100%; object-fit: cover;}
 .s13 .txt {width: 100%; text-align: center; font-size: 20px; padding: calc(15/20*1em) 0; white-space: nowrap; color: #43573a;}
 
-@media screen and (max-width: 428px) {
-    .s13 .together {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s13 .txt {font-size: clamp(14px, 16/428*100vw, 16px);}
+@media screen and (max-width: 500px) {
+    .s13 .together {font-size: clamp(14px, 18/500*100vw, 18px);}
+    .s13 .txt {font-size: clamp(14px, 16/500*100vw, 16px);}
 }
 
 
-.popup {font-family: 'Cafe24Oneprettynight'; position: fixed; top: 0; left: 0; width: 100%; max-width: 768px; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 9999; display: none;}
-.popup .popupBox {font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; box-sizing: border-box; max-width: 428px; background: #fff; border-radius: 10px; overflow: hidden; padding: calc(50/24*1em) calc(30/24*1em);}
+.popup {font-family: 'Cafe24Oneprettynight'; position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 768px; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 9999; display: none;}
+.popup .popupBox {font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; box-sizing: border-box; max-width: 500px; background: #fff; border-radius: 10px; overflow: hidden; padding: calc(50/24*1em) calc(30/24*1em);}
 .popup .popupBox .close {cursor: pointer; font-size: inherit; padding: 0; color: #43573a; border: none; outline: none; background: transparent; position: absolute; top: 0px; right: 0px; width: calc(50/24*1em); height: calc(50/24*1em); display: flex; align-items: center; justify-content: center;}
 .rsvp .rsvpBox .rsvpTxt {display: flex; flex-direction: column; align-items: center; gap: calc(10/24*1em); text-align: center;}
 .rsvp .rsvpBox .rsvpTxt .tit {font-weight: 600; font-size: calc(24/24*1em); color: #43573a; margin-bottom: calc(20/24*1em);}
@@ -348,12 +348,12 @@ body {background-color: #f4fbf1;}
 .rsvp .rsvpBox .rsvpTxt .bottom .check input {display: none;}
 .rsvp .rsvpBox .rsvpTxt .bottom .check label {cursor: pointer; display: flex; align-items: center; gap: calc(5/18*1em);}
 
-@media screen and (max-width: 428px) {
-    .popup .popupBox {font-size: clamp(16px, 20/428*100vw, 20px);}
+@media screen and (max-width: 500px) {
+    .popup .popupBox {font-size: clamp(16px, 20/500*100vw, 20px);}
 }
 
 
-.fullPopup {font-family: 'Cafe24Oneprettynight'; width: 100%; height: 100vh; max-width: 768px; position: fixed; top: 0; left: 0; z-index: 9999; background: #fff; display: none;}
+.fullPopup {font-family: 'Cafe24Oneprettynight'; width: 100%; height: 100vh; max-width: 768px; position: fixed; top: 0; left: 50%; transform: translateX(-50%);  z-index: 9999; background: #fff; display: none;}
 .fullPopup .popupBox {width: 100%; height: 100%; font-size: 22px; display: flex; flex-direction: column; align-items: center;;}
 .fullPopup .popupBox .top {position: relative; width: 100%; display: flex; align-items: center; justify-content: center; font-size: calc(22/22*1em); padding: calc(15/22*1em) 0; border-bottom: 0.5px solid #43573a54;}
 .fullPopup .popupBox .top .tit {font-weight: 600; font-size: calc(24/22*1em); color: #43573a;}
@@ -370,8 +370,8 @@ body {background-color: #f4fbf1;}
 .interviewPopup .popupBox .cont .item .a._2 b {background: #ff85a271;}
 .interviewPopup .popupBox .cont .item .a b + b {margin-top: calc(10/20*1em);}
 
-@media screen and (max-width: 428px) {
-    .fullPopup .popupBox {font-size: clamp(14px, 18/428*100vw, 18px);}
+@media screen and (max-width: 500px) {
+    .fullPopup .popupBox {font-size: clamp(14px, 18/500*100vw, 18px);}
     .interviewPopup .popupBox .cont .item {padding: calc(40/22*1em) calc(20/22*1em);}
     .interviewPopup .popupBox .cont .item .a .br {display: none;}
 }
@@ -413,7 +413,7 @@ body {background-color: #f4fbf1;}
 .guestbookListPopup .cont .list .item .actions button:hover {background: #58a23f;}
 .guestbookListPopup .cont .noneItem {text-align: center; padding: 50px 0; color: #666;}
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 500px) {
     .guestbookListPopup .cont {padding: 15px;}
     .guestbookListPopup .cont .list .item {padding: 15px;}
     .guestbookListPopup .cont .list .item .name {font-size: 16px;}
