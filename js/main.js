@@ -106,22 +106,56 @@ paths.forEach(segment => {
 });
 
 
+// 오늘 하루 보지 않기 기능
+function setHideForToday() {
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  tomorrow.setHours(0, 0, 0, 0);
+  
+  localStorage.setItem('hideRSVPUntil', tomorrow.getTime());
+}
+
+function shouldShowRSVP() {
+  const hideUntil = localStorage.getItem('hideRSVPUntil');
+  if (!hideUntil) return true;
+  
+  const now = new Date().getTime();
+  return now >= parseInt(hideUntil);
+}
+
+// RSVP 팝업 표시 로직 수정
 ScrollTrigger.create({
   trigger: '.s3 .profileImg',
   start: 'top 50%',
   end: 'bottom 50%',
   onEnter: () => {
-    if(!$('.rsvp').hasClass('active')) {
+    if(!$('.rsvp').hasClass('active') && shouldShowRSVP()) {
       scrollUse = false;
       $('.rsvp').fadeIn();
       $('.rsvp').addClass('active');
     }
   }
 });
+
+// 오늘 하루 보지 않기 체크박스 이벤트
+$('.rsvp .check input').on('change', function() {
+  if($(this).is(':checked')) {
+    setHideForToday();
+  } else {
+    localStorage.removeItem('hideRSVPUntil');
+  }
+});
+$('.rsvp .hideToday').on('click', function() {
+  setHideForToday();
+  $('.rsvp').fadeOut();
+  scrollUse = true;
+});
 $('.rsvp .close').on('click', function() {
   $('.rsvp').fadeOut();
   scrollUse = true;
 });
+
 
 $('.rsvp .rsvpBtn').on('click', function() {
   $('.rsvp').fadeOut();
@@ -144,7 +178,7 @@ $('.interviewPopup .close').on('click', function() {
 });
 
 
-$(document).ready(function() {
+$(document).on('load',function() {
   $("#lightgallery").lightGallery({
       // 옵션 설정
       mode: 'lg-slide',

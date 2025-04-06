@@ -335,7 +335,7 @@ body {background-color: #f4fbf1;}
 .rsvp .rsvpBox .rsvpTxt .bottom .rsvpBtn {font-size: inherit; padding: calc(10/20*1em) 0; width: 100%; border-radius: calc(5/20*1em);}
 .rsvp .rsvpBox .rsvpTxt .bottom .check {display: flex; align-items: center; gap: calc(5/18*1em); font-size: calc(18/20*1em);}
 .rsvp .rsvpBox .rsvpTxt .bottom .check input {display: none;}
-.rsvp .rsvpBox .rsvpTxt .bottom .check label {display: flex; align-items: center; gap: calc(5/18*1em);}
+.rsvp .rsvpBox .rsvpTxt .bottom .check label {cursor: pointer; display: flex; align-items: center; gap: calc(5/18*1em);}
 
 @media screen and (max-width: 428px) {
     .popup .popupBox {font-size: clamp(16px, 20/428*100vw, 20px);}

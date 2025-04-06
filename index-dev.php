@@ -485,7 +485,7 @@
                             <div class="itemWrap">
                                 <div class="item">
                                     <div class="img">
-                                        <img src="/asset/timeLine/1.jpg" alt="우리의 시간 이미지 1">
+                                        <img src="/asset/timeline/1.jpg" alt="우리의 시간 이미지 1">
                                     </div>
 
                                     <span class="dot"></span>
@@ -501,7 +501,7 @@
 
                                 <div class="item">
                                     <div class="img">
-                                        <img src="/asset/timeLine/2.jpg" alt="우리의 시간 이미지 2">
+                                        <img src="/asset/timeline/2.jpg" alt="우리의 시간 이미지 2">
                                     </div>
 
                                     <span class="dot"></span>
@@ -519,7 +519,7 @@
 
                                 <div class="item">
                                     <div class="img">
-                                        <img src="/asset/timeLine/3.jpg" alt="우리의 시간 이미지 3">
+                                        <img src="/asset/timeline/3.jpg" alt="우리의 시간 이미지 3">
                                     </div>
 
                                     <span class="dot"></span>
@@ -537,7 +537,7 @@
 
                                 <div class="item">
                                     <div class="img">
-                                        <img src="/asset/timeLine/4.jpg" alt="우리의 시간 이미지 4">
+                                        <img src="/asset/timeline/4.jpg" alt="우리의 시간 이미지 4">
                                     </div>
 
                                     <span class="dot"></span>
@@ -973,7 +973,7 @@
 
             <div class="bottom">
                 <button class="rsvpBtn btnStyle">참석 여부 전달</button>
-                <div class="check">
+                <div class="check hideToday">
                     <input type="checkbox" id="check">
                     <label for="check">
                         <span><i class="xi-check-circle-o"></i></span>
@@ -984,6 +984,8 @@
         </div>
     </div>
 </div>
+
+
 
 <!-- interview -->
 <div class="interviewPopup fullPopup">
