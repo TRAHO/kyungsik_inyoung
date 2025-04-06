@@ -1,9 +1,14 @@
 <?php
 // 데이터베이스 연결 설정
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_PASS', '');
+// define('DB_NAME', 'KI_wedding_db');
+
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'KI_wedding_db');
+define('DB_USER', 'ki_wedding');
+define('DB_PASS', 'ki_wedding_0524@');
+define('DB_NAME', 'ki_wedding_db');
 
 // 데이터베이스 연결
 try {
