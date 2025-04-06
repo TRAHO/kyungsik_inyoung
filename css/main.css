@@ -106,7 +106,49 @@ body {background-color: #f4fbf1;}
 }
 
 
-.s5 .guestSnap {display: flex; flex-direction: column; align-items: center;}
+.s5 .guestSnap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.s5 .guestSnap .guestSnapBtn {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.s5 .guestSnap .guestSnapBtn #guestSnapUploadBtn {
+    padding: 10px 20px;
+    background-color: #43573a;
+    color: #f4fbf1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.s5 .guestSnap .guestSnapList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.s5 .guestSnap .guestSnapList img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 428px) {
+    .s5 .guestSnap .guestSnapBtn #guestSnapUploadBtn {
+        font-size: clamp(14px, 18/428*100vw, 18px);
+    }
+}
+
 .s5 .guestSnap .subTxt {text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
 .s5 .guestSnap .subTxt small {font-family: 'Pretendard'; display: inline-block; padding: 0 calc(3/22*1em); background: #fff; border-radius: 50%;}
 .s5 .guestSnap .guestSnapImg {width: 100%; margin-top: calc(50/22*1em); position: relative; border-radius: calc(20/768*100vw); overflow: hidden;}
@@ -126,7 +168,6 @@ body {background-color: #f4fbf1;}
     .s5 .guestSnap .subTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
     .s5 .guestSnap .guestSnapTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
 }
-
 
 .s6 .gallery {display: flex; flex-direction: column; align-items: center;}
 .s6 .gallery .secTitle {margin-bottom: calc(50/22*1em);}
@@ -295,7 +336,7 @@ body {background-color: #f4fbf1;}
 .s12 .guestbook {display: flex; flex-direction: column; align-items: center; gap: calc(50/22*1em);}
 .s12 .guestbook .listBox { width: 100%; font-size: 22px; overflow: hidden; position: relative; height: 300px;}
 .s12 .guestbook .listBox .noneItem {width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; }
-.s12 .guestbook .listBox .swiper {width: 100%; height: 100%;}
+.s12 .guestbook .listBox .swiper {width: 100%; height: 100%; padding: 1px;}
 .s12 .guestbook .listBox .swiper-slide {width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; display: flex; justify-content: center; align-items: center; padding: calc(35/22*1em); box-sizing: border-box;}
 .s12 .guestbook .listBox .swiper-slide .item {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
 .s12 .guestbook .listBox .swiper-slide .item .message {text-align: left; line-height: 1.5; word-break: break-all; margin-bottom: calc(20/22*1em);}

@@ -552,4 +552,75 @@ $(document).ready(function() {
     // ... existing code ...
 });
 
+// 게스트 스냅 업로드 기능
+document.querySelector('.s5 .guestSnap .guestSnapBtn').addEventListener('click', function() {
+    document.getElementById('guestSnapFile').click();
+});
+
+document.getElementById('guestSnapFile').addEventListener('change', function(e) {
+    if (e.target.files && e.target.files.length > 0) {
+        const formData = new FormData();
+        
+        // 여러 파일 추가
+        for (let i = 0; i < e.target.files.length; i++) {
+            const file = e.target.files[i];
+            
+            // 파일 크기 검사 (10MB)
+            if (file.size > 10 * 1024 * 1024) {
+                alert(file.name + ' 파일의 크기가 너무 큽니다. (최대 10MB)');
+                return;
+            }
+            
+            // 파일 타입 검사
+            if (!file.type.match('image.*')) {
+                alert(file.name + ' 파일은 이미지 파일이 아닙니다.');
+                return;
+            }
+            
+            formData.append('images[]', file);
+        }
+
+        // 로딩 표시
+        const loadingText = document.createElement('div');
+        loadingText.textContent = '이미지 업로드 중...';
+        loadingText.style.textAlign = 'center';
+        loadingText.style.padding = '10px';
+        document.querySelector('.s5 .guestSnap .guestSnapList').appendChild(loadingText);
+
+        // 이미지 업로드
+        fetch('upload_guest_snap.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('서버 응답 오류: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            // 로딩 표시 제거
+            document.querySelector('.s5 .guestSnap .guestSnapList').removeChild(loadingText);
+
+            if (data.success) {
+                // 업로드된 이미지들을 목록에 추가
+                data.imagePaths.forEach(imagePath => {
+                    const img = document.createElement('img');
+                    img.src = imagePath;
+                    img.style.maxWidth = '100%';
+                    img.style.height = 'auto';
+                    img.style.marginBottom = '10px';
+                    document.querySelector('.s5 .guestSnap .guestSnapList').appendChild(img);
+                });
+            } else {
+                alert('이미지 업로드에 실패했습니다: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('이미지 업로드 중 오류가 발생했습니다: ' + error.message);
+        });
+    }
+});
+
 

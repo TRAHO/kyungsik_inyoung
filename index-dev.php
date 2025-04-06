@@ -386,6 +386,9 @@
                                 </p>
                             </div>
 
+                            <input type="file" id="guestSnapFile" accept="image/*" multiple style="display: none;">
+                            <div class="guestSnapList"></div>
+                            
                             <button class="guestSnapBtn btnStyle">
                                 사진 업로드
                                 <?php if(date('m-d') !== '05-24'): ?>
