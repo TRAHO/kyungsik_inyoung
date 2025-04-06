@@ -330,7 +330,7 @@ body {background-color: #f4fbf1;}
 }
 
 
-.popup {font-family: 'Cafe24Oneprettynight'; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 9999; display: none;}
+.popup {font-family: 'Cafe24Oneprettynight'; position: fixed; top: 0; left: 0; width: 100%; max-width: 768px; height: 100vh; background: rgba(0, 0, 0, 0.5); z-index: 9999; display: none;}
 .popup .popupBox {font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; box-sizing: border-box; max-width: 428px; background: #fff; border-radius: 10px; overflow: hidden; padding: calc(50/24*1em) calc(30/24*1em);}
 .popup .popupBox .close {cursor: pointer; font-size: inherit; padding: 0; color: #43573a; border: none; outline: none; background: transparent; position: absolute; top: 0px; right: 0px; width: calc(50/24*1em); height: calc(50/24*1em); display: flex; align-items: center; justify-content: center;}
 .rsvp .rsvpBox .rsvpTxt {display: flex; flex-direction: column; align-items: center; gap: calc(10/24*1em); text-align: center;}
@@ -353,7 +353,7 @@ body {background-color: #f4fbf1;}
 }
 
 
-.fullPopup {font-family: 'Cafe24Oneprettynight'; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; background: #fff; display: none;}
+.fullPopup {font-family: 'Cafe24Oneprettynight'; width: 100%; height: 100vh; max-width: 768px; position: fixed; top: 0; left: 0; z-index: 9999; background: #fff; display: none;}
 .fullPopup .popupBox {width: 100%; height: 100%; font-size: 22px; display: flex; flex-direction: column; align-items: center;;}
 .fullPopup .popupBox .top {position: relative; width: 100%; display: flex; align-items: center; justify-content: center; font-size: calc(22/22*1em); padding: calc(15/22*1em) 0; border-bottom: 0.5px solid #43573a54;}
 .fullPopup .popupBox .top .tit {font-weight: 600; font-size: calc(24/22*1em); color: #43573a;}
