@@ -1,0 +1,117 @@
+/* 갤러리 컨테이너 스타일 */
+.lg-outer {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lg-outer .lg-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 이미지 스타일 */
+.lg-outer .lg-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.lg-outer .lg-img-wrap {
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.lg-outer .lg-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+}
+
+/* 툴바와 컨트롤 버튼 스타일 */
+.lg-toolbar {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 1082;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.lg-actions {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* 닫기 버튼 스타일 */
+.lg-close {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* 이전/다음 버튼 스타일 */
+.lg-prev, .lg-next {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* 마우스 오버 시 버튼 스타일 */
+.lg-close:hover,
+.lg-prev:hover,
+.lg-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 컨트롤 버튼 위치 조정 */
+.lg-actions .lg-next {
+    right: 20px;
+}
+
+.lg-actions .lg-prev {
+    left: 20px;
+}
+
+/* 버튼이 항상 보이도록 설정 */
+.lg-hide-items .lg-toolbar,
+.lg-hide-items .lg-actions {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* 카운터 스타일 */
+#lg-counter {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* 다운로드 버튼 스타일 */
+.lg-download {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lg-download:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+} 

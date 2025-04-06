@@ -123,14 +123,49 @@ $('.rsvp .close').on('click', function() {
   scrollUse = true;
 });
 
+$('.rsvp .rsvpBtn').on('click', function() {
+  $('.rsvp').fadeOut();
+  $('.rsvpWritePopup').fadeIn();
+  scrollUse = true;
+});
+$('.s10 .visit .visitBtn').on('click', function() {
+  $('.rsvpWritePopup').fadeIn();
+});
+$('.rsvpWritePopup .close').on('click', function() {
+  $('.rsvpWritePopup').fadeOut();
+});
+
 
 $('.s4 .interview .interviewBtn').on('click', function() {
   $('.interviewPopup').fadeIn();
-  scrollUse = false;
 });
 $('.interviewPopup .close').on('click', function() {
   $('.interviewPopup').fadeOut();
-  scrollUse = true;
+});
+
+
+$(document).ready(function() {
+  $("#lightgallery").lightGallery({
+      // 옵션 설정
+      mode: 'lg-slide',
+      speed: 600,
+      download: false,
+      counter: true,
+
+      controls: true,    // 컨트롤 버튼 표시
+      closable: true,    // 닫기 버튼 표시
+      escKey: true,      // ESC 키로 닫기 가능
+      keyPress: true,    // 키보드 컨트롤 활성화
+      zoomFromOrigin: false,
+      actualSize : false,
+      showZoom: false,
+      zoom : false,
+      fullScreen : false,
+      share : false,
+      autoplayControls : false,
+
+      thumbnail: false
+  });
 });
 
 

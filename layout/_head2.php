@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="/plugin/XEIcon-master/xeicon.min.css">
     <link rel="stylesheet" href="/plugin/swiper11.0.4/swiper.css">
+    <link rel="stylesheet" href="/plugin/lightgallery/lightgallery.css">
+    <!-- <link rel="stylesheet" href="/css/lightgallery-custom.css"> -->
     <!-- <link rel="stylesheet" href="/plugin/fullpage/jquery.fullpage.min.css"> -->
     
     <script src="/plugin/jquery.js"></script>
@@ -22,5 +24,6 @@
     <script src="/plugin/gsap3.12.2/DrawSVGPlugin.min.js"></script>
     <script src="/plugin/gsap3.12.2/SplitText.min.js"></script>
     <script src="/plugin/gsap3.12.2/Observer.min.js"></script>
+    <script src="/plugin/lightgallery/lightgallery.js"></script>
 </head>
 <body>

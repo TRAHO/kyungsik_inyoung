@@ -402,70 +402,70 @@
                     <div class="gallery">
                         <b class="secTitle">갤러리</b>
 
-                        <div class="galleryGrid">
-                        <div class="galleryItem">
+                        <div class="galleryGrid" id="lightgallery">
+                            <a class="galleryItem" href="/asset/gallery/resize/1.jpg">
                                 <img src="/asset/gallery/thumb/1.jpg" alt="갤러리 이미지 1">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/2.jpg">
                                 <img src="/asset/gallery/thumb/2.jpg" alt="갤러리 이미지 2">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/3.jpg">
                                 <img src="/asset/gallery/thumb/3.jpg" alt="갤러리 이미지 3">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/4.jpg">
                                 <img src="/asset/gallery/thumb/4.jpg" alt="갤러리 이미지 4">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/5.jpg">
                                 <img src="/asset/gallery/thumb/5.jpg" alt="갤러리 이미지 5">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/6.jpg">
                                 <img src="/asset/gallery/thumb/6.jpg" alt="갤러리 이미지 6">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/7.jpg">
                                 <img src="/asset/gallery/thumb/7.jpg" alt="갤러리 이미지 7">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/8.jpg">
                                 <img src="/asset/gallery/thumb/8.jpg" alt="갤러리 이미지 8">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/9.jpg">
                                 <img src="/asset/gallery/thumb/9.jpg" alt="갤러리 이미지 9">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/10.jpg">
                                 <img src="/asset/gallery/thumb/10.jpg" alt="갤러리 이미지 10">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a11.jpg">
                                 <img src="/asset/gallery/thumb/a11.jpg" alt="갤러리 이미지 11">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a12.jpg">
                                 <img src="/asset/gallery/thumb/a12.jpg" alt="갤러리 이미지 12">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a13.jpg">
                                 <img src="/asset/gallery/thumb/a13.jpg" alt="갤러리 이미지 13">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a14.jpg">
                                 <img src="/asset/gallery/thumb/a14.jpg" alt="갤러리 이미지 14">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a15.jpg">
                                 <img src="/asset/gallery/thumb/a15.jpg" alt="갤러리 이미지 15">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a16.jpg">
                                 <img src="/asset/gallery/thumb/a16.jpg" alt="갤러리 이미지 16">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a17.jpg">
                                 <img src="/asset/gallery/thumb/a17.jpg" alt="갤러리 이미지 17">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a18.jpg">
                                 <img src="/asset/gallery/thumb/a18.jpg" alt="갤러리 이미지 18">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a19.jpg">
                                 <img src="/asset/gallery/thumb/a19.jpg" alt="갤러리 이미지 19">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a20.jpg">
                                 <img src="/asset/gallery/thumb/a20.jpg" alt="갤러리 이미지 20">
-                            </div>
-                            <div class="galleryItem">
+                            </a>
+                            <a class="galleryItem" href="/asset/gallery/resize/a21.jpg">
                                 <img src="/asset/gallery/thumb/a21.jpg" alt="갤러리 이미지 21">
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1048,6 +1048,94 @@
                     늘 하나님 중심으로 생각하고 바라보는 가정이 되길 소망해요. ✝️<br>
                     매일 가정예배도 꼭꼭 드리고 싶어요. 💝
                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="rsvpWritePopup fullPopup">
+    <div class="rsvpWriteBox popupBox">
+        <div class="top">
+            <b class="tit">참석 여부 전달</b>
+            <button class="close">
+                <i class="xi-close"></i>
+            </button>
+        </div>
+
+        <div class="cont">
+            <div class="item">
+                <p class="q required">
+                    어느 측 하객이신가요?
+                </p>
+                <div class="a">
+                    <div class="flx radio">
+                        <input type="radio" name="guest" id="groom" value="groom">
+                        <label for="groom">신랑</label>
+                        <input type="radio" name="guest" id="bride" value="bride">
+                        <label for="bride">신부</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p class="q required">
+                    참석 여부
+                </p>
+                <div class="a">
+                    <div class="flx radio">
+                        <input type="radio" name="attend" id="attendYes" value="yes">
+                        <label for="attendYes">참석</label>
+                        <input type="radio" name="attend" id="attendNo" value="no">
+                        <label for="attendNo">불참석</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p class="q required">
+                    식사 여부
+                </p>
+                <div class="a">
+                    <div class="flx radio">
+                        <input type="radio" name="meal" id="mealYes" value="yes">
+                        <label for="mealYes">O</label>
+                        <input type="radio" name="meal" id="mealNo" value="no">
+                        <label for="mealNo">X</label>
+                        <input type="radio" name="meal" id="mealNone" value="none">
+                        <label for="mealNone">미정</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <p class="q required">
+                    성함
+                </p>
+                <div class="a">
+                    <input type="text" name="name1" id="name1" placeholder="성함을 입력해주세요.">
+                </div>
+            </div>
+            <div class="item">
+                <p class="q required">
+                    연락처
+                </p>
+                <div class="a">
+                    <input type="text" name="phone" id="phone" placeholder="연락처를 입력해주세요.">
+                </div>
+            </div>
+            <div class="item">
+                <p class="q">
+                    동행인 성함
+                </p>
+                <div class="a">
+                    <input type="text" name="name2" id="name2" placeholder="성함을 입력해주세요.">
+                </div>
+            </div>
+            <div class="item">
+                <p class="q">
+                    전달사항
+                </p>
+                <div class="a">
+                    <textarea name="message" id="message" placeholder="전달사항을 입력해주세요."></textarea>
+                </div>
             </div>
         </div>
     </div>
