@@ -14,7 +14,7 @@
     <div id="smooth-content">
         <main class="main">
             <div class="petals-container">
-                <!-- SVG 꽃잎들이 JavaScript로 동적으로 추가됩니다 -->
+                <!-- SVG 꽃잎 추가 -->
             </div>
 
             
