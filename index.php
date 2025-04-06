@@ -9,6 +9,45 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
+<a id="kakaotalk-sharing-btn" href="javascript:;">
+  <i class="xi-share-alt"></i>
+</a>
+
+<script type="text/javascript">
+  Kakao.init('ddf0f1e6ba42d33eb4bda58fecb62f05'); // 초기화
+
+  Kakao.Share.createDefaultButton({
+    container: '#kakaotalk-sharing-btn',
+    objectType: 'location',
+    address: '경기 안산시 단원구 광덕4로 256 1,3,4,5층',
+    addressTitle: '더 베니르(안산)',
+    content: {
+      title: '신경식 ♥︎ 김인영 결혼합니다.',
+      description: '25년 5월 24일(토) 오후 1시 40분',
+      imageUrl:
+        'https://kyungsik-inyoung.love/asset/shareImg.jpg',
+      link: {
+        // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+        mobileWebUrl: 'https://kyungsik-inyoung.love',
+        webUrl: 'https://kyungsik-inyoung.love',
+      },
+    },
+    // social: {
+    //   likeCount: 286,
+    //   commentCount: 45,
+    //   sharedCount: 845,
+    // },
+    buttons: [
+      {
+        title: '청첩장 보기',
+        link: {
+          mobileWebUrl: 'https://kyungsik-inyoung.love',
+          webUrl: 'https://kyungsik-inyoung.love',
+        },
+      },
+    ],
+  });
+</script>
 
 <div id="smooth-wrapper">
     <div id="smooth-content">
@@ -269,7 +308,7 @@
                             이 모든 것 위에 사랑을 더하라<br>
                             이는 온전하게 매는 띠니라
                         </p>
-                        <p>
+                        <p class="ref">
                             -골로새서 3장 14절-
                         </p>
                     </div>
@@ -387,7 +426,7 @@
                             </div>
 
                             <input type="file" id="guestSnapFile" accept="image/*" multiple style="display: none;">
-                            <div id="lightgallery_snap" class="guestSnapList" id="lightgallery_snap">
+                            <div id="lightgallery_snap" class="guestSnapList" id="lightgallery_snap" style="display: none;">
                             <?php
                             // 이미지 디렉토리 경로 
                             $guestSnapDir = 'asset/img/snap/';
@@ -433,9 +472,9 @@
                             ?>
                             </div>
 
-                            <button class="guestSnapBtn btnStyle">
+                            <button class="guestSnapBtn btnStyle" <?php if(strtotime(date('Y-m-d')) < strtotime('2025-05-24')): ?>style="filter: brightness(0.5); pointer-events: none;"<?php endif; ?>>
                                 사진 업로드
-                                <?php if(date('m-d') !== '05-24'): ?>
+                                <?php if(strtotime(date('Y-m-d')) < strtotime('2025-05-24')): ?>
                                     <small>5월 24일 오픈</small>
                                 <?php endif; ?>
                             </button>
@@ -829,40 +868,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="infoWrap">
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>

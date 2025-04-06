@@ -25,5 +25,8 @@
     <script src="/plugin/gsap3.12.2/SplitText.min.js"></script>
     <script src="/plugin/gsap3.12.2/Observer.min.js"></script>
     <script src="/plugin/lightgallery/lightgallery.js"></script>
+
+    <!-- 카카오 api -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body>

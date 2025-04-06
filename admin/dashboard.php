@@ -332,7 +332,7 @@ function getPageUrl($page_type, $page) {
 
         .guestbook-actions {
             position: absolute;
-            top: 10px;
+            bottom: 10px;
             right: 10px;
         }
 
@@ -414,7 +414,10 @@ function getPageUrl($page_type, $page) {
         </div>
 
         <div class="rsvp-list">
-            <h2>참석자 목록</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h2>참석자 목록</h2>
+                <a href="download_rsvp.php" class="btn-action" style="text-decoration: none;">엑셀 다운로드</a>
+            </div>
             <div class="table-container">
                 <table>
                     <thead>
@@ -460,14 +463,22 @@ function getPageUrl($page_type, $page) {
             </div>
             <?php if ($total_rsvp_pages > 1): ?>
             <div class="pagination">
-                <?php if ($rsvp_page > 1): ?>
-                    <a href="<?php echo getPageUrl('rsvp', 1); ?>">처음</a>
-                    <a href="<?php echo getPageUrl('rsvp', $rsvp_page - 1); ?>">이전</a>
-                <?php endif; ?>
-                
                 <?php
-                $start_page = max(1, $rsvp_page - 2);
-                $end_page = min($total_rsvp_pages, $rsvp_page + 2);
+                if ($total_rsvp_pages <= 5) {
+                    $start_page = 1;
+                    $end_page = $total_rsvp_pages;
+                } else {
+                    if ($rsvp_page <= 3) {
+                        $start_page = 1;
+                        $end_page = 5;
+                    } elseif ($rsvp_page >= $total_rsvp_pages - 2) {
+                        $start_page = $total_rsvp_pages - 4;
+                        $end_page = $total_rsvp_pages;
+                    } else {
+                        $start_page = $rsvp_page - 2;
+                        $end_page = $rsvp_page + 2;
+                    }
+                }
                 
                 for ($i = $start_page; $i <= $end_page; $i++):
                 ?>
@@ -477,11 +488,6 @@ function getPageUrl($page_type, $page) {
                         <a href="<?php echo getPageUrl('rsvp', $i); ?>"><?php echo $i; ?></a>
                     <?php endif; ?>
                 <?php endfor; ?>
-                
-                <?php if ($rsvp_page < $total_rsvp_pages): ?>
-                    <a href="<?php echo getPageUrl('rsvp', $rsvp_page + 1); ?>">다음</a>
-                    <a href="<?php echo getPageUrl('rsvp', $total_rsvp_pages); ?>">마지막</a>
-                <?php endif; ?>
             </div>
             <?php endif; ?>
         </div>
@@ -503,14 +509,22 @@ function getPageUrl($page_type, $page) {
             
             <?php if ($total_guestbook_pages > 1): ?>
             <div class="pagination">
-                <?php if ($guestbook_page > 1): ?>
-                    <a href="<?php echo getPageUrl('guestbook', 1); ?>">처음</a>
-                    <a href="<?php echo getPageUrl('guestbook', $guestbook_page - 1); ?>">이전</a>
-                <?php endif; ?>
-                
                 <?php
-                $start_page = max(1, $guestbook_page - 2);
-                $end_page = min($total_guestbook_pages, $guestbook_page + 2);
+                if ($total_guestbook_pages <= 5) {
+                    $start_page = 1;
+                    $end_page = $total_guestbook_pages;
+                } else {
+                    if ($guestbook_page <= 3) {
+                        $start_page = 1;
+                        $end_page = 5;
+                    } elseif ($guestbook_page >= $total_guestbook_pages - 2) {
+                        $start_page = $total_guestbook_pages - 4;
+                        $end_page = $total_guestbook_pages;
+                    } else {
+                        $start_page = $guestbook_page - 2;
+                        $end_page = $guestbook_page + 2;
+                    }
+                }
                 
                 for ($i = $start_page; $i <= $end_page; $i++):
                 ?>
@@ -520,11 +534,6 @@ function getPageUrl($page_type, $page) {
                         <a href="<?php echo getPageUrl('guestbook', $i); ?>"><?php echo $i; ?></a>
                     <?php endif; ?>
                 <?php endfor; ?>
-                
-                <?php if ($guestbook_page < $total_guestbook_pages): ?>
-                    <a href="<?php echo getPageUrl('guestbook', $guestbook_page + 1); ?>">다음</a>
-                    <a href="<?php echo getPageUrl('guestbook', $total_guestbook_pages); ?>">마지막</a>
-                <?php endif; ?>
             </div>
             <?php endif; ?>
         </div>

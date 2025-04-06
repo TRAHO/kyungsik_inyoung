@@ -11,6 +11,9 @@ pointTxt2 #ff85a2
 
 */
 body {background-color: #f4fbf1;}
+
+#kakaotalk-sharing-btn {position: fixed; bottom: 20px; right: 20px; z-index: 900; background: #43573a; color: #f4fbf1; border: none; outline: none; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 22px; line-height: 1.55; white-space: nowrap;}
+
 .main {background-color: #fff; max-width: 768px; margin: 0 auto;}
 
 .petals-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000; }
@@ -18,7 +21,7 @@ body {background-color: #f4fbf1;}
 
 .secTitle {display: inline-block; border-radius: calc(10/28*1em); border-bottom: 2px solid #43573a; padding: calc(10/28*1em) calc(30/28*1em); font-size: 28px; font-weight: 600; color: #43573a; text-align: center; margin-top: calc(140/30*1em);}
 
-.btnStyle {cursor: pointer; background: #43573a; color: #f4fbf1; border: none; outline: none; line-height: 1.55; white-space: nowrap;}
+.btnStyle {cursor: pointer; box-shadow: 0 0 5px #0000006b; background: #43573a; color: #f4fbf1; border: none; outline: none; line-height: 1.55; white-space: nowrap;}
 /* font-size: 22px; margin-top: calc(30/22*1em); padding: calc(5/22*1em) calc(25/22*1em); border-radius: calc(7/22*1em);  */
 
 @media screen and (max-width: 768px) {
@@ -69,7 +72,7 @@ body {background-color: #f4fbf1;}
 }
 
 
-.s3 .profileImg {position: relative; width: 100%; margin: 0 auto; overflow: hidden; border-radius: calc(20/768*100vw);}
+.s3 .profileImg {box-shadow: 0 0 10px #0000006b; position: relative; width: 100%; margin: 0 auto; overflow: hidden; border-radius: calc(20/768*100vw);}
 .s3 .profileImg::before {content: ''; display: block; padding-top: calc(546/664*100%);}
 .s3 .profileImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .s3 .profile {display: flex; justify-content: space-between; margin-top: calc(30/24*1em); font-size: 24px; line-height: 1.4; width: 100%; margin-left: auto; margin-right: auto;}
@@ -109,10 +112,11 @@ body {background-color: #f4fbf1;}
 .s5 .guestSnap {display: flex; flex-direction: column; align-items: center;}
 .s5 .guestSnap .subTxt {text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
 .s5 .guestSnap .subTxt small {font-family: 'Pretendard'; display: inline-block; padding: 0 calc(3/22*1em); background: #fff; border-radius: 50%;}
-.s5 .guestSnap .guestSnapImg {width: 100%; margin-top: calc(50/22*1em); position: relative; border-radius: calc(20/768*100vw); overflow: hidden;}
+.s5 .guestSnap .guestSnapImg { box-shadow: 0 0 10px #0000006b; width: 100%; margin-top: calc(50/22*1em); position: relative; border-radius: calc(20/768*100vw); overflow: hidden;}
 .s5 .guestSnap .guestSnapImg::before {content: ''; display: block; padding-top: 95%;}
 .s5 .guestSnap .guestSnapImg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
-.s5 .guestSnap .guestSnapTxt {background: #f4fbf1; width: 100%; box-sizing: border-box; padding: calc(50/22*1em) calc(50/22*1em); text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
+.s5 .guestSnap .guestSnapTxt {box-shadow: 0 2px 5px #99ab91; background: #f4fbf1; width: 100%; box-sizing: border-box; padding: calc(50/22*1em) calc(50/22*1em); text-align: center; font-size: 22px; margin-top: calc(40/22*1em); line-height: 1.55; white-space: nowrap;}
+ /* 스냅킬때 위 박스 패딩, 그림자 삭제 */
 .s5 .guestSnap .guestSnapTxt .borderBtm {display: inline-block; border-bottom: 1px solid #99ab91; padding-bottom: calc(15/22*1em);}
 .s5 .guestSnap .guestSnapTxt .headTxt {font-size: calc(22/22*1em); margin-top: calc(25/22*1em);}
 .s5 .guestSnap .guestSnapTxt .missionTxt {margin-top: calc(25/22*1em);}
@@ -136,7 +140,7 @@ body {background-color: #f4fbf1;}
 .s6 .gallery {display: flex; flex-direction: column; align-items: center;}
 .s6 .gallery .secTitle {margin-bottom: calc(50/22*1em);}
 .s6 .gallery .galleryGrid {width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;}
-.s6 .gallery .galleryGrid .galleryItem {width: 100%; position: relative;}
+.s6 .gallery .galleryGrid .galleryItem {box-shadow: 0 0 3px #99ab91; width: 100%; position: relative;}
 .s6 .gallery .galleryGrid .galleryItem::before {content: ''; display: block; padding-top: 100%;}
 .s6 .gallery .galleryGrid .galleryItem img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 
@@ -144,13 +148,13 @@ body {background-color: #f4fbf1;}
 .s7 .timeLine {display: flex; flex-direction: column; align-items: center;}
 .s7 .timeLine .content {width: 100%; display: flex; flex-direction: column; align-items: center; position: relative; padding: calc(30/22*1em) 0; margin-top: calc(50/22*1em); font-size: 22px; line-height: 1.4;}
 .s7 .timeLine .content .line {width: 2px; height: 100%; position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: #ddd;}
-.s7 .timeLine .content .line .actLine {width: 100%; height: 100%; background: #43573a;}
+.s7 .timeLine .content .line .actLine {width: 100%; height: 0%; background: #43573a;}
 
 .s7 .timeLine .content .itemWrap {width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px;}
 .s7 .timeLine .content .itemWrap .item {width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; position: relative;}
 /* .s7 .timeLine .content .itemWrap .item:nth-child(2n) {text-align: right;} */
 .s7 .timeLine .content .itemWrap .item > div {width: 45%;}
-.s7 .timeLine .content .itemWrap .item .img {position: relative;}
+.s7 .timeLine .content .itemWrap .item .img {position: relative; border-radius: calc(25/22*1em); overflow: hidden; box-shadow: 0 0 10px #99ab91;}
 .s7 .timeLine .content .itemWrap .item .img::before {content: ''; display: block; padding-top: 100%;}
 .s7 .timeLine .content .itemWrap .item .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .s7 .timeLine .content .itemWrap .item .dot {width: 10px; height: 10px; background: #43573a; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
@@ -167,7 +171,7 @@ body {background-color: #f4fbf1;}
 
 .s8 .parking {display: flex; flex-direction: column; align-items: center;}
 .s8 .parking .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px;}
-.s8 .parking .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em);}
+.s8 .parking .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em); border-radius: calc(8/22*1em); overflow: hidden;}
 .s8 .parking .info .img::before {content: ''; display: block; padding-top: calc(493/768*100%);}
 .s8 .parking .info .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .s8 .parking .info .txt {text-align: center; font-size: inherit; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
@@ -187,7 +191,7 @@ body {background-color: #f4fbf1;}
 .s9 .information {display: flex; flex-direction: column; align-items: center;}
 .s9 .information .subTitle {text-align: center; font-size: 24px; margin-top: calc(50/24*1em); line-height: 1.55; white-space: nowrap;}
 .s9 .information .subTitle small {font-size: calc(22/24*1em);}
-.s9 .information .content {width: 100%;}
+.s9 .information .content {width: 100%; margin-top: calc(40/24*1em);}
 .s9 .information .calendar {width: 95%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; font-size: 28px;}
 .s9 .information .calendar .month {font-size: calc(30/28*1em); padding-bottom: calc(20/34*1em); font-weight: 600; color: #43573a;}
 .s9 .information .calendar .daysWrap {width: 100%;}
@@ -201,7 +205,7 @@ body {background-color: #f4fbf1;}
 .s9 .information .calendar .days .day.dday {background: #ff85a2; color: #f4fbf1;}
 .s9 .information .calendar .days + .days {margin-top: calc(13/28*1em);}
 .s9 .information .info {width: 100%; display: flex; flex-direction: column; align-items: center; font-size: 22px;}
-.s9 .information .info .img {position: relative; width: 100%; margin-top: calc(50/22*1em);}
+.s9 .information .info .img {box-shadow: 0 0 5px #00000085; position: relative; width: 100%; margin-top: calc(50/22*1em);}
 .s9 .information .info .img::before {content: ''; display: block; padding-top: 100%;}
 .s9 .information .info .img img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 .s9 .information .info .txt {text-align: center; font-size: inherit; margin-top: calc(50/22*1em); line-height: 1.55; white-space: nowrap;}
@@ -298,9 +302,9 @@ body {background-color: #f4fbf1;}
 
 
 .s12 .guestbook {display: flex; flex-direction: column; align-items: center; gap: calc(50/22*1em);}
-.s12 .guestbook .listBox { padding: 2px; box-sizing: border-box; width: 100%; font-size: 22px; overflow: hidden; position: relative; height: 300px;}
-.s12 .guestbook .listBox .noneItem {width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; line-height: 1.4;}
-.s12 .guestbook .listBox .swiper {width: 100%; height: 100%;}
+.s12 .guestbook .listBox { padding: 4px; box-sizing: border-box; width: 100%; font-size: 22px; overflow: hidden; position: relative; height: 300px;}
+.s12 .guestbook .listBox .noneItem {box-shadow: 0 0 5px #00000085; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; line-height: 1.4;}
+.s12 .guestbook .listBox .swiper {width: 100%; height: 100%; overflow: visible;}
 .s12 .guestbook .listBox .swiper-slide {width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; display: flex; justify-content: center; align-items: center; padding: calc(35/22*1em); box-sizing: border-box;}
 .s12 .guestbook .listBox .swiper-slide .item {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
 .s12 .guestbook .listBox .swiper-slide .item .message {text-align: left; line-height: 1.5; word-break: break-all; margin-bottom: calc(20/22*1em);}

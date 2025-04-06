@@ -580,7 +580,7 @@ $('#guestMessage').on('input', function() {
 // 함께한 시간 계산 및 표시
 function updateTogetherTime() {
     // 시작일 설정 (예: 2025-05-24)
-    const startDate = new Date('2025-05-24');
+    const startDate = new Date('2024-01-11');
     const now = new Date();
     
     // 시간 차이 계산 (밀리초)
@@ -674,5 +674,364 @@ document.getElementById('guestSnapFile').addEventListener('change', function(e) 
         });
     }
 });
+
+
+
+
+
+// 모션
+let textSplit_s2_1 = new SplitText('.s2 .welcome p.bold', {type: 'words'});
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.s2 .welcome',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+.from(textSplit_s2_1.words, {
+  opacity: 0,
+  y: -40,
+  duration: 1,
+  ease: 'sine.inOut',
+  stagger: 0.15
+})
+.from('.s2 .welcome p.ref', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+})
+
+gsap.from('.s2 .inviteTxt > *', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+  stagger: 0.15,
+
+  scrollTrigger: {
+    trigger: '.s2 .inviteTxt > *',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+
+gsap.from('.s3 .profileImg', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+  scrollTrigger: {
+    trigger: '.s3 .profileImg',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s3 .profile', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+
+  scrollTrigger: {
+    trigger: '.s3 .profile',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+
+gsap.utils.toArray('.secTitle').forEach(title => {
+  gsap.from(title, {
+    opacity: 0,
+    y: 30,
+    duration: .8,
+    ease: 'sine.inOut',
+    scrollTrigger: {
+      trigger: title,
+      start: 'top 70%',
+      end: 'bottom 70%',
+    }
+  })
+})
+
+
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.s4 .interview',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+.from('.s4 .interview .txt', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+})
+.from('.s4 .interview .interviewBtn', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+})
+
+
+gsap.from('.s5 .guestSnap .subTxt', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+
+  scrollTrigger: {
+    trigger: '.s5 .guestSnap .subTxt',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s5 .guestSnap .guestSnapImg', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s5 .guestSnap .guestSnapImg',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s5 .guestSnap .guestSnapTxt', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s5 .guestSnap .guestSnapTxt',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+
+gsap.utils.toArray('.s6 .galleryGrid .galleryItem').forEach(item => {
+  gsap.from(item, {
+    opacity: 0,
+    y: 30,
+    duration: .8,
+    ease: 'sine.inOut',
+
+    scrollTrigger: {
+      trigger: item,
+      start: 'top 90%',
+      end: 'bottom 90%',
+    }
+  })
+})
+
+
+gsap.to('.s7 .timeLine .content .line .actLine', {
+  height: '100%',
+  duration: .8,
+  ease: 'none',
+
+  scrollTrigger: {
+    trigger: '.s7 .timeLine .content .line',
+    start: 'top 50%',
+    end: 'bottom 50%',
+    scrub: 1,
+  }
+})
+
+gsap.utils.toArray('.s7 .timeLine .content .itemWrap .item').forEach(item => {
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: item,
+      start: 'top+=50% 50%',
+      end: 'bottom-=50% 50%',
+      toggleActions: 'play none none reverse',
+    }
+  })
+  .from(item.querySelector('.img'), {
+    opacity: 0,
+    duration: .8,
+    ease: 'sine.inOut',
+  })
+  .from(item.querySelector('.txt'), {
+    opacity: 0,
+    y: 30,
+    duration: .8,
+    ease: 'sine.inOut',
+  }, '-=80%')
+})
+
+
+gsap.from('.s8 .parking .info .img', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s8 .parking .info .img',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s8 .parking .info .txt', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s8 .parking .info .txt',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})  
+gsap.from('.s8 .parking .info .subInfo', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+
+  scrollTrigger: {
+    trigger: '.s8 .parking .info .subInfo',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+
+gsap.from('.s9 .information .info .img', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s9 .information .info .img',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s9 .information .info .content .calendar', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+
+  scrollTrigger: {
+    trigger: '.s9 .information .info .content .calendar',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+gsap.from('.s9 .information .info .ddayCounter .counter .countBox > *', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+  stagger: 0.15,
+
+  scrollTrigger: {
+    trigger: '.s9 .information .info .ddayCounter .counter .countBox',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+
+gsap.from('.s9 .information .info .location .txt', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s9 .information .info .location .txt',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s9 .information .info .location .map', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+  
+  scrollTrigger: {
+    trigger: '.s9 .information .info .location .map',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+gsap.from('.s9 .information .info .location .locationInfo .item', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+  stagger: 0.15,
+  
+  scrollTrigger: {
+    trigger: '.s9 .information .info .location .locationInfo .item',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.s10 .visit .txt',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+.from('.s10 .visit .txt', {
+  opacity: 0,
+  y: 30,
+  duration: .8,
+  ease: 'sine.inOut',
+})
+.from('.s10 .visit .visitBtn', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+})
+
+
+gsap.utils.toArray('.s11 .gift .info .item').forEach(item => {
+  gsap.from(item, {
+    opacity: 0,
+    y: 30,
+    duration: .8,
+    ease: 'sine.inOut',
+  })
+})
+
+
+gsap.from('.s13 .together', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+
+  scrollTrigger: {
+    trigger: '.s13 .together',
+    start: 'top 70%',
+    end: 'bottom 70%',
+  }
+})
+
+gsap.from('.s13 .img', {
+  opacity: 0,
+  duration: .8,
+  ease: 'sine.inOut',
+
+  scrollTrigger: {
+    trigger: '.s13 .img',
+    start: 'top 100%',
+    end: 'bottom 100%',
+    scrub: 1,
+  }
+})
 
 

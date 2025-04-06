@@ -269,7 +269,7 @@
                             이 모든 것 위에 사랑을 더하라<br>
                             이는 온전하게 매는 띠니라
                         </p>
-                        <p>
+                        <p class="ref">
                             -골로새서 3장 14절-
                         </p>
                     </div>
@@ -829,40 +829,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="infoWrap">
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                    <div class="item">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-child">👶</i>
-                                        </div>
-                                        <p>
-                                            5-7세 아이와 동반 참석 가능합니다.
-                                        </p>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>
