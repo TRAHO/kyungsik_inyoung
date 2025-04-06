@@ -767,7 +767,7 @@
                                             </div>
                                             <p>
                                                 중앙역2번출구 정류장 하차 [18361]
-                                                <small>일반버스 3, 7, 9, 10, 60A, 60B, 62, 70A, 71, 71-1, 76, 77, 80B, 80C, 123, 123-1</small>
+                                                <small>-일반버스-<br> 3, 7, 9, 10, 60A, 60B, 62, 70A, 71, 71-1, 76, 77, 80B, 80C, 123, 123-1</small>
                                             </p>
                                         </div>
                                         <div class="item">
@@ -921,8 +921,8 @@
                     </div>
 
                     <div class="btnWrap">
-                        <button class="guestbookBtn btnStyle">전체보기</button>
-                        <button class="guestbookBtn btnStyle">작성</button>
+                        <button type="button" class="guestbookBtn guestbookBtn_all btnStyle">전체보기</button>
+                        <button type="button" class="guestbookBtn guestbookBtn_write btnStyle">작성</button>
                     </div>
                 </div>
             </section>
@@ -950,7 +950,7 @@
 <!-- rsvp direct -->
 <div class="rsvp popup">
     <div class="rsvpBox popupBox">
-        <button class="close">
+        <button type="button" class="close">
             <i class="xi-close"></i>
         </button>
 
@@ -992,7 +992,7 @@
     <div class="interviewBox popupBox">
         <div class="top">
             <b class="tit">신랑 신부 인터뷰</b>
-            <button class="close">
+            <button type="button" class="close">
                 <i class="xi-close"></i>
             </button>
         </div>
@@ -1056,87 +1056,159 @@
 </div>
 
 
-<div class="rsvpWritePopup fullPopup">
+<div class="rsvpWritePopup writePopup fullPopup">
     <div class="rsvpWriteBox popupBox">
         <div class="top">
             <b class="tit">참석 여부 전달</b>
-            <button class="close">
+            <button type="button" class="close">
                 <i class="xi-close"></i>
             </button>
         </div>
 
         <div class="cont">
-            <div class="item">
-                <p class="q required">
-                    어느 측 하객이신가요?
-                </p>
-                <div class="a">
-                    <div class="flx radio">
-                        <input type="radio" name="guest" id="groom" value="groom">
-                        <label for="groom">신랑</label>
-                        <input type="radio" name="guest" id="bride" value="bride">
-                        <label for="bride">신부</label>
+            <form id="rsvpForm">
+                <div class="item">
+                    <p class="q required">
+                        어느 측 하객이신가요?
+                    </p>
+                    <div class="a">
+                        <div class="flx radio">
+                            <input type="radio" name="guest" id="groom" value="groom">
+                            <label for="groom">신랑</label>
+                            <input type="radio" name="guest" id="bride" value="bride">
+                            <label for="bride">신부</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <p class="q required">
-                    참석 여부
-                </p>
-                <div class="a">
-                    <div class="flx radio">
-                        <input type="radio" name="attend" id="attendYes" value="yes">
-                        <label for="attendYes">참석</label>
-                        <input type="radio" name="attend" id="attendNo" value="no">
-                        <label for="attendNo">불참석</label>
+                <div class="item">
+                    <p class="q required">
+                        참석 여부
+                    </p>
+                    <div class="a">
+                        <div class="flx radio">
+                            <input type="radio" name="attend" id="attendYes" value="yes">
+                            <label for="attendYes">참석</label>
+                            <input type="radio" name="attend" id="attendNo" value="no">
+                            <label for="attendNo">불참석</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <p class="q required">
-                    식사 여부
-                </p>
-                <div class="a">
-                    <div class="flx radio">
-                        <input type="radio" name="meal" id="mealYes" value="yes">
-                        <label for="mealYes">O</label>
-                        <input type="radio" name="meal" id="mealNo" value="no">
-                        <label for="mealNo">X</label>
-                        <input type="radio" name="meal" id="mealNone" value="none">
-                        <label for="mealNone">미정</label>
+                <div class="item">
+                    <p class="q required">
+                        식사 여부
+                    </p>
+                    <div class="a">
+                        <div class="flx radio">
+                            <input type="radio" name="meal" id="mealYes" value="yes">
+                            <label for="mealYes">O</label>
+                            <input type="radio" name="meal" id="mealNo" value="no">
+                            <label for="mealNo">X</label>
+                            <input type="radio" name="meal" id="mealNone" value="none">
+                            <label for="mealNone">미정</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <p class="q required">
-                    성함
-                </p>
-                <div class="a">
-                    <input type="text" name="name1" id="name1" placeholder="성함을 입력해주세요.">
+                <div class="item">
+                    <p class="q required">
+                        성함
+                    </p>
+                    <div class="a">
+                        <input type="text" name="name1" id="name1" placeholder="성함을 입력해주세요.">
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <p class="q required">
-                    연락처
-                </p>
-                <div class="a">
-                    <input type="text" name="phone" id="phone" placeholder="연락처를 입력해주세요.">
+                <div class="item">
+                    <p class="q required">
+                        연락처
+                    </p>
+                    <div class="a">
+                        <input type="text" name="phone" id="phone" placeholder="연락처를 입력해주세요.">
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <p class="q">
-                    동행인 성함
-                </p>
-                <div class="a">
-                    <input type="text" name="name2" id="name2" placeholder="성함을 입력해주세요.">
+                <div class="item">
+                    <p class="q">
+                        동행인 성함
+                    </p>
+                    <div class="a">
+                        <input type="text" name="name2" id="name2" placeholder="성함을 입력해주세요.">
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <p class="q">
-                    전달사항
-                </p>
-                <div class="a">
-                    <textarea name="message" id="message" placeholder="전달사항을 입력해주세요."></textarea>
+                <div class="item">
+                    <p class="q">
+                        전달사항
+                    </p>
+                    <div class="a">
+                        <textarea name="message" id="message" placeholder="전달사항을 입력해주세요."></textarea>
+                    </div>
+                </div>
+
+                <div class="btnWrap">
+                    <button type="submit" class="rsvpBtn_submit btnStyle">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="guestbookPopup writePopup fullPopup">
+    <div class="guestbookBox popupBox">
+        <div class="top">
+            <b class="tit">방명록 작성</b>
+            <button type="button" class="close">
+                <i class="xi-close"></i>
+            </button>
+        </div>
+
+        <div class="cont">
+            <form id="guestbookForm">
+                <div class="item">
+                    <p class="q required">
+                        성함
+                    </p>
+                    <div class="a">
+                        <input type="text" name="guestName" id="guestName" placeholder="성함을 입력해주세요.">
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="q required">
+                        메시지
+                    </p>
+                    <div class="a">
+                        <textarea name="guestMessage" id="guestMessage" placeholder="메시지를 입력해주세요." maxlength="150"></textarea>
+                        <p class="char-count">
+                            <span class="current">0</span> / 150
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="q required">
+                        비밀번호
+                    </p>
+                    <div class="a">
+                        <input type="password" name="guestPassword" id="guestPassword" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                </div>
+                <div class="btnWrap">
+                    <button type="submit" class="guestbookBtn_submit btnStyle">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="guestbookListPopup fullPopup">
+    <div class="guestbookListBox popupBox">
+        <div class="top">
+            <b class="tit">방명록</b>
+            <button type="button" class="close">
+                <i class="xi-close"></i>
+            </button>
+        </div>
+
+        <div class="cont">
+            <div class="list">
+                <div class="item">
+                    
                 </div>
             </div>
         </div>

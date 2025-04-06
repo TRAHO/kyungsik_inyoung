@@ -63,9 +63,9 @@ body {background-color: #f4fbf1;}
 .s2 .inviteTxt p {margin-top: calc(30/22*1em);}
 
 @media screen and (max-width: 428px) {
-    .s2 .welcome {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s2 .inviteTxt {font-size: clamp(14px, 18/428*100vw, 18px);}
-    .s2 .inviteTxt b {font-size: clamp(18px, 22/428*100vw, 22px);}
+    .s2 .welcome {font-size: clamp(14px, 16/428*100vw, 16px);}
+    .s2 .inviteTxt {font-size: clamp(14px, 16/428*100vw, 16px);}
+    .s2 .inviteTxt b {font-size: clamp(18px, 18/428*100vw, 18px);}
 }
 
 
@@ -247,7 +247,7 @@ body {background-color: #f4fbf1;}
     .s9 .information .info {font-size: clamp(14px, 18/428*100vw, 18px);}
     .s9 .information .info .ddayCounter .counter .countBox {font-size: clamp(18px, 24/428*100vw, 24px);}
     .s9 .information .info .location {font-size: clamp(16px, 20/428*100vw, 20px);}
-    .s9 .information .info .location .locationInfo {font-size: clamp(18px, 22/428*100vw, 22px);}
+    .s9 .information .info .location .locationInfo {font-size: clamp(18px, 20/428*100vw, 20px);}
     .s9 .information .info .location .locationInfo .item p {font-size: clamp(16px, 18/22*1em, 18px);}
     .s9 .information .info .location .locationInfo .item p small {font-size: clamp(14px, 16/18*1em, 16px);}
 }
@@ -293,10 +293,16 @@ body {background-color: #f4fbf1;}
 
 
 .s12 .guestbook {display: flex; flex-direction: column; align-items: center; gap: calc(50/22*1em);}
-.s12 .guestbook .listBox {font-size: 22px; width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden;}
-.s12 .guestbook .listBox .noneItem {padding: calc(175/22*1em) 0; text-align: center; font-weight: 600; color: #43573a; line-height: 1.55; white-space: nowrap;}
-.s12 .guestbook .listBox .list {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(20/22*1em);}
-.s12 .guestbook .listBox .list .item {width: 100%; display: flex; flex-direction: column; align-items: center; gap: calc(20/22*1em);}
+.s12 .guestbook .listBox { width: 100%; font-size: 22px; overflow: hidden; position: relative; height: 300px;}
+.s12 .guestbook .listBox .noneItem {width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; }
+.s12 .guestbook .listBox .swiper {width: 100%; height: 100%;}
+.s12 .guestbook .listBox .swiper-slide {width: 100%; border-radius: calc(15/22*1em); border: 1px solid #43573a; overflow: hidden; display: flex; justify-content: center; align-items: center; padding: calc(35/22*1em); box-sizing: border-box;}
+.s12 .guestbook .listBox .swiper-slide .item {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+.s12 .guestbook .listBox .swiper-slide .item .message {text-align: left; line-height: 1.5; word-break: break-all; margin-bottom: calc(20/22*1em);}
+.s12 .guestbook .listBox .swiper-slide .item .writer {align-self: flex-end;}
+.s12 .guestbook .listBox .swiper-slide .item .name {width: 100%; display: block; text-align: right; font-weight: 600; color: #43573a; margin-bottom: calc(10/22*1em);}
+.s12 .guestbook .listBox .swiper-slide .item .date {width: 100%; display: block; text-align: right; font-size: 0.9em; color: #666;}
+
 .s12 .btnWrap {font-size: 22px; margin-top: calc(10/22*1em); margin-bottom: calc(140/22*1em); width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(10/22*1em);}
 .s12 .btnWrap .guestbookBtn {font-size: inherit; padding: calc(10/22*1em) 0; width: calc(100% / 2); border-radius: calc(5/22*1em);}
 
@@ -366,18 +372,47 @@ body {background-color: #f4fbf1;}
 }
 
 
-.rsvpWritePopup .popupBox .cont {padding: calc(30/22*1em) calc(30/22*1em); box-sizing: border-box;}
-.rsvpWritePopup .popupBox .cont .item {display: flex; flex-direction: column; align-items: flex-start;}
-.rsvpWritePopup .popupBox .cont .item + .item {margin-top: calc(30/22*1em);}
-.rsvpWritePopup .popupBox .cont .item .q {font-size: calc(22/22*1em); padding-bottom: calc(15/22*1em); font-weight: 500; color: #43573a; position: relative;}
-.rsvpWritePopup .popupBox .cont .item .q.required::after {content: '*'; color: #ff0000; font-size: calc(22/22*1em);}
-.rsvpWritePopup .popupBox .cont .item .a {font-size: calc(20/22*1em); width: 100%;}
-.rsvpWritePopup .popupBox .cont .item .a .radio {display: flex; align-items: center; gap: calc(15/20*1em);}
-.rsvpWritePopup .popupBox .cont .item .a .radio input {display: none;}
-.rsvpWritePopup .popupBox .cont .item .a .radio label {cursor: pointer; transition: .2s; background: #f0f5ee; flex: 1; text-align: center; padding: calc(15/20*1em) 0; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1);}
-.rsvpWritePopup .popupBox .cont .item .a .radio input:checked + label {background: #43573a; color: #fff; font-weight: 500;}
-.rsvpWritePopup .popupBox .cont .item .a input[type="text"] {box-sizing: border-box; width: 100%; font-size: calc(20/22*1em); padding: calc(15/20*1em); background: #f0f5ee; border: none; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1); transition: .2s;}
-.rsvpWritePopup .popupBox .cont .item .a input[type="text"]:focus { background: #43573a; color: #fff; font-weight: 500;}
-.rsvpWritePopup .popupBox .cont .item .a textarea {box-sizing: border-box; width: 100%; font-size: calc(20/22*1em); padding: calc(15/20*1em); background: #f0f5ee; border: none; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1); resize: none; transition: .2s; min-height: calc(150/22*1em);}
-.rsvpWritePopup .popupBox .cont .item .a textarea:focus {background: #43573a; color: #fff; font-weight: 500;}
+.writePopup .popupBox .cont {padding: calc(30/22*1em) calc(30/22*1em); box-sizing: border-box;}
+.writePopup .popupBox .cont .item {display: flex; flex-direction: column; align-items: flex-start;}
+.writePopup .popupBox .cont .item + .item {margin-top: calc(30/22*1em);}
+.writePopup .popupBox .cont .item .q {font-size: calc(22/22*1em); padding-bottom: calc(15/22*1em); font-weight: 500; color: #43573a; position: relative;}
+.writePopup .popupBox .cont .item .q.required::after {content: '*'; color: #ff0000; font-size: calc(22/22*1em);}
+.writePopup .popupBox .cont .item .a {font-size: calc(20/22*1em); width: 100%;}
+.writePopup .popupBox .cont .item .a .radio {display: flex; align-items: center; gap: calc(15/20*1em);}
+.writePopup .popupBox .cont .item .a .radio input {display: none;}
+.writePopup .popupBox .cont .item .a .radio label {cursor: pointer; transition: .2s; background: #f0f5ee; flex: 1; text-align: center; padding: calc(15/20*1em) 0; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1);}
+.writePopup .popupBox .cont .item .a .radio input:checked + label {background: #43573a; color: #fff; font-weight: 500;}
+.writePopup .popupBox .cont .item .a input[type="text"] {box-sizing: border-box; width: 100%; font-size: calc(20/22*1em); padding: calc(15/20*1em); background: #f0f5ee; border: none; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1); transition: .2s;}
+.writePopup .popupBox .cont .item .a input[type="text"]:focus { background: #43573a; color: #fff; font-weight: 500;}
+.writePopup .popupBox .cont .item .a input[type="password"] {font-family: 'Pretendard'; box-sizing: border-box; width: 100%; font-size: calc(20/22*1em); padding: calc(15/20*1em); background: #f0f5ee; border: none; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1); transition: .2s;}
+.writePopup .popupBox .cont .item .a input[type="password"]:focus { background: #43573a; color: #fff; font-weight: 500;}
+.writePopup .popupBox .cont .item .a input[type="password"]:focus::placeholder {color: #fff;}
+.writePopup .popupBox .cont .item .a textarea {box-sizing: border-box; width: 100%; font-size: calc(20/22*1em); padding: calc(15/20*1em); background: #f0f5ee; border: none; border-radius: calc(5/22*1em); box-shadow: 0 2px 5px rgba(67, 87, 58, 0.1); resize: none; transition: .2s; min-height: calc(150/22*1em);}
+.writePopup .popupBox .cont .item .a textarea:focus {background: #43573a; color: #fff; font-weight: 500;}
+.writePopup .popupBox .cont .btnWrap {width: 100%; display: flex; justify-content: space-between; align-items: center; gap: calc(10/22*1em); margin-top: calc(30/22*1em);}
+.writePopup .popupBox .cont .btnWrap button {font-size: inherit; padding: calc(10/22*1em) 0; width: 100%; border-radius: calc(5/22*1em);}
 
+.guestbookPopup {z-index: 1;}
+.guestbookPopup .popupBox .cont .item .a .char-count {font-size: calc(18/22*1em); color: #666; margin-top: calc(10/18*1em);}
+.guestbookPopup .popupBox .cont .item .a .char-count .current {font-weight: 400; color: #43573a;}
+
+.guestbookListPopup .cont {padding: 20px;}
+.guestbookListPopup .cont .list {display: flex; flex-direction: column; gap: 20px; max-height: 100%; overflow-y: auto;}
+.guestbookListPopup .cont .list::-webkit-scrollbar {display: none;}
+.guestbookListPopup .cont .list .item {box-sizing: border-box; width: 100%; padding: 20px; border: 1px solid #43573a; border-radius: 10px;}
+.guestbookListPopup .cont .list .item .name {font-weight: 600; color: #43573a; margin-bottom: 10px;}
+.guestbookListPopup .cont .list .item .message {line-height: 1.5; margin-bottom: 10px; word-break: break-all;}
+.guestbookListPopup .cont .list .item .date {font-size: 0.9em; color: #666;}
+.guestbookListPopup .cont .list .item .actions {display: flex; gap: 10px; margin-top: 10px;}
+.guestbookListPopup .cont .list .item .actions button {padding: 5px 15px; border-radius: 5px; background: #43573a; color: #fff; border: none; cursor: pointer;}
+.guestbookListPopup .cont .list .item .actions button:hover {background: #58a23f;}
+.guestbookListPopup .cont .noneItem {text-align: center; padding: 50px 0; color: #666;}
+
+@media screen and (max-width: 428px) {
+    .guestbookListPopup .cont {padding: 15px;}
+    .guestbookListPopup .cont .list .item {padding: 15px;}
+    .guestbookListPopup .cont .list .item .name {font-size: 16px;}
+    .guestbookListPopup .cont .list .item .message {font-size: 14px;}
+    .guestbookListPopup .cont .list .item .date {font-size: 12px;}
+    .guestbookListPopup .cont .list .item .actions button {font-size: 14px; padding: 4px 12px;}
+}
