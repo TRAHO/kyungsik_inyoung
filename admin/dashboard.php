@@ -116,6 +116,26 @@ function getPageUrl($page_type, $page) {
             text-align: center;
         }
 
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .nav-links a {
+            color: #58a23f;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #f0f5ee;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #e0ebd9;
+        }
+
         .stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -388,6 +408,10 @@ function getPageUrl($page_type, $page) {
     <div class="container">
         <div class="header">
             <h1>관리자 대시보드</h1>
+            <div class="nav-links">
+                <a href="dashboard.php">대시보드</a>
+                <a href="guest_snaps.php">게스트스냅 관리</a>
+            </div>
         </div>
 
         <div class="stats">

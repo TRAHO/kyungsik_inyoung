@@ -8,6 +8,9 @@ ini_set('error_log', 'php_errors.log'); // 오류 로그 파일 지정
 // JSON 응답 헤더 설정
 header('Content-Type: application/json; charset=utf-8');
 
+// 데이터베이스 연결
+require_once 'config/database.php';
+
 // 업로드 디렉토리 설정
 $uploadDir = 'asset/img/snap/';
 if (!file_exists($uploadDir)) {
@@ -31,6 +34,14 @@ if (!extension_loaded('gd')) {
     echo json_encode(['success' => false, 'message' => '서버에 GD 라이브러리가 설치되어 있지 않습니다.']);
     exit;
 }
+
+// 게스트 이름 확인
+if (!isset($_POST['guest_name']) || empty($_POST['guest_name'])) {
+    echo json_encode(['success' => false, 'message' => '게스트 이름이 필요합니다.']);
+    exit;
+}
+
+$guest_name = $_POST['guest_name'];
 
 // 파일 업로드 처리
 if (isset($_FILES['images'])) {
@@ -135,6 +146,14 @@ if (isset($_FILES['images'])) {
                 }
 
                 imagedestroy($sourceImage);
+                
+                // 데이터베이스에 이미지 정보 저장
+                $stmt = $conn->prepare("INSERT INTO guest_snaps (guest_name, image_path) VALUES (:guest_name, :image_path)");
+                $stmt->execute([
+                    ':guest_name' => $guest_name,
+                    ':image_path' => $targetPath
+                ]);
+                
                 $uploadedFiles[] = $targetPath;
             } catch (Exception $e) {
                 error_log("이미지 처리 오류: " . $e->getMessage());
@@ -159,9 +178,14 @@ if (isset($_FILES['images'])) {
             'message' => implode(', ', $errors)
         ]);
     } else {
+        // 업로드 성공 후 최신 이미지 목록 가져오기
+        $stmt = $conn->query("SELECT * FROM guest_snaps ORDER BY created_at DESC");
+        $images = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
         echo json_encode([
             'success' => true,
-            'imagePaths' => $uploadedFiles
+            'message' => '이미지가 성공적으로 업로드되었습니다.',
+            'images' => $images
         ]);
     }
 } else {

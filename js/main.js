@@ -305,8 +305,12 @@ $(document).on('click', '.edit-btn', function() {
                 alert(response.message);
             }
         },
-        error: function() {
-            alert('서버 오류가 발생했습니다.');
+        error: function(xhr) {
+            if (xhr.responseJSON && xhr.responseJSON.message) {
+                alert(xhr.responseJSON.message);
+            } else {
+                alert('비밀번호가 일치하지 않습니다.');
+            }
         }
     });
 });
@@ -332,7 +336,12 @@ $('#guestbookForm').on('submit', function(e) {
     if (mode === 'edit') {
         // 수정 모드일 경우
         formData.id = id;
-        formData.password = password;
+        formData.old_password = password;
+        formData.password = $('#guestPassword').val();
+        if (!formData.password) {
+            alert('비밀번호를 입력해주세요.');
+            return;
+        }
         $.ajax({
             url: 'update_guestbook.php',
             type: 'POST',
@@ -347,8 +356,12 @@ $('#guestbookForm').on('submit', function(e) {
                     alert(response.message);
                 }
             },
-            error: function() {
-                alert('서버 오류가 발생했습니다.');
+            error: function(xhr) {
+                if (xhr.responseJSON && xhr.responseJSON.message) {
+                    alert(xhr.responseJSON.message);
+                } else {
+                    alert('서버 오류가 발생했습니다.');
+                }
             }
         });
     } else {
@@ -492,9 +505,12 @@ $(document).on('click', '.delete-btn', function() {
                 alert(response.message);
             }
         },
-        error: function(xhr, status, error) {
-            console.error('Error:', error);
-            alert('서버 오류가 발생했습니다. 다시 시도해주세요.');
+        error: function(xhr) {
+            if (xhr.responseJSON && xhr.responseJSON.message) {
+                alert(xhr.responseJSON.message);
+            } else {
+                alert('비밀번호가 일치하지 않습니다.');
+            }
         }
     });
 });
@@ -610,26 +626,23 @@ document.querySelector('.s5 .guestSnap .guestSnapBtn').addEventListener('click',
 });
 
 document.getElementById('guestSnapFile').addEventListener('change', function(e) {
-    if (e.target.files && e.target.files.length > 0) {
+    const files = e.target.files;
+    if (files.length > 0) {
         const formData = new FormData();
         
-        // 여러 파일 추가
-        for (let i = 0; i < e.target.files.length; i++) {
-            const file = e.target.files[i];
-            
-            // 파일 크기 검사 (10MB)
-            if (file.size > 10 * 1024 * 1024) {
-                alert(file.name + ' 파일의 크기가 너무 큽니다. (최대 10MB)');
-                return;
-            }
-            
-            // 파일 타입 검사
-            if (!file.type.match('image.*')) {
-                alert(file.name + ' 파일은 이미지 파일이 아닙니다.');
-                return;
-            }
-            
-            formData.append('images[]', file);
+        // 게스트 이름 입력 받기
+        const guestName = prompt('이름을 입력해주세요:');
+        if (!guestName) {
+            alert('이름을 입력해주세요.');
+            return;
+        }
+        
+        // 게스트 이름 추가
+        formData.append('guest_name', guestName);
+        
+        // 파일 추가
+        for (let i = 0; i < files.length; i++) {
+            formData.append('images[]', files[i]);
         }
 
         // 로딩 표시
@@ -655,15 +668,12 @@ document.getElementById('guestSnapFile').addEventListener('change', function(e) 
             document.querySelector('.s5 .guestSnap .guestSnapList').removeChild(loadingText);
 
             if (data.success) {
-                // 업로드된 이미지들을 목록에 추가
-                data.imagePaths.forEach(imagePath => {
-                    const img = document.createElement('img');
-                    img.src = imagePath;
-                    img.style.maxWidth = '100%';
-                    img.style.height = 'auto';
-                    img.style.marginBottom = '10px';
-                    document.querySelector('.s5 .guestSnap .guestSnapList').appendChild(img);
-                });
+                alert('이미지가 성공적으로 업로드되었습니다.');
+                // 업로드 후 입력 필드 초기화
+                document.getElementById('guestSnapFile').value = '';
+                
+                // 갤러리 새로고침
+                location.reload();
             } else {
                 alert('이미지 업로드에 실패했습니다: ' + data.message);
             }
@@ -674,10 +684,6 @@ document.getElementById('guestSnapFile').addEventListener('change', function(e) 
         });
     }
 });
-
-
-
-
 
 // 모션
 let textSplit_s2_1 = new SplitText('.s2 .welcome p.bold', {type: 'words'});
@@ -1033,5 +1039,3 @@ gsap.from('.s13 .img', {
     scrub: 1,
   }
 })
-
-

@@ -12,14 +12,16 @@ try {
     $stmt->execute([':id' => $data['id']]);
     $stored_password = $stmt->fetchColumn();
     
-    if (!password_verify($data['password'], $stored_password)) {
+    if (!password_verify($data['old_password'], $stored_password)) {
         throw new Exception('비밀번호가 일치하지 않습니다.');
     }
     
     // 방명록 수정
-    $stmt = $conn->prepare("UPDATE guestbook SET message = :message WHERE id = :id");
+    $stmt = $conn->prepare("UPDATE guestbook SET name = :name, message = :message, password = :password WHERE id = :id");
     $stmt->execute([
+        ':name' => $data['name'],
         ':message' => $data['message'],
+        ':password' => password_hash($data['password'], PASSWORD_DEFAULT),
         ':id' => $data['id']
     ]);
     

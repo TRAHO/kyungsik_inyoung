@@ -258,7 +258,7 @@ body {background-color: #f4fbf1;}
     .s9 .information .info .location {font-size: clamp(16px, 20/500*100vw, 20px);}
     .s9 .information .info .location .locationInfo {font-size: clamp(18px, 20/500*100vw, 20px);}
     .s9 .information .info .location .locationInfo .item p {font-size: clamp(16px, 18/22*1em, 18px);}
-    .s9 .information .info .location .locationInfo .item p small {font-size: clamp(14px, 16/18*1em, 16px);}
+    .s9 .information .info .location .locationInfo .item p small {font-size: clamp(13px, 15/18*1em, 15px);}
 }
 
 

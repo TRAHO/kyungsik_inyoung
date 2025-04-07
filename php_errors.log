@@ -1,9 +1,0 @@
-[06-Apr-2025 13:37:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromstring() in C:\project\kyungsik_inyoung\upload_guest_snap.php:62
-Stack trace:
-#0 {main}
-  thrown in C:\project\kyungsik_inyoung\upload_guest_snap.php on line 62
-[06-Apr-2025 13:38:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromstring() in C:\project\kyungsik_inyoung\upload_guest_snap.php:70
-Stack trace:
-#0 {main}
-  thrown in C:\project\kyungsik_inyoung\upload_guest_snap.php on line 70
-[06-Apr-2025 13:39:56 Europe/Berlin] GD 라이브러리가 설치되어 있지 않습니다.

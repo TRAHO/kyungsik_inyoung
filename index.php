@@ -19,13 +19,12 @@
   Kakao.Share.createDefaultButton({
     container: '#kakaotalk-sharing-btn',
     objectType: 'location',
-    address: '경기 안산시 단원구 광덕4로 256 1,3,4,5층',
+    address: '경기 안산시 단원구 광덕4로 256',
     addressTitle: '더 베니르(안산)',
     content: {
       title: '신경식 ♥︎ 김인영 결혼합니다.',
       description: '25년 5월 24일(토) 오후 1시 40분',
-      imageUrl:
-        'https://kyungsik-inyoung.love/asset/shareImg.jpg',
+      imageUrl:'https://kyungsik-inyoung.love/asset/shareImg_kakao.jpg',
       link: {
         // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
         mobileWebUrl: 'https://kyungsik-inyoung.love',
@@ -48,6 +47,23 @@
     ],
   });
 </script>
+
+<!-- 배경음악 -->
+<audio id="bgm" loop autoplay style="display: none;">
+    <source src="/asset/bgm.mp3" type="audio/mp3">
+</audio>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var bgm = document.getElementById('bgm');
+    bgm.volume = 0.3; // 볼륨 30%로 설정
+});
+
+
+</script>
+<script>
+</script>
+
 
 <div id="smooth-wrapper">
     <div id="smooth-content">
@@ -322,7 +338,7 @@
                             부담 없이 편한 마음으로 오셔서<br>
                             축하해 주시면 감사하겠습니다.<br>
                             <br>
-                            자리에에 함께 하지 못하시더라도 부담 갖지 마시고, <br>
+                            자리에 함께 하지 못하시더라도 부담 갖지 마시고, <br>
                             따뜻한 마음으로 축하해 주시면 감사하겠습니다.
                         </p>
                     </div>
@@ -853,7 +869,7 @@
                                             </div>
                                             <p>
                                                 중앙역2번출구 정류장 하차 [18361]
-                                                <small>-일반버스-<br> 3, 7, 9, 10, 60A, 60B, 62, 70A, 71, 71-1, 76, 77, 80B, 80C, 123, 123-1</small>
+                                                <small>-일반버스-<br>3, 7, 9, 10, 60A, 60B, 62, 70A, 71, 71-1, 76, 77, 80B, 80C, 123, 123-1</small>
                                             </p>
                                         </div>
                                         <div class="item">
@@ -937,6 +953,25 @@
                                         <div class="bank">
                                             <span>카카오뱅크</span>
                                             <b>3333-12-9061065</b>
+                                        </div>
+
+                                        <div class="copy">
+                                            <div class="icon">
+                                                <img src="/asset/img/kakaopayIcon.png" alt="카카오페이 아이콘">
+                                            </div>
+                                            <span><i class="xi-document"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hideBlock">
+                                    <div class="name">
+                                        <span>신부 어머니</span>
+                                        <b>이미향</b>
+                                    </div>
+                                    <div class="bankWrap">
+                                        <div class="bank">
+                                            <span>농협</span>
+                                            <b>1110-01-008723</b>
                                         </div>
 
                                         <div class="copy">
